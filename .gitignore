@@ -1,0 +1,8 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Model data
+emotion_gesture/model2/
+*venv

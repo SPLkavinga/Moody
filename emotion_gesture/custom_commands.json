@@ -1,0 +1,18 @@
+{
+  "open project folder": {
+    "type": "run",
+    "windows": "explorer C:\\Projects",
+    "mac": "open ~/Projects",
+    "linux": "xdg-open ~/Projects"
+  },
+  "start meeting": {
+    "type": "url",
+    "url": "https://meet.google.com"
+  },
+  "start coding": {
+    "type": "run",
+    "windows": "code",
+    "mac": "open -a 'Visual Studio Code'",
+    "linux": "code"
+  }
+}

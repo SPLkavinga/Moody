@@ -1,0 +1,6362 @@
+[
+  {
+    "timestamp": "2025-12-11T16:44:17.492124",
+    "emotion": "sad",
+    "confidence": 0.305,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:17.623019",
+    "emotion": "sad",
+    "confidence": 0.305,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:17.734232",
+    "emotion": "sad",
+    "confidence": 0.32166666666666666,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:17.841433",
+    "emotion": "sad",
+    "confidence": 0.315,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:17.924872",
+    "emotion": "sad",
+    "confidence": 0.313,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:18.020608",
+    "emotion": "sad",
+    "confidence": 0.3083333333333333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:18.116957",
+    "emotion": "sad",
+    "confidence": 0.3092857142857143,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:18.216004",
+    "emotion": "sad",
+    "confidence": 0.313125,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:18.313429",
+    "emotion": "sad",
+    "confidence": 0.3111111111111111,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:18.411970",
+    "emotion": "sad",
+    "confidence": 0.3015,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:18.512819",
+    "emotion": "sad",
+    "confidence": 0.29849999999999993,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:18.780442",
+    "emotion": "angry",
+    "confidence": 0.293,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:18.930409",
+    "emotion": "sad",
+    "confidence": 0.29899999999999993,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:19.048235",
+    "emotion": "sad",
+    "confidence": 0.30300000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:19.135341",
+    "emotion": "sad",
+    "confidence": 0.3125,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:19.229613",
+    "emotion": "sad",
+    "confidence": 0.3195,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:19.326071",
+    "emotion": "sad",
+    "confidence": 0.32599999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:19.413888",
+    "emotion": "sad",
+    "confidence": 0.3335,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:19.492542",
+    "emotion": "sad",
+    "confidence": 0.34199999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:19.579525",
+    "emotion": "sad",
+    "confidence": 0.3675,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:19.663333",
+    "emotion": "sad",
+    "confidence": 0.3909999999999999,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:19.759307",
+    "emotion": "sad",
+    "confidence": 0.403,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:19.852877",
+    "emotion": "sad",
+    "confidence": 0.40650000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:19.935881",
+    "emotion": "sad",
+    "confidence": 0.4125,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:20.016988",
+    "emotion": "sad",
+    "confidence": 0.4069999999999999,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:20.113060",
+    "emotion": "sad",
+    "confidence": 0.4145,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:20.197461",
+    "emotion": "sad",
+    "confidence": 0.40449999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:20.298517",
+    "emotion": "sad",
+    "confidence": 0.40199999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:20.399533",
+    "emotion": "sad",
+    "confidence": 0.4015000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:20.515885",
+    "emotion": "sad",
+    "confidence": 0.39300000000000007,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:20.629623",
+    "emotion": "sad",
+    "confidence": 0.38649999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:20.713765",
+    "emotion": "sad",
+    "confidence": 0.38149999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:20.796036",
+    "emotion": "sad",
+    "confidence": 0.36899999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:20.897164",
+    "emotion": "sad",
+    "confidence": 0.3685,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:20.992572",
+    "emotion": "sad",
+    "confidence": 0.37250000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:21.078351",
+    "emotion": "sad",
+    "confidence": 0.353,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:21.171427",
+    "emotion": "sad",
+    "confidence": 0.36150000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:21.258401",
+    "emotion": "sad",
+    "confidence": 0.3495,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:21.390594",
+    "emotion": "sad",
+    "confidence": 0.34349999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:21.489349",
+    "emotion": "sad",
+    "confidence": 0.3375,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:21.581393",
+    "emotion": "sad",
+    "confidence": 0.31700000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:21.681439",
+    "emotion": "sad",
+    "confidence": 0.3175,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:21.779432",
+    "emotion": "sad",
+    "confidence": 0.3135,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:21.953655",
+    "emotion": "angry",
+    "confidence": 0.32300000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:22.081707",
+    "emotion": "angry",
+    "confidence": 0.3325,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:22.178819",
+    "emotion": "angry",
+    "confidence": 0.3415,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:22.263763",
+    "emotion": "angry",
+    "confidence": 0.3496666666666667,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:22.356481",
+    "emotion": "angry",
+    "confidence": 0.35391666666666666,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:22.454407",
+    "emotion": "angry",
+    "confidence": 0.35616666666666663,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:22.539726",
+    "emotion": "angry",
+    "confidence": 0.3551666666666667,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:22.637400",
+    "emotion": "angry",
+    "confidence": 0.3566666666666667,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:22.746328",
+    "emotion": "angry",
+    "confidence": 0.3451666666666667,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:22.829673",
+    "emotion": "angry",
+    "confidence": 0.3286666666666666,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:22.929650",
+    "emotion": "angry",
+    "confidence": 0.33466666666666667,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:23.030655",
+    "emotion": "angry",
+    "confidence": 0.3436666666666666,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:23.129360",
+    "emotion": "angry",
+    "confidence": 0.35216666666666663,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:23.224093",
+    "emotion": "angry",
+    "confidence": 0.347,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:23.324367",
+    "emotion": "angry",
+    "confidence": 0.35975,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:23.427195",
+    "emotion": "angry",
+    "confidence": 0.3565,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:23.572095",
+    "emotion": "angry",
+    "confidence": 0.35650000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:23.694582",
+    "emotion": "angry",
+    "confidence": 0.356,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:23.789671",
+    "emotion": "angry",
+    "confidence": 0.35150000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:23.889432",
+    "emotion": "angry",
+    "confidence": 0.35900000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:23.992784",
+    "emotion": "angry",
+    "confidence": 0.356,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:24.086930",
+    "emotion": "angry",
+    "confidence": 0.355,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:24.182113",
+    "emotion": "angry",
+    "confidence": 0.35000000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:24.279061",
+    "emotion": "angry",
+    "confidence": 0.34800000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:24.368198",
+    "emotion": "angry",
+    "confidence": 0.342,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:24.463826",
+    "emotion": "angry",
+    "confidence": 0.3425,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:24.569867",
+    "emotion": "angry",
+    "confidence": 0.3435,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:24.677377",
+    "emotion": "angry",
+    "confidence": 0.32700000000000007,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:24.767587",
+    "emotion": "angry",
+    "confidence": 0.35150000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:24.861326",
+    "emotion": "angry",
+    "confidence": 0.3585000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:24.955706",
+    "emotion": "angry",
+    "confidence": 0.358,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:25.055752",
+    "emotion": "angry",
+    "confidence": 0.33849999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:25.157806",
+    "emotion": "angry",
+    "confidence": 0.3185,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:25.265379",
+    "emotion": "angry",
+    "confidence": 0.306,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:25.409350",
+    "emotion": "sad",
+    "confidence": 0.3055,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:25.517587",
+    "emotion": "sad",
+    "confidence": 0.30300000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:25.621988",
+    "emotion": "sad",
+    "confidence": 0.3105,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:25.719081",
+    "emotion": "sad",
+    "confidence": 0.32700000000000007,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:25.812572",
+    "emotion": "sad",
+    "confidence": 0.3315,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:25.902291",
+    "emotion": "sad",
+    "confidence": 0.33949999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:25.996738",
+    "emotion": "sad",
+    "confidence": 0.34550000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:26.103637",
+    "emotion": "sad",
+    "confidence": 0.34199999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:26.248399",
+    "emotion": "sad",
+    "confidence": 0.35,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:26.393421",
+    "emotion": "sad",
+    "confidence": 0.357,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:26.492080",
+    "emotion": "sad",
+    "confidence": 0.35250000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:26.705466",
+    "emotion": "sad",
+    "confidence": 0.356,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:26.795751",
+    "emotion": "sad",
+    "confidence": 0.3505,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:26.891766",
+    "emotion": "sad",
+    "confidence": 0.3275,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:26.983960",
+    "emotion": "sad",
+    "confidence": 0.32300000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:27.087653",
+    "emotion": "sad",
+    "confidence": 0.3235,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:27.189231",
+    "emotion": "sad",
+    "confidence": 0.31999999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:27.283419",
+    "emotion": "sad",
+    "confidence": 0.31199999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:27.374170",
+    "emotion": "sad",
+    "confidence": 0.30199999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:27.467826",
+    "emotion": "sad",
+    "confidence": 0.30700000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:27.562435",
+    "emotion": "sad",
+    "confidence": 0.3125,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:27.656640",
+    "emotion": "sad",
+    "confidence": 0.32099999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:27.746065",
+    "emotion": "sad",
+    "confidence": 0.33199999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:27.839322",
+    "emotion": "sad",
+    "confidence": 0.3465,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:27.930656",
+    "emotion": "sad",
+    "confidence": 0.358,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:28.020425",
+    "emotion": "sad",
+    "confidence": 0.36100000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:28.113755",
+    "emotion": "sad",
+    "confidence": 0.36900000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:28.206076",
+    "emotion": "sad",
+    "confidence": 0.368,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:28.295685",
+    "emotion": "sad",
+    "confidence": 0.365,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:28.387569",
+    "emotion": "sad",
+    "confidence": 0.356,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:28.482079",
+    "emotion": "sad",
+    "confidence": 0.356,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:28.574035",
+    "emotion": "sad",
+    "confidence": 0.35,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:28.681004",
+    "emotion": "sad",
+    "confidence": 0.34249999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:28.791206",
+    "emotion": "sad",
+    "confidence": 0.33949999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:28.887285",
+    "emotion": "sad",
+    "confidence": 0.3335,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:28.979079",
+    "emotion": "sad",
+    "confidence": 0.3275,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:29.123344",
+    "emotion": "neutral",
+    "confidence": 0.32649999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:29.245678",
+    "emotion": "neutral",
+    "confidence": 0.3235,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:29.344730",
+    "emotion": "neutral",
+    "confidence": 0.3295,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:29.462256",
+    "emotion": "sad",
+    "confidence": 0.322,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:29.579686",
+    "emotion": "neutral",
+    "confidence": 0.3225,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:29.682281",
+    "emotion": "neutral",
+    "confidence": 0.325,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:29.773700",
+    "emotion": "neutral",
+    "confidence": 0.32399999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:29.873032",
+    "emotion": "neutral",
+    "confidence": 0.32699999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:29.965734",
+    "emotion": "neutral",
+    "confidence": 0.3275,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:30.068299",
+    "emotion": "neutral",
+    "confidence": 0.32949999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:30.170584",
+    "emotion": "neutral",
+    "confidence": 0.32149999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:30.254616",
+    "emotion": "neutral",
+    "confidence": 0.32499999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:30.334568",
+    "emotion": "neutral",
+    "confidence": 0.319,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:30.425026",
+    "emotion": "neutral",
+    "confidence": 0.31799999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:30.512261",
+    "emotion": "neutral",
+    "confidence": 0.3035,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:30.646041",
+    "emotion": "sad",
+    "confidence": 0.291,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:30.747301",
+    "emotion": "sad",
+    "confidence": 0.28700000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:30.882840",
+    "emotion": "angry",
+    "confidence": 0.28300000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:30.980434",
+    "emotion": "angry",
+    "confidence": 0.3115,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:31.090479",
+    "emotion": "angry",
+    "confidence": 0.3275,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:31.174358",
+    "emotion": "angry",
+    "confidence": 0.32999999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:31.265997",
+    "emotion": "angry",
+    "confidence": 0.356,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:31.362383",
+    "emotion": "angry",
+    "confidence": 0.34950000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:31.458137",
+    "emotion": "angry",
+    "confidence": 0.3625,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:31.562747",
+    "emotion": "angry",
+    "confidence": 0.368,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:31.663411",
+    "emotion": "angry",
+    "confidence": 0.371,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:31.767012",
+    "emotion": "angry",
+    "confidence": 0.376,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:31.856592",
+    "emotion": "angry",
+    "confidence": 0.35650000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:31.953815",
+    "emotion": "angry",
+    "confidence": 0.35,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:32.045568",
+    "emotion": "angry",
+    "confidence": 0.359,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:32.147811",
+    "emotion": "angry",
+    "confidence": 0.35900000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:32.252244",
+    "emotion": "angry",
+    "confidence": 0.33399999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:32.357673",
+    "emotion": "angry",
+    "confidence": 0.341,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:32.450039",
+    "emotion": "angry",
+    "confidence": 0.3305,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:32.546619",
+    "emotion": "angry",
+    "confidence": 0.324,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:32.662143",
+    "emotion": "sad",
+    "confidence": 0.3135,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:32.756496",
+    "emotion": "sad",
+    "confidence": 0.32,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:32.841900",
+    "emotion": "sad",
+    "confidence": 0.3215,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:32.936829",
+    "emotion": "sad",
+    "confidence": 0.31799999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:33.020237",
+    "emotion": "sad",
+    "confidence": 0.32799999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:33.113038",
+    "emotion": "sad",
+    "confidence": 0.32749999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:33.213183",
+    "emotion": "sad",
+    "confidence": 0.33299999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:33.312343",
+    "emotion": "sad",
+    "confidence": 0.33549999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:33.413233",
+    "emotion": "sad",
+    "confidence": 0.3385000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:33.515197",
+    "emotion": "sad",
+    "confidence": 0.334,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:33.607376",
+    "emotion": "sad",
+    "confidence": 0.33899999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:33.701606",
+    "emotion": "sad",
+    "confidence": 0.34249999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:33.801720",
+    "emotion": "sad",
+    "confidence": 0.347,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:33.895886",
+    "emotion": "sad",
+    "confidence": 0.3555,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:33.988807",
+    "emotion": "sad",
+    "confidence": 0.353,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:34.082456",
+    "emotion": "sad",
+    "confidence": 0.368,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:34.178122",
+    "emotion": "sad",
+    "confidence": 0.3635,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:34.282157",
+    "emotion": "sad",
+    "confidence": 0.362,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:34.373625",
+    "emotion": "sad",
+    "confidence": 0.36050000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:34.455027",
+    "emotion": "sad",
+    "confidence": 0.36100000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:34.546812",
+    "emotion": "sad",
+    "confidence": 0.3535000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:34.641833",
+    "emotion": "sad",
+    "confidence": 0.3335,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:34.746882",
+    "emotion": "sad",
+    "confidence": 0.3345000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:34.845979",
+    "emotion": "sad",
+    "confidence": 0.3345000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:34.938584",
+    "emotion": "sad",
+    "confidence": 0.3395,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:35.019888",
+    "emotion": "sad",
+    "confidence": 0.333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:35.113620",
+    "emotion": "sad",
+    "confidence": 0.33,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:35.218925",
+    "emotion": "sad",
+    "confidence": 0.31900000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:35.319204",
+    "emotion": "sad",
+    "confidence": 0.3055,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:35.412193",
+    "emotion": "sad",
+    "confidence": 0.3175,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:35.504764",
+    "emotion": "sad",
+    "confidence": 0.33049999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:35.599783",
+    "emotion": "sad",
+    "confidence": 0.333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:35.695474",
+    "emotion": "sad",
+    "confidence": 0.324,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:35.783011",
+    "emotion": "sad",
+    "confidence": 0.31600000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:35.874013",
+    "emotion": "sad",
+    "confidence": 0.31000000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:35.968319",
+    "emotion": "sad",
+    "confidence": 0.312,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:36.062120",
+    "emotion": "sad",
+    "confidence": 0.3165,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:36.155610",
+    "emotion": "sad",
+    "confidence": 0.33249999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:36.247551",
+    "emotion": "sad",
+    "confidence": 0.348,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:36.344038",
+    "emotion": "sad",
+    "confidence": 0.3395,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:36.447395",
+    "emotion": "sad",
+    "confidence": 0.32799999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:36.548102",
+    "emotion": "sad",
+    "confidence": 0.3375,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:36.661121",
+    "emotion": "sad",
+    "confidence": 0.35650000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:36.818335",
+    "emotion": "sad",
+    "confidence": 0.3765,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:36.918379",
+    "emotion": "sad",
+    "confidence": 0.37049999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:37.064378",
+    "emotion": "sad",
+    "confidence": 0.37350000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:37.213675",
+    "emotion": "sad",
+    "confidence": 0.373,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:37.311913",
+    "emotion": "sad",
+    "confidence": 0.366,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:37.411386",
+    "emotion": "sad",
+    "confidence": 0.36300000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:37.511891",
+    "emotion": "sad",
+    "confidence": 0.36,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:37.612587",
+    "emotion": "sad",
+    "confidence": 0.3685,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:37.708566",
+    "emotion": "sad",
+    "confidence": 0.36150000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:37.822993",
+    "emotion": "sad",
+    "confidence": 0.34450000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:37.919931",
+    "emotion": "sad",
+    "confidence": 0.331,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:38.003451",
+    "emotion": "sad",
+    "confidence": 0.346,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:38.096438",
+    "emotion": "sad",
+    "confidence": 0.35100000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:38.196583",
+    "emotion": "sad",
+    "confidence": 0.33699999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:38.305426",
+    "emotion": "sad",
+    "confidence": 0.34550000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:38.391034",
+    "emotion": "sad",
+    "confidence": 0.3335,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:38.484226",
+    "emotion": "sad",
+    "confidence": 0.34349999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:38.582860",
+    "emotion": "sad",
+    "confidence": 0.3465,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:38.677523",
+    "emotion": "sad",
+    "confidence": 0.36250000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:38.778940",
+    "emotion": "sad",
+    "confidence": 0.36500000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:38.873498",
+    "emotion": "sad",
+    "confidence": 0.3645,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:38.973825",
+    "emotion": "sad",
+    "confidence": 0.36900000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:39.070075",
+    "emotion": "sad",
+    "confidence": 0.3645,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:39.167280",
+    "emotion": "sad",
+    "confidence": 0.382,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:39.251664",
+    "emotion": "sad",
+    "confidence": 0.375,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:39.347504",
+    "emotion": "sad",
+    "confidence": 0.37600000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:39.449818",
+    "emotion": "sad",
+    "confidence": 0.364,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:39.557599",
+    "emotion": "sad",
+    "confidence": 0.3505,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:39.640232",
+    "emotion": "sad",
+    "confidence": 0.3415,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:39.737389",
+    "emotion": "sad",
+    "confidence": 0.3390000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:39.830252",
+    "emotion": "sad",
+    "confidence": 0.34299999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:39.929016",
+    "emotion": "sad",
+    "confidence": 0.3375,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:40.029689",
+    "emotion": "sad",
+    "confidence": 0.32849999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:40.112378",
+    "emotion": "sad",
+    "confidence": 0.3195,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:40.203045",
+    "emotion": "sad",
+    "confidence": 0.31049999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:40.298479",
+    "emotion": "sad",
+    "confidence": 0.3195,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:40.396258",
+    "emotion": "sad",
+    "confidence": 0.32899999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:40.487558",
+    "emotion": "sad",
+    "confidence": 0.33949999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:40.583252",
+    "emotion": "sad",
+    "confidence": 0.3415,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:40.681546",
+    "emotion": "sad",
+    "confidence": 0.33999999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:40.800492",
+    "emotion": "sad",
+    "confidence": 0.3395,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:40.902897",
+    "emotion": "sad",
+    "confidence": 0.324,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:40.997761",
+    "emotion": "sad",
+    "confidence": 0.32499999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:41.091024",
+    "emotion": "sad",
+    "confidence": 0.313,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:41.182027",
+    "emotion": "sad",
+    "confidence": 0.3155,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:41.278588",
+    "emotion": "sad",
+    "confidence": 0.3075,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:41.445141",
+    "emotion": "angry",
+    "confidence": 0.306,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:41.555934",
+    "emotion": "angry",
+    "confidence": 0.321,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:41.652059",
+    "emotion": "angry",
+    "confidence": 0.324,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:41.750414",
+    "emotion": "angry",
+    "confidence": 0.32499999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:41.846981",
+    "emotion": "angry",
+    "confidence": 0.31999999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:41.954115",
+    "emotion": "angry",
+    "confidence": 0.32549999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:42.049948",
+    "emotion": "angry",
+    "confidence": 0.32949999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:42.179901",
+    "emotion": "angry",
+    "confidence": 0.328,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:42.287066",
+    "emotion": "angry",
+    "confidence": 0.3345,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:42.398508",
+    "emotion": "angry",
+    "confidence": 0.34550000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:42.511675",
+    "emotion": "angry",
+    "confidence": 0.3255,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:42.675935",
+    "emotion": "sad",
+    "confidence": 0.326,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:42.770797",
+    "emotion": "sad",
+    "confidence": 0.32799999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:42.963042",
+    "emotion": "angry",
+    "confidence": 0.325,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:43.081124",
+    "emotion": "angry",
+    "confidence": 0.327,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:43.178289",
+    "emotion": "angry",
+    "confidence": 0.327,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:43.280005",
+    "emotion": "angry",
+    "confidence": 0.32449999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:43.379062",
+    "emotion": "angry",
+    "confidence": 0.3255,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:43.478890",
+    "emotion": "angry",
+    "confidence": 0.31599999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:43.628228",
+    "emotion": "sad",
+    "confidence": 0.31700000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:43.728425",
+    "emotion": "sad",
+    "confidence": 0.3275,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:43.823894",
+    "emotion": "sad",
+    "confidence": 0.324,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:43.923237",
+    "emotion": "sad",
+    "confidence": 0.33249999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:44.028350",
+    "emotion": "sad",
+    "confidence": 0.34249999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:44.112216",
+    "emotion": "sad",
+    "confidence": 0.34349999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:44.199249",
+    "emotion": "sad",
+    "confidence": 0.352,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:44.295079",
+    "emotion": "sad",
+    "confidence": 0.3505,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:44.395065",
+    "emotion": "sad",
+    "confidence": 0.34199999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:44.490759",
+    "emotion": "sad",
+    "confidence": 0.34,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:44.594027",
+    "emotion": "sad",
+    "confidence": 0.3435,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:44.689554",
+    "emotion": "sad",
+    "confidence": 0.3405,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:44.782672",
+    "emotion": "sad",
+    "confidence": 0.33399999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:44.882359",
+    "emotion": "sad",
+    "confidence": 0.32299999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:44.981388",
+    "emotion": "sad",
+    "confidence": 0.318,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:45.078430",
+    "emotion": "sad",
+    "confidence": 0.3085,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:45.178353",
+    "emotion": "sad",
+    "confidence": 0.2955,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:45.269377",
+    "emotion": "sad",
+    "confidence": 0.2885,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:45.436585",
+    "emotion": "neutral",
+    "confidence": 0.30849999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:45.539117",
+    "emotion": "neutral",
+    "confidence": 0.31450000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:45.645778",
+    "emotion": "neutral",
+    "confidence": 0.32399999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:45.748275",
+    "emotion": "neutral",
+    "confidence": 0.3275,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:45.847463",
+    "emotion": "neutral",
+    "confidence": 0.331,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:45.931298",
+    "emotion": "neutral",
+    "confidence": 0.3195,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:46.019205",
+    "emotion": "neutral",
+    "confidence": 0.32049999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:46.100666",
+    "emotion": "neutral",
+    "confidence": 0.3195,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:46.196153",
+    "emotion": "neutral",
+    "confidence": 0.3215,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:46.291975",
+    "emotion": "neutral",
+    "confidence": 0.31500000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:46.380873",
+    "emotion": "neutral",
+    "confidence": 0.3005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:46.473869",
+    "emotion": "neutral",
+    "confidence": 0.30199999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:46.572426",
+    "emotion": "neutral",
+    "confidence": 0.301,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:46.668418",
+    "emotion": "neutral",
+    "confidence": 0.29450000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:46.754446",
+    "emotion": "neutral",
+    "confidence": 0.2955,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:46.848122",
+    "emotion": "neutral",
+    "confidence": 0.31399999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:46.936476",
+    "emotion": "neutral",
+    "confidence": 0.3055,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:47.034522",
+    "emotion": "neutral",
+    "confidence": 0.28900000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:47.145868",
+    "emotion": "neutral",
+    "confidence": 0.28600000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:47.244864",
+    "emotion": "neutral",
+    "confidence": 0.28600000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:47.347589",
+    "emotion": "neutral",
+    "confidence": 0.2845000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:47.462598",
+    "emotion": "neutral",
+    "confidence": 0.2924999999999999,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:47.566185",
+    "emotion": "neutral",
+    "confidence": 0.2765,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:47.673225",
+    "emotion": "neutral",
+    "confidence": 0.2775,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:47.779210",
+    "emotion": "neutral",
+    "confidence": 0.2715,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:47.872816",
+    "emotion": "neutral",
+    "confidence": 0.269,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:47.997719",
+    "emotion": "neutral",
+    "confidence": 0.264,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:48.094840",
+    "emotion": "neutral",
+    "confidence": 0.26600000000000007,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:48.261440",
+    "emotion": "sad",
+    "confidence": 0.25949999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:48.411456",
+    "emotion": "sad",
+    "confidence": 0.267,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:48.511448",
+    "emotion": "sad",
+    "confidence": 0.267,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:48.608903",
+    "emotion": "sad",
+    "confidence": 0.28049999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:48.714915",
+    "emotion": "sad",
+    "confidence": 0.291,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:48.818231",
+    "emotion": "sad",
+    "confidence": 0.2945,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:48.914166",
+    "emotion": "sad",
+    "confidence": 0.301,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:49.028030",
+    "emotion": "sad",
+    "confidence": 0.302,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:49.128158",
+    "emotion": "sad",
+    "confidence": 0.30999999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:49.219037",
+    "emotion": "sad",
+    "confidence": 0.315,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:49.304486",
+    "emotion": "sad",
+    "confidence": 0.32199999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:49.401517",
+    "emotion": "sad",
+    "confidence": 0.3275,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:49.501366",
+    "emotion": "sad",
+    "confidence": 0.31799999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:49.668351",
+    "emotion": "neutral",
+    "confidence": 0.318,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:49.773554",
+    "emotion": "neutral",
+    "confidence": 0.3225,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:49.860434",
+    "emotion": "neutral",
+    "confidence": 0.31100000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:49.943915",
+    "emotion": "neutral",
+    "confidence": 0.30700000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:50.044871",
+    "emotion": "neutral",
+    "confidence": 0.31100000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:50.148113",
+    "emotion": "neutral",
+    "confidence": 0.3195,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:50.245880",
+    "emotion": "neutral",
+    "confidence": 0.32249999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:50.356870",
+    "emotion": "neutral",
+    "confidence": 0.323,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:50.457076",
+    "emotion": "neutral",
+    "confidence": 0.33249999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:50.549349",
+    "emotion": "neutral",
+    "confidence": 0.34099999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:50.646768",
+    "emotion": "neutral",
+    "confidence": 0.3415,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:50.746484",
+    "emotion": "neutral",
+    "confidence": 0.34099999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:50.844845",
+    "emotion": "neutral",
+    "confidence": 0.351,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:50.927044",
+    "emotion": "neutral",
+    "confidence": 0.35350000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:51.020360",
+    "emotion": "neutral",
+    "confidence": 0.3475,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:51.128500",
+    "emotion": "neutral",
+    "confidence": 0.35750000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:51.217523",
+    "emotion": "neutral",
+    "confidence": 0.356,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:51.312011",
+    "emotion": "neutral",
+    "confidence": 0.35550000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:51.411498",
+    "emotion": "neutral",
+    "confidence": 0.35100000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:51.502701",
+    "emotion": "neutral",
+    "confidence": 0.3295,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:51.594604",
+    "emotion": "neutral",
+    "confidence": 0.3375,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:51.688274",
+    "emotion": "neutral",
+    "confidence": 0.3445,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:51.778130",
+    "emotion": "neutral",
+    "confidence": 0.34450000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:51.861204",
+    "emotion": "neutral",
+    "confidence": 0.3415,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:51.940330",
+    "emotion": "neutral",
+    "confidence": 0.338,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:52.044670",
+    "emotion": "neutral",
+    "confidence": 0.3235,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:52.128122",
+    "emotion": "neutral",
+    "confidence": 0.319,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:52.208535",
+    "emotion": "neutral",
+    "confidence": 0.322,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:52.300733",
+    "emotion": "neutral",
+    "confidence": 0.30300000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:52.390198",
+    "emotion": "neutral",
+    "confidence": 0.3005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:52.485300",
+    "emotion": "neutral",
+    "confidence": 0.2805,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:52.578603",
+    "emotion": "neutral",
+    "confidence": 0.265,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:52.682494",
+    "emotion": "neutral",
+    "confidence": 0.24949999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:52.844568",
+    "emotion": "sad",
+    "confidence": 0.25100000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:52.957970",
+    "emotion": "sad",
+    "confidence": 0.24900000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:53.094523",
+    "emotion": "neutral",
+    "confidence": 0.24450000000000002,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:53.211359",
+    "emotion": "neutral",
+    "confidence": 0.24349999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:53.311785",
+    "emotion": "neutral",
+    "confidence": 0.23500000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:53.413802",
+    "emotion": "neutral",
+    "confidence": 0.2435,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:53.517454",
+    "emotion": "neutral",
+    "confidence": 0.24700000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:53.620743",
+    "emotion": "neutral",
+    "confidence": 0.2475,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:53.711499",
+    "emotion": "neutral",
+    "confidence": 0.25199999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:53.814087",
+    "emotion": "neutral",
+    "confidence": 0.246,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:53.910329",
+    "emotion": "neutral",
+    "confidence": 0.253,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:53.994480",
+    "emotion": "neutral",
+    "confidence": 0.24949999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:54.194633",
+    "emotion": "happy",
+    "confidence": 0.26599999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:54.302446",
+    "emotion": "happy",
+    "confidence": 0.276,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:54.396257",
+    "emotion": "happy",
+    "confidence": 0.272,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:54.494600",
+    "emotion": "happy",
+    "confidence": 0.31000000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:54.594771",
+    "emotion": "happy",
+    "confidence": 0.33199999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:54.686560",
+    "emotion": "happy",
+    "confidence": 0.366,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:54.778157",
+    "emotion": "happy",
+    "confidence": 0.3695,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:54.885560",
+    "emotion": "happy",
+    "confidence": 0.41150000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:54.995211",
+    "emotion": "happy",
+    "confidence": 0.41150000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:55.089729",
+    "emotion": "happy",
+    "confidence": 0.39349999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:55.194485",
+    "emotion": "happy",
+    "confidence": 0.38249999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:55.287567",
+    "emotion": "happy",
+    "confidence": 0.38849999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:55.371670",
+    "emotion": "happy",
+    "confidence": 0.39549999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:55.465163",
+    "emotion": "happy",
+    "confidence": 0.3705,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:55.561567",
+    "emotion": "happy",
+    "confidence": 0.3505,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:55.660078",
+    "emotion": "happy",
+    "confidence": 0.3285,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:55.739308",
+    "emotion": "happy",
+    "confidence": 0.34550000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:55.845489",
+    "emotion": "happy",
+    "confidence": 0.32899999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:55.944578",
+    "emotion": "happy",
+    "confidence": 0.358,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:56.035192",
+    "emotion": "happy",
+    "confidence": 0.3965,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:56.133721",
+    "emotion": "happy",
+    "confidence": 0.402,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:56.228258",
+    "emotion": "happy",
+    "confidence": 0.41050000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:56.320928",
+    "emotion": "happy",
+    "confidence": 0.433,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:56.417504",
+    "emotion": "happy",
+    "confidence": 0.4445000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:56.511598",
+    "emotion": "happy",
+    "confidence": 0.4825000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:56.594385",
+    "emotion": "happy",
+    "confidence": 0.487,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:56.693359",
+    "emotion": "happy",
+    "confidence": 0.4885,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:56.785426",
+    "emotion": "happy",
+    "confidence": 0.457,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:56.881641",
+    "emotion": "happy",
+    "confidence": 0.41,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:56.978000",
+    "emotion": "happy",
+    "confidence": 0.3525,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:57.079663",
+    "emotion": "happy",
+    "confidence": 0.3235,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:57.179300",
+    "emotion": "happy",
+    "confidence": 0.2875,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:57.343448",
+    "emotion": "sad",
+    "confidence": 0.2605833333333333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:57.461894",
+    "emotion": "sad",
+    "confidence": 0.3010833333333333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:57.547417",
+    "emotion": "sad",
+    "confidence": 0.3375833333333333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:57.643252",
+    "emotion": "sad",
+    "confidence": 0.3515833333333333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:57.747395",
+    "emotion": "sad",
+    "confidence": 0.3605833333333333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:57.855847",
+    "emotion": "sad",
+    "confidence": 0.3730833333333333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:57.947525",
+    "emotion": "sad",
+    "confidence": 0.37958333333333333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:58.040323",
+    "emotion": "sad",
+    "confidence": 0.3700833333333333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:58.139380",
+    "emotion": "sad",
+    "confidence": 0.36700000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:58.235600",
+    "emotion": "sad",
+    "confidence": 0.34750000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:58.328117",
+    "emotion": "sad",
+    "confidence": 0.34299999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:58.410974",
+    "emotion": "sad",
+    "confidence": 0.331,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:58.505902",
+    "emotion": "sad",
+    "confidence": 0.30799999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:58.584976",
+    "emotion": "sad",
+    "confidence": 0.29450000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:58.683954",
+    "emotion": "sad",
+    "confidence": 0.299,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:58.773987",
+    "emotion": "sad",
+    "confidence": 0.29650000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:58.868969",
+    "emotion": "sad",
+    "confidence": 0.2775000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:58.961263",
+    "emotion": "sad",
+    "confidence": 0.2825000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:59.062167",
+    "emotion": "sad",
+    "confidence": 0.2625,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:59.164318",
+    "emotion": "sad",
+    "confidence": 0.25,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:59.262336",
+    "emotion": "sad",
+    "confidence": 0.24900000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:59.448867",
+    "emotion": "happy",
+    "confidence": 0.2345,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:59.568799",
+    "emotion": "happy",
+    "confidence": 0.2515,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:59.657045",
+    "emotion": "happy",
+    "confidence": 0.24050000000000002,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:59.812341",
+    "emotion": "happy",
+    "confidence": 0.2615,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:44:59.945014",
+    "emotion": "happy",
+    "confidence": 0.269,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:00.054904",
+    "emotion": "happy",
+    "confidence": 0.2425,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:00.151533",
+    "emotion": "happy",
+    "confidence": 0.2535,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:00.254233",
+    "emotion": "happy",
+    "confidence": 0.25200000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:00.363940",
+    "emotion": "happy",
+    "confidence": 0.2555,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:00.543760",
+    "emotion": "angry",
+    "confidence": 0.23333333333333334,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:00.660889",
+    "emotion": "angry",
+    "confidence": 0.24225000000000002,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:00.756986",
+    "emotion": "angry",
+    "confidence": 0.26275,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:00.853680",
+    "emotion": "angry",
+    "confidence": 0.27416666666666667,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:00.952253",
+    "emotion": "angry",
+    "confidence": 0.28441666666666665,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:01.045486",
+    "emotion": "angry",
+    "confidence": 0.29241666666666666,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:01.145500",
+    "emotion": "angry",
+    "confidence": 0.281,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:01.247638",
+    "emotion": "angry",
+    "confidence": 0.2685,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:01.351288",
+    "emotion": "angry",
+    "confidence": 0.25400000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:01.436446",
+    "emotion": "angry",
+    "confidence": 0.24100000000000002,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:01.521187",
+    "emotion": "angry",
+    "confidence": 0.22208333333333333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:01.609976",
+    "emotion": "angry",
+    "confidence": 0.21216666666666667,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:01.705423",
+    "emotion": "angry",
+    "confidence": 0.20166666666666666,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:01.860884",
+    "emotion": "sad",
+    "confidence": 0.20600000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:02.146624",
+    "emotion": "disgust",
+    "confidence": 0.21150000000000002,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:02.355851",
+    "emotion": "sad",
+    "confidence": 0.21900000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:02.477413",
+    "emotion": "sad",
+    "confidence": 0.22000000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:02.571704",
+    "emotion": "sad",
+    "confidence": 0.23700000000000002,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:02.678861",
+    "emotion": "sad",
+    "confidence": 0.2675,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:02.778886",
+    "emotion": "sad",
+    "confidence": 0.28450000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:02.894080",
+    "emotion": "sad",
+    "confidence": 0.3035,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:03.012263",
+    "emotion": "sad",
+    "confidence": 0.31799999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:03.101898",
+    "emotion": "sad",
+    "confidence": 0.33149999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:03.197057",
+    "emotion": "sad",
+    "confidence": 0.3445,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:03.294135",
+    "emotion": "sad",
+    "confidence": 0.351,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:03.377475",
+    "emotion": "sad",
+    "confidence": 0.35700000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:03.475280",
+    "emotion": "sad",
+    "confidence": 0.35850000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:03.556969",
+    "emotion": "sad",
+    "confidence": 0.36200000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:03.661173",
+    "emotion": "sad",
+    "confidence": 0.35550000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:03.777559",
+    "emotion": "sad",
+    "confidence": 0.366,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:03.872550",
+    "emotion": "sad",
+    "confidence": 0.36400000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:03.973088",
+    "emotion": "sad",
+    "confidence": 0.368,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:04.081981",
+    "emotion": "sad",
+    "confidence": 0.36150000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:04.177482",
+    "emotion": "sad",
+    "confidence": 0.352,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:04.272867",
+    "emotion": "sad",
+    "confidence": 0.347,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:04.366127",
+    "emotion": "sad",
+    "confidence": 0.3335,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:04.644507",
+    "emotion": "sad",
+    "confidence": 0.3365,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:04.746452",
+    "emotion": "sad",
+    "confidence": 0.3295,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:04.851706",
+    "emotion": "sad",
+    "confidence": 0.32900000000000007,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:04.934917",
+    "emotion": "sad",
+    "confidence": 0.317,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:05.030006",
+    "emotion": "sad",
+    "confidence": 0.312,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:05.195456",
+    "emotion": "neutral",
+    "confidence": 0.31300000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:05.327650",
+    "emotion": "neutral",
+    "confidence": 0.3105,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:05.494031",
+    "emotion": "sad",
+    "confidence": 0.317,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:05.610741",
+    "emotion": "sad",
+    "confidence": 0.3205,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:05.716303",
+    "emotion": "sad",
+    "confidence": 0.3195,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:05.911266",
+    "emotion": "neutral",
+    "confidence": 0.3189999999999999,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:06.095096",
+    "emotion": "sad",
+    "confidence": 0.325,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:06.310680",
+    "emotion": "neutral",
+    "confidence": 0.32749999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:06.452452",
+    "emotion": "neutral",
+    "confidence": 0.326,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:06.546933",
+    "emotion": "neutral",
+    "confidence": 0.3345,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:06.644613",
+    "emotion": "neutral",
+    "confidence": 0.32999999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:06.744234",
+    "emotion": "neutral",
+    "confidence": 0.3285,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:06.840113",
+    "emotion": "neutral",
+    "confidence": 0.337,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:06.940358",
+    "emotion": "neutral",
+    "confidence": 0.331,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:07.034661",
+    "emotion": "neutral",
+    "confidence": 0.33,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:07.119996",
+    "emotion": "neutral",
+    "confidence": 0.3375000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:07.221850",
+    "emotion": "neutral",
+    "confidence": 0.35050000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:07.336094",
+    "emotion": "neutral",
+    "confidence": 0.34249999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:07.684375",
+    "emotion": "neutral",
+    "confidence": 0.3445,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:07.782491",
+    "emotion": "neutral",
+    "confidence": 0.344,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:07.881612",
+    "emotion": "neutral",
+    "confidence": 0.344,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:07.967134",
+    "emotion": "neutral",
+    "confidence": 0.33799999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:08.052452",
+    "emotion": "neutral",
+    "confidence": 0.33199999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:08.146267",
+    "emotion": "neutral",
+    "confidence": 0.33799999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:08.243117",
+    "emotion": "neutral",
+    "confidence": 0.33999999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:08.337125",
+    "emotion": "neutral",
+    "confidence": 0.337,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:08.432916",
+    "emotion": "neutral",
+    "confidence": 0.3345,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:08.527760",
+    "emotion": "neutral",
+    "confidence": 0.3335,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:08.616232",
+    "emotion": "neutral",
+    "confidence": 0.332,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:08.711113",
+    "emotion": "neutral",
+    "confidence": 0.331,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:08.797029",
+    "emotion": "neutral",
+    "confidence": 0.332,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:08.890822",
+    "emotion": "neutral",
+    "confidence": 0.3375,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:08.982022",
+    "emotion": "neutral",
+    "confidence": 0.3395,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:09.066167",
+    "emotion": "neutral",
+    "confidence": 0.3345,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:09.163271",
+    "emotion": "neutral",
+    "confidence": 0.3335,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:09.244658",
+    "emotion": "neutral",
+    "confidence": 0.33149999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:09.344206",
+    "emotion": "neutral",
+    "confidence": 0.3315,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:09.439785",
+    "emotion": "neutral",
+    "confidence": 0.3295,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:09.527562",
+    "emotion": "neutral",
+    "confidence": 0.33399999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:09.618867",
+    "emotion": "neutral",
+    "confidence": 0.32849999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:09.710548",
+    "emotion": "neutral",
+    "confidence": 0.32749999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:09.814041",
+    "emotion": "neutral",
+    "confidence": 0.3264999999999999,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:09.914559",
+    "emotion": "neutral",
+    "confidence": 0.32699999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:10.010618",
+    "emotion": "neutral",
+    "confidence": 0.331,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:10.102355",
+    "emotion": "neutral",
+    "confidence": 0.33099999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:10.183911",
+    "emotion": "neutral",
+    "confidence": 0.33099999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:10.277877",
+    "emotion": "neutral",
+    "confidence": 0.3375,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:10.387878",
+    "emotion": "neutral",
+    "confidence": 0.3375,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:10.485148",
+    "emotion": "neutral",
+    "confidence": 0.3255,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:10.578841",
+    "emotion": "neutral",
+    "confidence": 0.329,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:10.677273",
+    "emotion": "neutral",
+    "confidence": 0.33,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:10.767997",
+    "emotion": "neutral",
+    "confidence": 0.3285,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:10.860382",
+    "emotion": "neutral",
+    "confidence": 0.31600000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:10.960650",
+    "emotion": "neutral",
+    "confidence": 0.30900000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:11.061231",
+    "emotion": "neutral",
+    "confidence": 0.30300000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:11.144794",
+    "emotion": "neutral",
+    "confidence": 0.2995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:11.293962",
+    "emotion": "sad",
+    "confidence": 0.29300000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:11.416458",
+    "emotion": "sad",
+    "confidence": 0.2935,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:11.509878",
+    "emotion": "sad",
+    "confidence": 0.28950000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:11.589215",
+    "emotion": "sad",
+    "confidence": 0.28550000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:11.683673",
+    "emotion": "sad",
+    "confidence": 0.277,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:11.781595",
+    "emotion": "sad",
+    "confidence": 0.2785,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:11.863382",
+    "emotion": "sad",
+    "confidence": 0.28500000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:11.956057",
+    "emotion": "sad",
+    "confidence": 0.2875,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:12.052291",
+    "emotion": "sad",
+    "confidence": 0.2885,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:12.134108",
+    "emotion": "sad",
+    "confidence": 0.282,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:12.227404",
+    "emotion": "sad",
+    "confidence": 0.2785,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:12.337558",
+    "emotion": "sad",
+    "confidence": 0.271,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:12.481658",
+    "emotion": "angry",
+    "confidence": 0.27799999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:12.599380",
+    "emotion": "angry",
+    "confidence": 0.27799999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:12.694213",
+    "emotion": "angry",
+    "confidence": 0.2955,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:12.788212",
+    "emotion": "angry",
+    "confidence": 0.31,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:12.885595",
+    "emotion": "angry",
+    "confidence": 0.3135,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:12.987257",
+    "emotion": "angry",
+    "confidence": 0.3115,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:13.073812",
+    "emotion": "angry",
+    "confidence": 0.31700000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:13.163729",
+    "emotion": "angry",
+    "confidence": 0.31100000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:13.260441",
+    "emotion": "angry",
+    "confidence": 0.304,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:13.360317",
+    "emotion": "angry",
+    "confidence": 0.29600000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:13.455122",
+    "emotion": "angry",
+    "confidence": 0.296,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:13.545872",
+    "emotion": "angry",
+    "confidence": 0.281,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:13.644672",
+    "emotion": "angry",
+    "confidence": 0.271,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:13.750083",
+    "emotion": "angry",
+    "confidence": 0.263,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:13.843693",
+    "emotion": "angry",
+    "confidence": 0.26349999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:13.938854",
+    "emotion": "angry",
+    "confidence": 0.2675,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:14.031490",
+    "emotion": "angry",
+    "confidence": 0.275,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:14.127326",
+    "emotion": "angry",
+    "confidence": 0.264,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:14.216225",
+    "emotion": "angry",
+    "confidence": 0.258,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:14.338625",
+    "emotion": "angry",
+    "confidence": 0.2575,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:14.432257",
+    "emotion": "angry",
+    "confidence": 0.25650000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:14.516716",
+    "emotion": "angry",
+    "confidence": 0.279,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:14.610298",
+    "emotion": "angry",
+    "confidence": 0.28500000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:14.701954",
+    "emotion": "angry",
+    "confidence": 0.28950000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:14.800856",
+    "emotion": "angry",
+    "confidence": 0.2865000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:14.889448",
+    "emotion": "angry",
+    "confidence": 0.28500000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:15.043525",
+    "emotion": "sad",
+    "confidence": 0.29300000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:15.145282",
+    "emotion": "sad",
+    "confidence": 0.30050000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:15.227488",
+    "emotion": "sad",
+    "confidence": 0.30300000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:15.380131",
+    "emotion": "angry",
+    "confidence": 0.3085,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:15.482596",
+    "emotion": "angry",
+    "confidence": 0.30600000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:15.643489",
+    "emotion": "sad",
+    "confidence": 0.3095,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:15.755005",
+    "emotion": "sad",
+    "confidence": 0.305,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:15.843505",
+    "emotion": "sad",
+    "confidence": 0.31199999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:15.939739",
+    "emotion": "sad",
+    "confidence": 0.304,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:16.035740",
+    "emotion": "sad",
+    "confidence": 0.29800000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:16.135392",
+    "emotion": "sad",
+    "confidence": 0.29450000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:16.229662",
+    "emotion": "sad",
+    "confidence": 0.2895,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:16.322347",
+    "emotion": "sad",
+    "confidence": 0.2925,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:16.427242",
+    "emotion": "sad",
+    "confidence": 0.28500000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:16.518122",
+    "emotion": "sad",
+    "confidence": 0.274,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:16.610324",
+    "emotion": "sad",
+    "confidence": 0.2725000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:16.701884",
+    "emotion": "sad",
+    "confidence": 0.2740000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:16.843483",
+    "emotion": "neutral",
+    "confidence": 0.27,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:16.952971",
+    "emotion": "neutral",
+    "confidence": 0.281,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:17.047252",
+    "emotion": "neutral",
+    "confidence": 0.2835,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:17.143845",
+    "emotion": "neutral",
+    "confidence": 0.2935,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:17.237379",
+    "emotion": "neutral",
+    "confidence": 0.302,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:17.327928",
+    "emotion": "neutral",
+    "confidence": 0.31100000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:17.434937",
+    "emotion": "neutral",
+    "confidence": 0.3065,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:17.522723",
+    "emotion": "neutral",
+    "confidence": 0.3015,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:17.612940",
+    "emotion": "neutral",
+    "confidence": 0.302,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:17.712917",
+    "emotion": "neutral",
+    "confidence": 0.3085,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:17.819323",
+    "emotion": "neutral",
+    "confidence": 0.3045,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:17.906035",
+    "emotion": "neutral",
+    "confidence": 0.306,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:18.000577",
+    "emotion": "neutral",
+    "confidence": 0.306,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:18.151805",
+    "emotion": "sad",
+    "confidence": 0.3055,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:18.273440",
+    "emotion": "sad",
+    "confidence": 0.3175,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:18.384891",
+    "emotion": "sad",
+    "confidence": 0.3235,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:18.481558",
+    "emotion": "sad",
+    "confidence": 0.334,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:18.575682",
+    "emotion": "sad",
+    "confidence": 0.337,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:18.666701",
+    "emotion": "sad",
+    "confidence": 0.34400000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:18.762724",
+    "emotion": "sad",
+    "confidence": 0.34,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:18.860074",
+    "emotion": "sad",
+    "confidence": 0.3345,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:18.956614",
+    "emotion": "sad",
+    "confidence": 0.344,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:19.050543",
+    "emotion": "sad",
+    "confidence": 0.35350000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:19.145471",
+    "emotion": "sad",
+    "confidence": 0.355,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:19.244586",
+    "emotion": "sad",
+    "confidence": 0.34750000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:19.351094",
+    "emotion": "sad",
+    "confidence": 0.35250000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:19.461020",
+    "emotion": "sad",
+    "confidence": 0.352,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:19.560111",
+    "emotion": "sad",
+    "confidence": 0.36300000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:19.642716",
+    "emotion": "sad",
+    "confidence": 0.35300000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:19.720876",
+    "emotion": "sad",
+    "confidence": 0.3510000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:19.814751",
+    "emotion": "sad",
+    "confidence": 0.352,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:19.898647",
+    "emotion": "sad",
+    "confidence": 0.344,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:19.982908",
+    "emotion": "sad",
+    "confidence": 0.33599999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:20.063342",
+    "emotion": "sad",
+    "confidence": 0.3295,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:20.157834",
+    "emotion": "sad",
+    "confidence": 0.3305,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:20.242399",
+    "emotion": "sad",
+    "confidence": 0.322,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:20.344752",
+    "emotion": "sad",
+    "confidence": 0.31449999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:20.481432",
+    "emotion": "neutral",
+    "confidence": 0.313,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:20.587555",
+    "emotion": "neutral",
+    "confidence": 0.31149999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:20.692475",
+    "emotion": "neutral",
+    "confidence": 0.3075,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:20.776708",
+    "emotion": "neutral",
+    "confidence": 0.306,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:20.909952",
+    "emotion": "sad",
+    "confidence": 0.30100000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:20.999042",
+    "emotion": "sad",
+    "confidence": 0.296,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:21.154354",
+    "emotion": "neutral",
+    "confidence": 0.2935,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:21.247149",
+    "emotion": "neutral",
+    "confidence": 0.288,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:21.393278",
+    "emotion": "angry",
+    "confidence": 0.282,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:21.516885",
+    "emotion": "angry",
+    "confidence": 0.2855,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:21.665642",
+    "emotion": "neutral",
+    "confidence": 0.28800000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:21.766147",
+    "emotion": "neutral",
+    "confidence": 0.29250000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:21.862900",
+    "emotion": "neutral",
+    "confidence": 0.2945,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:21.960993",
+    "emotion": "neutral",
+    "confidence": 0.29100000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:22.068355",
+    "emotion": "neutral",
+    "confidence": 0.2925,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:22.170312",
+    "emotion": "neutral",
+    "confidence": 0.297,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:22.264337",
+    "emotion": "neutral",
+    "confidence": 0.28650000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:22.409798",
+    "emotion": "sad",
+    "confidence": 0.29050000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:22.508849",
+    "emotion": "sad",
+    "confidence": 0.29350000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:22.660210",
+    "emotion": "neutral",
+    "confidence": 0.28900000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:22.826604",
+    "emotion": "sad",
+    "confidence": 0.296,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:22.933821",
+    "emotion": "sad",
+    "confidence": 0.28400000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:23.027842",
+    "emotion": "sad",
+    "confidence": 0.284,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:23.133640",
+    "emotion": "sad",
+    "confidence": 0.281,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:23.227702",
+    "emotion": "sad",
+    "confidence": 0.2905,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:23.332153",
+    "emotion": "sad",
+    "confidence": 0.29500000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:23.426714",
+    "emotion": "sad",
+    "confidence": 0.284,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:23.576503",
+    "emotion": "neutral",
+    "confidence": 0.28250000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:23.693557",
+    "emotion": "neutral",
+    "confidence": 0.28650000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:23.797544",
+    "emotion": "neutral",
+    "confidence": 0.282,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:23.893159",
+    "emotion": "neutral",
+    "confidence": 0.2815,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:23.993256",
+    "emotion": "neutral",
+    "confidence": 0.291,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:24.093403",
+    "emotion": "neutral",
+    "confidence": 0.2935,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:24.176637",
+    "emotion": "neutral",
+    "confidence": 0.2995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:24.273541",
+    "emotion": "neutral",
+    "confidence": 0.304,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:24.367110",
+    "emotion": "neutral",
+    "confidence": 0.30250000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:24.448134",
+    "emotion": "neutral",
+    "confidence": 0.30200000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:24.544458",
+    "emotion": "neutral",
+    "confidence": 0.30500000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:24.643097",
+    "emotion": "neutral",
+    "confidence": 0.312,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:24.745248",
+    "emotion": "neutral",
+    "confidence": 0.3195,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:24.843017",
+    "emotion": "neutral",
+    "confidence": 0.3235,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:24.933468",
+    "emotion": "neutral",
+    "confidence": 0.3135,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:25.033432",
+    "emotion": "neutral",
+    "confidence": 0.3125,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:25.139470",
+    "emotion": "neutral",
+    "confidence": 0.2995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:25.233967",
+    "emotion": "neutral",
+    "confidence": 0.30249999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:25.315818",
+    "emotion": "neutral",
+    "confidence": 0.305,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:25.399665",
+    "emotion": "neutral",
+    "confidence": 0.2975,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:25.493239",
+    "emotion": "neutral",
+    "confidence": 0.29250000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:25.577683",
+    "emotion": "neutral",
+    "confidence": 0.287,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:25.680722",
+    "emotion": "neutral",
+    "confidence": 0.27999999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:25.828399",
+    "emotion": "sad",
+    "confidence": 0.28200000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:26.002590",
+    "emotion": "neutral",
+    "confidence": 0.2845,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:26.111967",
+    "emotion": "neutral",
+    "confidence": 0.28300000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:26.212089",
+    "emotion": "neutral",
+    "confidence": 0.288,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:26.301219",
+    "emotion": "neutral",
+    "confidence": 0.289,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:26.396758",
+    "emotion": "neutral",
+    "confidence": 0.295,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:26.489155",
+    "emotion": "neutral",
+    "confidence": 0.3045,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:26.571513",
+    "emotion": "neutral",
+    "confidence": 0.31,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:26.672151",
+    "emotion": "neutral",
+    "confidence": 0.3115,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:26.785286",
+    "emotion": "neutral",
+    "confidence": 0.323,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:26.878202",
+    "emotion": "neutral",
+    "confidence": 0.3195,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:26.972100",
+    "emotion": "neutral",
+    "confidence": 0.32249999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:27.052893",
+    "emotion": "neutral",
+    "confidence": 0.32450000000000007,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:27.137762",
+    "emotion": "neutral",
+    "confidence": 0.32750000000000007,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:27.280479",
+    "emotion": "neutral",
+    "confidence": 0.33100000000000007,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:27.371359",
+    "emotion": "neutral",
+    "confidence": 0.317,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:27.475893",
+    "emotion": "neutral",
+    "confidence": 0.31899999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:27.580721",
+    "emotion": "neutral",
+    "confidence": 0.31799999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:27.672298",
+    "emotion": "neutral",
+    "confidence": 0.3175,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:27.776525",
+    "emotion": "neutral",
+    "confidence": 0.30799999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:27.868068",
+    "emotion": "neutral",
+    "confidence": 0.3135,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:27.965810",
+    "emotion": "neutral",
+    "confidence": 0.3035,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:28.068196",
+    "emotion": "neutral",
+    "confidence": 0.296,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:28.210585",
+    "emotion": "sad",
+    "confidence": 0.29700000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:28.317212",
+    "emotion": "sad",
+    "confidence": 0.29900000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:28.465615",
+    "emotion": "neutral",
+    "confidence": 0.2935,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:28.626269",
+    "emotion": "sad",
+    "confidence": 0.29399999999999993,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:28.726586",
+    "emotion": "sad",
+    "confidence": 0.283,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:28.876182",
+    "emotion": "neutral",
+    "confidence": 0.27599999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:29.013561",
+    "emotion": "neutral",
+    "confidence": 0.27649999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:29.110285",
+    "emotion": "neutral",
+    "confidence": 0.271,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:29.209688",
+    "emotion": "neutral",
+    "confidence": 0.27349999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:29.293115",
+    "emotion": "neutral",
+    "confidence": 0.277,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:29.396616",
+    "emotion": "neutral",
+    "confidence": 0.2805,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:29.486875",
+    "emotion": "neutral",
+    "confidence": 0.2775,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:29.572684",
+    "emotion": "neutral",
+    "confidence": 0.2785,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:29.654450",
+    "emotion": "neutral",
+    "confidence": 0.27599999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:29.747323",
+    "emotion": "neutral",
+    "confidence": 0.2785,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:29.843032",
+    "emotion": "neutral",
+    "confidence": 0.287,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:29.943905",
+    "emotion": "neutral",
+    "confidence": 0.28750000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:30.039019",
+    "emotion": "neutral",
+    "confidence": 0.29100000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:30.133035",
+    "emotion": "neutral",
+    "confidence": 0.2885000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:30.226242",
+    "emotion": "neutral",
+    "confidence": 0.28850000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:30.321768",
+    "emotion": "neutral",
+    "confidence": 0.29050000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:30.426569",
+    "emotion": "neutral",
+    "confidence": 0.29875,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:30.527373",
+    "emotion": "neutral",
+    "confidence": 0.29225,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:30.621303",
+    "emotion": "neutral",
+    "confidence": 0.29825,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:30.727244",
+    "emotion": "neutral",
+    "confidence": 0.30225,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:30.827025",
+    "emotion": "neutral",
+    "confidence": 0.29875,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:30.930072",
+    "emotion": "neutral",
+    "confidence": 0.29725,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:31.021348",
+    "emotion": "neutral",
+    "confidence": 0.30175,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:31.117361",
+    "emotion": "neutral",
+    "confidence": 0.30375,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:31.210071",
+    "emotion": "neutral",
+    "confidence": 0.30175,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:31.392799",
+    "emotion": "sad",
+    "confidence": 0.30274999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:31.516514",
+    "emotion": "sad",
+    "confidence": 0.2995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:31.606941",
+    "emotion": "sad",
+    "confidence": 0.29599999999999993,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:31.695930",
+    "emotion": "sad",
+    "confidence": 0.283,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:31.792963",
+    "emotion": "sad",
+    "confidence": 0.284,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:31.880688",
+    "emotion": "sad",
+    "confidence": 0.2785,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:31.995910",
+    "emotion": "sad",
+    "confidence": 0.2720000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:32.092821",
+    "emotion": "sad",
+    "confidence": 0.272,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:32.185337",
+    "emotion": "sad",
+    "confidence": 0.2665,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:32.342714",
+    "emotion": "neutral",
+    "confidence": 0.2625,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:32.460314",
+    "emotion": "neutral",
+    "confidence": 0.2645,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:32.627521",
+    "emotion": "angry",
+    "confidence": 0.267,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:32.792747",
+    "emotion": "sad",
+    "confidence": 0.2595,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:32.899570",
+    "emotion": "sad",
+    "confidence": 0.26450000000000007,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:32.993182",
+    "emotion": "sad",
+    "confidence": 0.269,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:33.082485",
+    "emotion": "sad",
+    "confidence": 0.271,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:33.194742",
+    "emotion": "sad",
+    "confidence": 0.271,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:33.301877",
+    "emotion": "sad",
+    "confidence": 0.2735,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:33.393620",
+    "emotion": "sad",
+    "confidence": 0.2779999999999999,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:33.493055",
+    "emotion": "sad",
+    "confidence": 0.27249999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:33.593891",
+    "emotion": "sad",
+    "confidence": 0.2755,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:33.686918",
+    "emotion": "sad",
+    "confidence": 0.272,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:33.781577",
+    "emotion": "sad",
+    "confidence": 0.272,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:33.876118",
+    "emotion": "sad",
+    "confidence": 0.276,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:33.976328",
+    "emotion": "sad",
+    "confidence": 0.2705000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:34.066590",
+    "emotion": "sad",
+    "confidence": 0.2705000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:34.178897",
+    "emotion": "sad",
+    "confidence": 0.2775,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:34.277713",
+    "emotion": "sad",
+    "confidence": 0.28200000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:34.368691",
+    "emotion": "sad",
+    "confidence": 0.29050000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:34.449181",
+    "emotion": "sad",
+    "confidence": 0.29050000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:34.542771",
+    "emotion": "sad",
+    "confidence": 0.296,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:34.635440",
+    "emotion": "sad",
+    "confidence": 0.3045,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:34.727818",
+    "emotion": "sad",
+    "confidence": 0.3085,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:34.820953",
+    "emotion": "sad",
+    "confidence": 0.311,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:34.915012",
+    "emotion": "sad",
+    "confidence": 0.32699999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:35.010374",
+    "emotion": "sad",
+    "confidence": 0.33099999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:35.127035",
+    "emotion": "sad",
+    "confidence": 0.3355,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:35.228562",
+    "emotion": "sad",
+    "confidence": 0.3335,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:35.321191",
+    "emotion": "sad",
+    "confidence": 0.331,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:35.417358",
+    "emotion": "sad",
+    "confidence": 0.34299999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:35.514026",
+    "emotion": "sad",
+    "confidence": 0.3395,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:35.605869",
+    "emotion": "sad",
+    "confidence": 0.35150000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:35.697608",
+    "emotion": "sad",
+    "confidence": 0.36249999999999993,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:35.793734",
+    "emotion": "sad",
+    "confidence": 0.36050000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:35.910446",
+    "emotion": "sad",
+    "confidence": 0.35550000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:36.014924",
+    "emotion": "sad",
+    "confidence": 0.363,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:36.115859",
+    "emotion": "sad",
+    "confidence": 0.36,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:36.215127",
+    "emotion": "sad",
+    "confidence": 0.3695,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:36.316219",
+    "emotion": "sad",
+    "confidence": 0.3735,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:36.409251",
+    "emotion": "sad",
+    "confidence": 0.373,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:36.494980",
+    "emotion": "sad",
+    "confidence": 0.37449999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:36.593081",
+    "emotion": "sad",
+    "confidence": 0.367,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:36.694281",
+    "emotion": "sad",
+    "confidence": 0.363,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:36.780658",
+    "emotion": "sad",
+    "confidence": 0.36499999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:36.876559",
+    "emotion": "sad",
+    "confidence": 0.36699999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:36.976272",
+    "emotion": "sad",
+    "confidence": 0.35750000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:37.084264",
+    "emotion": "sad",
+    "confidence": 0.3510000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:37.191646",
+    "emotion": "sad",
+    "confidence": 0.3415000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:37.293664",
+    "emotion": "sad",
+    "confidence": 0.337,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:37.384367",
+    "emotion": "sad",
+    "confidence": 0.3390000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:37.467064",
+    "emotion": "sad",
+    "confidence": 0.348,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:37.559201",
+    "emotion": "sad",
+    "confidence": 0.35,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:37.641745",
+    "emotion": "sad",
+    "confidence": 0.344,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:37.747562",
+    "emotion": "sad",
+    "confidence": 0.346,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:37.843285",
+    "emotion": "sad",
+    "confidence": 0.35050000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:37.948689",
+    "emotion": "sad",
+    "confidence": 0.3524999999999999,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:38.103522",
+    "emotion": "sad",
+    "confidence": 0.362,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:38.211204",
+    "emotion": "sad",
+    "confidence": 0.36050000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:38.327069",
+    "emotion": "sad",
+    "confidence": 0.36200000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:38.445411",
+    "emotion": "sad",
+    "confidence": 0.3575,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:38.559123",
+    "emotion": "sad",
+    "confidence": 0.3470000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:38.793031",
+    "emotion": "neutral",
+    "confidence": 0.33899999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:38.912042",
+    "emotion": "neutral",
+    "confidence": 0.33799999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:39.033605",
+    "emotion": "neutral",
+    "confidence": 0.3390000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:39.205452",
+    "emotion": "neutral",
+    "confidence": 0.3375,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:39.398851",
+    "emotion": "neutral",
+    "confidence": 0.33049999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:39.509412",
+    "emotion": "neutral",
+    "confidence": 0.3335,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:39.671153",
+    "emotion": "sad",
+    "confidence": 0.3325,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:39.775823",
+    "emotion": "sad",
+    "confidence": 0.3295,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:39.888945",
+    "emotion": "sad",
+    "confidence": 0.329,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:40.010462",
+    "emotion": "sad",
+    "confidence": 0.325,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:40.135242",
+    "emotion": "sad",
+    "confidence": 0.32599999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:40.302288",
+    "emotion": "sad",
+    "confidence": 0.3205000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:40.437316",
+    "emotion": "sad",
+    "confidence": 0.31850000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:40.675855",
+    "emotion": "neutral",
+    "confidence": 0.31549999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:40.834539",
+    "emotion": "neutral",
+    "confidence": 0.32249999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:40.997049",
+    "emotion": "neutral",
+    "confidence": 0.31549999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:41.110950",
+    "emotion": "neutral",
+    "confidence": 0.31849999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:41.227169",
+    "emotion": "neutral",
+    "confidence": 0.3195,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:41.340197",
+    "emotion": "neutral",
+    "confidence": 0.3255,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:41.467123",
+    "emotion": "neutral",
+    "confidence": 0.32699999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:41.614752",
+    "emotion": "neutral",
+    "confidence": 0.323,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:41.808962",
+    "emotion": "neutral",
+    "confidence": 0.317,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:42.002437",
+    "emotion": "neutral",
+    "confidence": 0.31849999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:42.097910",
+    "emotion": "neutral",
+    "confidence": 0.32,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:42.206749",
+    "emotion": "neutral",
+    "confidence": 0.3195,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:42.314808",
+    "emotion": "neutral",
+    "confidence": 0.32699999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:42.417485",
+    "emotion": "neutral",
+    "confidence": 0.32,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:42.584792",
+    "emotion": "sad",
+    "confidence": 0.3175,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:42.703191",
+    "emotion": "sad",
+    "confidence": 0.31900000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:42.802657",
+    "emotion": "sad",
+    "confidence": 0.318,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:42.908915",
+    "emotion": "sad",
+    "confidence": 0.3145,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:43.059030",
+    "emotion": "sad",
+    "confidence": 0.314,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:43.167782",
+    "emotion": "sad",
+    "confidence": 0.315,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:43.361578",
+    "emotion": "sad",
+    "confidence": 0.3135,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:43.510695",
+    "emotion": "neutral",
+    "confidence": 0.30449999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:43.627276",
+    "emotion": "neutral",
+    "confidence": 0.3055,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:43.721857",
+    "emotion": "neutral",
+    "confidence": 0.3145,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:43.816649",
+    "emotion": "neutral",
+    "confidence": 0.329,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:43.925565",
+    "emotion": "neutral",
+    "confidence": 0.34199999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:44.033522",
+    "emotion": "neutral",
+    "confidence": 0.344,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:44.131607",
+    "emotion": "neutral",
+    "confidence": 0.3515,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:44.233619",
+    "emotion": "neutral",
+    "confidence": 0.348,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:44.342912",
+    "emotion": "neutral",
+    "confidence": 0.3485,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:44.444476",
+    "emotion": "neutral",
+    "confidence": 0.355,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:44.542879",
+    "emotion": "neutral",
+    "confidence": 0.349,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:44.651652",
+    "emotion": "neutral",
+    "confidence": 0.344,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:44.745517",
+    "emotion": "neutral",
+    "confidence": 0.35749999999999993,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:44.846967",
+    "emotion": "neutral",
+    "confidence": 0.36249999999999993,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:44.948429",
+    "emotion": "neutral",
+    "confidence": 0.36,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.031256",
+    "emotion": "neutral",
+    "confidence": 0.368,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.112699",
+    "emotion": "neutral",
+    "confidence": 0.36500000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.206439",
+    "emotion": "neutral",
+    "confidence": 0.36,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.292220",
+    "emotion": "neutral",
+    "confidence": 0.3655,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.381928",
+    "emotion": "neutral",
+    "confidence": 0.3665,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.463145",
+    "emotion": "neutral",
+    "confidence": 0.358,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.568647",
+    "emotion": "neutral",
+    "confidence": 0.363,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.647153",
+    "emotion": "neutral",
+    "confidence": 0.34349999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.730463",
+    "emotion": "neutral",
+    "confidence": 0.341,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.825438",
+    "emotion": "neutral",
+    "confidence": 0.33399999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.907947",
+    "emotion": "neutral",
+    "confidence": 0.32399999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:45.992088",
+    "emotion": "neutral",
+    "confidence": 0.3235,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:46.071134",
+    "emotion": "neutral",
+    "confidence": 0.3355,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:46.153158",
+    "emotion": "neutral",
+    "confidence": 0.3385,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:46.244818",
+    "emotion": "neutral",
+    "confidence": 0.343,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:46.340098",
+    "emotion": "neutral",
+    "confidence": 0.34650000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:46.443816",
+    "emotion": "neutral",
+    "confidence": 0.3395,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:46.532417",
+    "emotion": "neutral",
+    "confidence": 0.348,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:46.625580",
+    "emotion": "neutral",
+    "confidence": 0.3435,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:46.726974",
+    "emotion": "neutral",
+    "confidence": 0.347,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:46.831959",
+    "emotion": "neutral",
+    "confidence": 0.3485,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:46.913954",
+    "emotion": "neutral",
+    "confidence": 0.3475,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:46.995614",
+    "emotion": "neutral",
+    "confidence": 0.34049999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:47.092328",
+    "emotion": "neutral",
+    "confidence": 0.331,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:47.184891",
+    "emotion": "neutral",
+    "confidence": 0.3095,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:47.342049",
+    "emotion": "sad",
+    "confidence": 0.317,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:47.442187",
+    "emotion": "sad",
+    "confidence": 0.3325,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:47.531864",
+    "emotion": "sad",
+    "confidence": 0.33899999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:47.616135",
+    "emotion": "sad",
+    "confidence": 0.352,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:47.711269",
+    "emotion": "sad",
+    "confidence": 0.36249999999999993,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:47.826005",
+    "emotion": "sad",
+    "confidence": 0.36650000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:47.907611",
+    "emotion": "sad",
+    "confidence": 0.3695,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.001223",
+    "emotion": "sad",
+    "confidence": 0.3815,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.080369",
+    "emotion": "sad",
+    "confidence": 0.3865,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.164386",
+    "emotion": "sad",
+    "confidence": 0.38300000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.259676",
+    "emotion": "sad",
+    "confidence": 0.36850000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.366861",
+    "emotion": "sad",
+    "confidence": 0.361,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.448091",
+    "emotion": "sad",
+    "confidence": 0.36300000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.542063",
+    "emotion": "sad",
+    "confidence": 0.35350000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.625339",
+    "emotion": "sad",
+    "confidence": 0.3525,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.718000",
+    "emotion": "sad",
+    "confidence": 0.352,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.800186",
+    "emotion": "sad",
+    "confidence": 0.3475,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.892834",
+    "emotion": "sad",
+    "confidence": 0.3330000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:48.999918",
+    "emotion": "sad",
+    "confidence": 0.3315,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:49.082572",
+    "emotion": "sad",
+    "confidence": 0.3245,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:49.165148",
+    "emotion": "sad",
+    "confidence": 0.3395,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:49.263721",
+    "emotion": "sad",
+    "confidence": 0.341,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:49.352496",
+    "emotion": "sad",
+    "confidence": 0.333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:49.433525",
+    "emotion": "sad",
+    "confidence": 0.331,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:49.513860",
+    "emotion": "sad",
+    "confidence": 0.33299999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:49.642126",
+    "emotion": "neutral",
+    "confidence": 0.3390000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:49.746314",
+    "emotion": "neutral",
+    "confidence": 0.329,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:49.830086",
+    "emotion": "neutral",
+    "confidence": 0.333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:49.924233",
+    "emotion": "neutral",
+    "confidence": 0.332,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:50.059210",
+    "emotion": "sad",
+    "confidence": 0.306,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:50.193626",
+    "emotion": "neutral",
+    "confidence": 0.2780000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:50.342000",
+    "emotion": "sad",
+    "confidence": 0.26,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:50.442884",
+    "emotion": "sad",
+    "confidence": 0.2435,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:50.558802",
+    "emotion": "sad",
+    "confidence": 0.233,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:50.637187",
+    "emotion": "sad",
+    "confidence": 0.21349999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:50.717762",
+    "emotion": "sad",
+    "confidence": 0.199,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:50.808931",
+    "emotion": "sad",
+    "confidence": 0.182,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:50.891877",
+    "emotion": "sad",
+    "confidence": 0.178,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:50.974634",
+    "emotion": "sad",
+    "confidence": 0.181,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:51.053801",
+    "emotion": "sad",
+    "confidence": 0.20250000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:51.138277",
+    "emotion": "sad",
+    "confidence": 0.231,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:51.244300",
+    "emotion": "sad",
+    "confidence": 0.24500000000000002,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:51.351694",
+    "emotion": "sad",
+    "confidence": 0.2545,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:51.477422",
+    "emotion": "sad",
+    "confidence": 0.259,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:51.601623",
+    "emotion": "sad",
+    "confidence": 0.275,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:51.770531",
+    "emotion": "sad",
+    "confidence": 0.292,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:51.875288",
+    "emotion": "sad",
+    "confidence": 0.31050000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:51.975363",
+    "emotion": "sad",
+    "confidence": 0.3215,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:52.141993",
+    "emotion": "neutral",
+    "confidence": 0.3105,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:52.234305",
+    "emotion": "neutral",
+    "confidence": 0.322,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:52.349912",
+    "emotion": "neutral",
+    "confidence": 0.325,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:52.491796",
+    "emotion": "neutral",
+    "confidence": 0.3285,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:52.599122",
+    "emotion": "neutral",
+    "confidence": 0.3249999999999999,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:52.772759",
+    "emotion": "sad",
+    "confidence": 0.3205,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:52.947285",
+    "emotion": "neutral",
+    "confidence": 0.3225,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:53.108497",
+    "emotion": "sad",
+    "confidence": 0.32399999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:53.228854",
+    "emotion": "sad",
+    "confidence": 0.32199999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:53.336888",
+    "emotion": "sad",
+    "confidence": 0.3235,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:53.432171",
+    "emotion": "sad",
+    "confidence": 0.337,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:53.569959",
+    "emotion": "sad",
+    "confidence": 0.3385,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:53.671504",
+    "emotion": "sad",
+    "confidence": 0.35,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:53.791989",
+    "emotion": "sad",
+    "confidence": 0.35450000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:53.891902",
+    "emotion": "sad",
+    "confidence": 0.3450000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:53.987698",
+    "emotion": "sad",
+    "confidence": 0.3385,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:54.083336",
+    "emotion": "sad",
+    "confidence": 0.3435,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:54.179948",
+    "emotion": "sad",
+    "confidence": 0.337,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:54.276256",
+    "emotion": "sad",
+    "confidence": 0.33199999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:54.370954",
+    "emotion": "sad",
+    "confidence": 0.3295,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:54.458503",
+    "emotion": "sad",
+    "confidence": 0.31999999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:54.549252",
+    "emotion": "sad",
+    "confidence": 0.32899999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:54.642294",
+    "emotion": "sad",
+    "confidence": 0.33149999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:54.752517",
+    "emotion": "sad",
+    "confidence": 0.3235,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:54.849518",
+    "emotion": "sad",
+    "confidence": 0.3295,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:54.949850",
+    "emotion": "sad",
+    "confidence": 0.33050000000000007,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:55.030007",
+    "emotion": "sad",
+    "confidence": 0.32999999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:55.112437",
+    "emotion": "sad",
+    "confidence": 0.3285,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:55.204806",
+    "emotion": "sad",
+    "confidence": 0.3284999999999999,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:55.308792",
+    "emotion": "sad",
+    "confidence": 0.32399999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:55.411199",
+    "emotion": "sad",
+    "confidence": 0.32699999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:55.495379",
+    "emotion": "sad",
+    "confidence": 0.31649999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:55.605429",
+    "emotion": "sad",
+    "confidence": 0.3045,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:55.712510",
+    "emotion": "sad",
+    "confidence": 0.3055,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:55.858436",
+    "emotion": "neutral",
+    "confidence": 0.3105,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:55.967305",
+    "emotion": "neutral",
+    "confidence": 0.3105,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:56.058790",
+    "emotion": "neutral",
+    "confidence": 0.313,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:56.158524",
+    "emotion": "neutral",
+    "confidence": 0.3085,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:56.308318",
+    "emotion": "sad",
+    "confidence": 0.3065,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:56.414876",
+    "emotion": "sad",
+    "confidence": 0.31799999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:56.508607",
+    "emotion": "sad",
+    "confidence": 0.3215,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:56.604582",
+    "emotion": "sad",
+    "confidence": 0.3404999999999999,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:56.703001",
+    "emotion": "sad",
+    "confidence": 0.35300000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:56.826154",
+    "emotion": "sad",
+    "confidence": 0.3545,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:56.940927",
+    "emotion": "sad",
+    "confidence": 0.3545,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:57.061061",
+    "emotion": "sad",
+    "confidence": 0.3545,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:57.178196",
+    "emotion": "sad",
+    "confidence": 0.35350000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:57.277008",
+    "emotion": "sad",
+    "confidence": 0.343,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:57.414764",
+    "emotion": "sad",
+    "confidence": 0.352,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:57.510448",
+    "emotion": "sad",
+    "confidence": 0.351,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:57.616324",
+    "emotion": "sad",
+    "confidence": 0.3510000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:57.717047",
+    "emotion": "sad",
+    "confidence": 0.3465,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:57.825026",
+    "emotion": "sad",
+    "confidence": 0.327,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:57.941655",
+    "emotion": "sad",
+    "confidence": 0.3265,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:58.050792",
+    "emotion": "sad",
+    "confidence": 0.324,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:58.159220",
+    "emotion": "sad",
+    "confidence": 0.3315,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:58.252715",
+    "emotion": "sad",
+    "confidence": 0.331,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:58.346557",
+    "emotion": "sad",
+    "confidence": 0.341,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:58.447360",
+    "emotion": "sad",
+    "confidence": 0.331,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:58.549749",
+    "emotion": "sad",
+    "confidence": 0.328,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:58.642660",
+    "emotion": "sad",
+    "confidence": 0.32999999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:58.734063",
+    "emotion": "sad",
+    "confidence": 0.3185,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:58.833488",
+    "emotion": "sad",
+    "confidence": 0.33050000000000007,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:58.944767",
+    "emotion": "sad",
+    "confidence": 0.3425000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:59.045894",
+    "emotion": "sad",
+    "confidence": 0.348,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:59.153899",
+    "emotion": "sad",
+    "confidence": 0.363,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:59.241477",
+    "emotion": "sad",
+    "confidence": 0.359,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:59.346459",
+    "emotion": "sad",
+    "confidence": 0.35,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:59.441741",
+    "emotion": "sad",
+    "confidence": 0.36249999999999993,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:59.532938",
+    "emotion": "sad",
+    "confidence": 0.35300000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:59.629959",
+    "emotion": "sad",
+    "confidence": 0.3365000000000001,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:59.718093",
+    "emotion": "sad",
+    "confidence": 0.333,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:45:59.813323",
+    "emotion": "sad",
+    "confidence": 0.3215,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:00.022334",
+    "emotion": "neutral",
+    "confidence": 0.32299999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:00.136572",
+    "emotion": "neutral",
+    "confidence": 0.31999999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:00.240290",
+    "emotion": "neutral",
+    "confidence": 0.31949999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:00.336179",
+    "emotion": "neutral",
+    "confidence": 0.31649999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:00.509953",
+    "emotion": "sad",
+    "confidence": 0.3135,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:00.704918",
+    "emotion": "neutral",
+    "confidence": 0.3175,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:00.908175",
+    "emotion": "sad",
+    "confidence": 0.31199999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:01.025640",
+    "emotion": "sad",
+    "confidence": 0.31799999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:01.142473",
+    "emotion": "sad",
+    "confidence": 0.318,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:01.265798",
+    "emotion": "sad",
+    "confidence": 0.32599999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:01.426669",
+    "emotion": "sad",
+    "confidence": 0.3315,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:01.574985",
+    "emotion": "sad",
+    "confidence": 0.3225,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:01.774976",
+    "emotion": "neutral",
+    "confidence": 0.314,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:01.896451",
+    "emotion": "neutral",
+    "confidence": 0.311,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:01.999967",
+    "emotion": "neutral",
+    "confidence": 0.315,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:02.108364",
+    "emotion": "neutral",
+    "confidence": 0.3095,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:02.240404",
+    "emotion": "neutral",
+    "confidence": 0.3085,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:02.408040",
+    "emotion": "sad",
+    "confidence": 0.3065,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:02.532991",
+    "emotion": "sad",
+    "confidence": 0.30849999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:02.635226",
+    "emotion": "sad",
+    "confidence": 0.31799999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:02.762103",
+    "emotion": "sad",
+    "confidence": 0.32,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:02.862689",
+    "emotion": "sad",
+    "confidence": 0.3395,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:02.995026",
+    "emotion": "sad",
+    "confidence": 0.32799999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:03.110919",
+    "emotion": "sad",
+    "confidence": 0.3405,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:03.258405",
+    "emotion": "sad",
+    "confidence": 0.3395,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:03.383480",
+    "emotion": "sad",
+    "confidence": 0.341,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:03.574933",
+    "emotion": "sad",
+    "confidence": 0.34049999999999997,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:03.675874",
+    "emotion": "sad",
+    "confidence": 0.33299999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:03.829990",
+    "emotion": "sad",
+    "confidence": 0.3405,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:03.928561",
+    "emotion": "sad",
+    "confidence": 0.339,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:04.133819",
+    "emotion": "sad",
+    "confidence": 0.341,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:04.274746",
+    "emotion": "sad",
+    "confidence": 0.3265,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:04.443649",
+    "emotion": "sad",
+    "confidence": 0.3405,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:04.574591",
+    "emotion": "sad",
+    "confidence": 0.3365,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:04.707118",
+    "emotion": "sad",
+    "confidence": 0.35100000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:04.807974",
+    "emotion": "sad",
+    "confidence": 0.34750000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:04.908059",
+    "emotion": "sad",
+    "confidence": 0.34950000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:05.011523",
+    "emotion": "sad",
+    "confidence": 0.35600000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:05.115091",
+    "emotion": "sad",
+    "confidence": 0.35000000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:05.214737",
+    "emotion": "sad",
+    "confidence": 0.34450000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:05.331423",
+    "emotion": "sad",
+    "confidence": 0.3385,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:05.433738",
+    "emotion": "sad",
+    "confidence": 0.34700000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:05.531677",
+    "emotion": "sad",
+    "confidence": 0.33399999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:05.708028",
+    "emotion": "angry",
+    "confidence": 0.3465,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:05.841998",
+    "emotion": "angry",
+    "confidence": 0.356,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:05.950144",
+    "emotion": "angry",
+    "confidence": 0.364,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:06.050926",
+    "emotion": "angry",
+    "confidence": 0.373,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:06.151635",
+    "emotion": "angry",
+    "confidence": 0.37,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:06.246542",
+    "emotion": "angry",
+    "confidence": 0.367,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:06.343075",
+    "emotion": "angry",
+    "confidence": 0.355,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:06.450579",
+    "emotion": "angry",
+    "confidence": 0.356,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:06.547479",
+    "emotion": "angry",
+    "confidence": 0.34450000000000003,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:06.643243",
+    "emotion": "angry",
+    "confidence": 0.36150000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:06.747812",
+    "emotion": "angry",
+    "confidence": 0.3425,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:06.843626",
+    "emotion": "angry",
+    "confidence": 0.327,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:07.025027",
+    "emotion": "sad",
+    "confidence": 0.3215,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:07.144559",
+    "emotion": "sad",
+    "confidence": 0.325,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:07.250607",
+    "emotion": "sad",
+    "confidence": 0.31799999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:07.347562",
+    "emotion": "sad",
+    "confidence": 0.3145,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:07.525070",
+    "emotion": "angry",
+    "confidence": 0.318,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:07.651945",
+    "emotion": "angry",
+    "confidence": 0.32100000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:07.761504",
+    "emotion": "angry",
+    "confidence": 0.3335,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:07.861772",
+    "emotion": "angry",
+    "confidence": 0.32849999999999996,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:08.141587",
+    "emotion": "angry",
+    "confidence": 0.3465,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:08.307927",
+    "emotion": "angry",
+    "confidence": 0.36249999999999993,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:08.474506",
+    "emotion": "angry",
+    "confidence": 0.38149999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:08.675153",
+    "emotion": "angry",
+    "confidence": 0.37199999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:08.841158",
+    "emotion": "angry",
+    "confidence": 0.37649999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:09.091358",
+    "emotion": "angry",
+    "confidence": 0.375,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:09.408162",
+    "emotion": "angry",
+    "confidence": 0.37750000000000006,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:09.825865",
+    "emotion": "angry",
+    "confidence": 0.36900000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:09.957747",
+    "emotion": "angry",
+    "confidence": 0.3645,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:10.111202",
+    "emotion": "angry",
+    "confidence": 0.35850000000000004,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:10.210838",
+    "emotion": "angry",
+    "confidence": 0.36800000000000005,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:10.309546",
+    "emotion": "angry",
+    "confidence": 0.376,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:10.408044",
+    "emotion": "angry",
+    "confidence": 0.36349999999999993,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:10.508390",
+    "emotion": "angry",
+    "confidence": 0.37649999999999995,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:10.608249",
+    "emotion": "angry",
+    "confidence": 0.372,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:10.709182",
+    "emotion": "angry",
+    "confidence": 0.37449999999999994,
+    "session_id": 2357435169984
+  },
+  {
+    "timestamp": "2025-12-11T16:46:10.825279",
+    "emotion": "angry",
+    "confidence": 0.3625,
+    "session_id": 2357435169984
+  }
+]

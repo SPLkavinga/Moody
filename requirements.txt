@@ -1,0 +1,33 @@
+
+# Computer Vision & Image Processing
+opencv-python==4.8.1.78
+mediapipe==0.10.13
+Pillow==10.1.0
+
+# Machine Learning & Data Processing
+numpy>=2.0.0
+joblib>=1.4.0
+scikit-learn>=1.7.0
+pandas>=2.2.0
+
+# Speech Recognition & Text-to-Speech
+SpeechRecognition==3.10.0
+pyttsx3==2.90
+PyAudio==0.2.14
+
+# System Automation & Control
+pyautogui==0.9.54
+PyGetWindow==0.0.9
+pynput==1.7.6
+psutil==5.9.8
+
+# OCR (Optional - for screen reading features)
+pytesseract==0.3.10
+
+# Report Generation & Data Export
+reportlab==4.0.7
+openpyxl==3.1.2
+
+# Additional Utilities
+pywin32==306; sys_platform == 'win32'
+
