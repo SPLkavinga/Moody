@@ -83,7 +83,7 @@ def finger_extended_np(lms, tip_idx, pip_idx):
     return lms[tip_idx, 1] < lms[pip_idx, 1]
 
 def thumb_really_extended_np(lms):
-    """Strict thumb check (extended + apart from index)"""
+    """Strict thumb check (extended, apart from index)"""
     tip = lms[mp_hands.HandLandmark.THUMB_TIP.value]
     ip = lms[mp_hands.HandLandmark.THUMB_IP.value]
     index_tip = lms[mp_hands.HandLandmark.INDEX_FINGER_TIP.value]

@@ -300,130 +300,130 @@ class EmotionRecognitionApp:
         # Emotion actions with specific songs & games per emotion
         self.emotion_actions = {
             'happy': [
-                ('🎵 Play "Happy" - Pharrell Williams', self.song_happy_pharrell),
-                ('🎵 Play "Uptown Funk" - Bruno Mars', self.song_uptown_funk),
-                ('🎵 Play "Good as Hell" - Lizzo', self.song_good_as_hell),
-                ('🎮 Play Pac-Man Online', self.game_pacman),
-                ('🎮 Play Friday Night Funkin\' (Music Battle)', self.game_friday_night_funkin),
-                ('🎮 Open Games Platform', self.open_games),
-                ('📺 Browse YouTube', self.open_youtube),
-                ('📱 Open Social Media', self.open_social_media),
-                ('📸 Launch Camera App', self.open_camera_app),
-                ('🎨 Open Paint/Creative Tools', self.open_creative_apps),
-                ('💬 Start Video Call', self.open_video_call),
-                ('🎉 Play Party Music', self.play_party_music),
-                ('📝 Create Happy Journal Entry', self.open_happy_journal),
+                (' Play "Happy" - Pharrell Williams', self.song_happy_pharrell),
+                (' Play "Uptown Funk" - Bruno Mars', self.song_uptown_funk),
+                (' Play "Good as Hell" - Lizzo', self.song_good_as_hell),
+                (' Play Pac-Man Online', self.game_pacman),
+                (' Play Friday Night Funkin\' (Music Battle)', self.game_friday_night_funkin),
+                (' Open Games Platform', self.open_games),
+                (' Browse YouTube', self.open_youtube),
+                (' Open Social Media', self.open_social_media),
+                (' Launch Camera App', self.open_camera_app),
+                (' Open Paint/Creative Tools', self.open_creative_apps),
+                (' Start Video Call', self.open_video_call),
+                (' Play Party Music', self.play_party_music),
+                (' Create Happy Journal Entry', self.open_happy_journal),
             ],
             'sad': [
-                ('🎵 Play "Fix You" - Coldplay', self.song_fix_you),
-                ('🎵 Play "Lean on Me" - Bill Withers', self.song_lean_on_me),
-                ('🎵 Play "Here Comes the Sun" - Beatles', self.song_here_comes_the_sun),
-                ('🎮 Play Little Alchemy (Creative Discovery)', self.game_little_alchemy),
-                ('🎮 Play Bubble Shooter (Soothing)', self.game_bubble_shooter),
-                ('🎵 Play Comforting Music', self.play_comforting_music),
-                ('🎬 Watch Comedy/Feel-Good Shows', self.watch_comedy),
-                ('☕ View Self-Care Guide', self.show_selfcare_tips),
-                ('📖 Read Motivational Content', self.show_motivational_quotes),
-                ('🧘 Open Meditation App', self.open_meditation),
-                ('💬 Connect with Friends', self.open_messaging),
-                ('📝 Write in Journal', self.open_journal),
-                ('🌈 Watch Mood-Lifting Videos', self.open_mood_lifting),
-                ('🎧 Listen to Healing Sounds', self.play_healing_music),
-                ('🆘 View Support Resources', self.show_support_resources),
-                ('🌻 Positive Affirmations', self.show_affirmations),
-                ('📞 Contact Helpline Info', self.show_emergency_contacts),
+                (' Play "Fix You" - Coldplay', self.song_fix_you),
+                (' Play "Lean on Me" - Bill Withers', self.song_lean_on_me),
+                (' Play "Here Comes the Sun" - Beatles', self.song_here_comes_the_sun),
+                (' Play Little Alchemy (Creative Discovery)', self.game_little_alchemy),
+                (' Play Bubble Shooter (Soothing)', self.game_bubble_shooter),
+                (' Play Comforting Music', self.play_comforting_music),
+                (' Watch Comedy/Feel-Good Shows', self.watch_comedy),
+                (' View Self-Care Guide', self.show_selfcare_tips),
+                (' Read Motivational Content', self.show_motivational_quotes),
+                (' Open Meditation App', self.open_meditation),
+                (' Connect with Friends', self.open_messaging),
+                (' Write in Journal', self.open_journal),
+                (' Watch Mood-Lifting Videos', self.open_mood_lifting),
+                (' Listen to Healing Sounds', self.play_healing_music),
+                (' View Support Resources', self.show_support_resources),
+                (' Positive Affirmations', self.show_affirmations),
+                (' Contact Helpline Info', self.show_emergency_contacts),
             ],
             'angry': [
-                ('🎵 Play "Weightless" - Marconi Union', self.song_weightless),
-                ('🎵 Play "Breathe Me" - Sia', self.song_breathe_me),
-                ('🎵 Play "Let It Be" - Beatles', self.song_let_it_be),
-                ('🎮 Play Slice Master (Slash It Out!)', self.game_slice_master),
-                ('🎮 Play Punchers (Punch It Out!)', self.game_punchers),
-                ('🎵 Play Calming Music', self.play_calming_music),
-                ('🧘 Start Breathing Exercise', self.start_breathing_exercise),
-                ('🏃 Open Workout/Exercise Videos', self.open_fitness_app),
-                ('✍️ Vent in Journal', self.open_journal),
-                ('🌿 Listen to Nature Sounds', self.play_nature_sounds),
-                ('🎮 Play Stress-Relief Games', self.open_stress_games),
-                ('🥊 Virtual Stress Relief', self.open_stress_relief),
-                ('📊 Anger Management Tips', self.show_anger_tips),
-                ('🎯 Redirect Energy Productively', self.suggest_productive_activity),
-                ('💪 Physical Exercise Guide', self.suggest_exercise),
-                ('🧊 Cool Down Technique', self.show_cooldown_tips),
-                ('📉 Track Your Triggers', self.open_mood_tracker),
+                (' Play "Weightless" - Marconi Union', self.song_weightless),
+                (' Play "Breathe Me" - Sia', self.song_breathe_me),
+                (' Play "Let It Be" - Beatles', self.song_let_it_be),
+                (' Play Slice Master (Slash It Out!)', self.game_slice_master),
+                (' Play Punchers (Punch It Out!)', self.game_punchers),
+                (' Play Calming Music', self.play_calming_music),
+                (' Start Breathing Exercise', self.start_breathing_exercise),
+                (' Open Workout/Exercise Videos', self.open_fitness_app),
+                (' Vent in Journal', self.open_journal),
+                (' Listen to Nature Sounds', self.play_nature_sounds),
+                (' Play Stress-Relief Games', self.open_stress_games),
+                (' Virtual Stress Relief', self.open_stress_relief),
+                (' Anger Management Tips', self.show_anger_tips),
+                (' Redirect Energy Productively', self.suggest_productive_activity),
+                (' Physical Exercise Guide', self.suggest_exercise),
+                (' Cool Down Technique', self.show_cooldown_tips),
+                (' Track Your Triggers', self.open_mood_tracker),
             ],
             'fear': [
-                ('🎵 Play "Somewhere Over the Rainbow" - IZ', self.song_over_the_rainbow),
-                ('🎵 Play "Brave" - Sara Bareilles', self.song_brave),
-                ('🎵 Play "Three Little Birds" - Bob Marley', self.song_three_little_birds),
-                ('🎮 Play Mahjong Solitaire (Calming Puzzle)', self.game_mahjong_solitaire),
-                ('🎮 Play Color Fill (Relaxing)', self.game_color_fill),
-                ('🎵 Play Comforting Music', self.play_comforting_music),
-                ('🧘 Guided Meditation', self.open_meditation),
-                ('📞 Emergency Contacts', self.show_emergency_contacts),
-                ('💪 Empowerment Content', self.show_motivational_quotes),
-                ('🌟 Positive Affirmations', self.show_affirmations),
-                ('🔒 Safety Resources', self.show_safety_resources),
-                ('💬 Support Chat', self.open_support_chat),
-                ('🎧 Anxiety Relief Audio', self.play_anxiety_relief),
-                ('🌬️ Breathing Exercises', self.start_breathing_exercise),
-                ('📝 Write Your Worries', self.open_journal),
-                ('🛡️ Grounding Techniques', self.show_grounding_techniques),
-                ('☮️ Peace and Calm Guide', self.show_peace_guide),
+                (' Play "Somewhere Over the Rainbow" - IZ', self.song_over_the_rainbow),
+                (' Play "Brave" - Sara Bareilles', self.song_brave),
+                (' Play "Three Little Birds" - Bob Marley', self.song_three_little_birds),
+                (' Play Mahjong Solitaire (Calming Puzzle)', self.game_mahjong_solitaire),
+                (' Play Color Fill (Relaxing)', self.game_color_fill),
+                (' Play Comforting Music', self.play_comforting_music),
+                (' Guided Meditation', self.open_meditation),
+                (' Emergency Contacts', self.show_emergency_contacts),
+                (' Empowerment Content', self.show_motivational_quotes),
+                (' Positive Affirmations', self.show_affirmations),
+                (' Safety Resources', self.show_safety_resources),
+                (' Support Chat', self.open_support_chat),
+                (' Anxiety Relief Audio', self.play_anxiety_relief),
+                (' Breathing Exercises', self.start_breathing_exercise),
+                (' Write Your Worries', self.open_journal),
+                (' Grounding Techniques', self.show_grounding_techniques),
+                (' Peace and Calm Guide', self.show_peace_guide),
             ],
             'surprise': [
-                ('🎵 Play "Don\'t Stop Me Now" - Queen', self.song_dont_stop_me_now),
-                ('🎵 Play "Celebration" - Kool & The Gang', self.song_celebration),
-                ('🎵 Play "Walking on Sunshine"', self.song_walking_on_sunshine),
-                ('🎮 Play Agar.io (Surprise Attack!)', self.game_agario),
-                ('🎮 Play Helix Jump (How Far?)', self.game_helix_jump),
-                ('📸 Capture This Moment', self.open_camera_app),
-                ('📱 Share on Social Media', self.open_social_media),
-                ('🎵 Play Energetic Music', self.play_upbeat_music),
-                ('📝 Document Your Thoughts', self.open_journal),
-                ('🎉 Celebration Ideas', self.show_celebration_ideas),
-                ('📹 Record Video Message', self.open_video_recorder),
-                ('🎊 Share Your Excitement', self.open_messaging),
-                ('⚡ Explore Exciting Content', self.open_exciting_content),
-                ('🎯 Channel This Energy', self.suggest_productive_activity),
-                ('🌟 Reflect on the Moment', self.show_reflection_prompt),
+                (' Play "Don\'t Stop Me Now" - Queen', self.song_dont_stop_me_now),
+                (' Play "Celebration" - Kool & The Gang', self.song_celebration),
+                (' Play "Walking on Sunshine"', self.song_walking_on_sunshine),
+                (' Play Agar.io (Surprise Attack!)', self.game_agario),
+                (' Play Helix Jump (How Far?)', self.game_helix_jump),
+                (' Capture This Moment', self.open_camera_app),
+                (' Share on Social Media', self.open_social_media),
+                (' Play Energetic Music', self.play_upbeat_music),
+                (' Document Your Thoughts', self.open_journal),
+                (' Celebration Ideas', self.show_celebration_ideas),
+                (' Record Video Message', self.open_video_recorder),
+                (' Share Your Excitement', self.open_messaging),
+                (' Explore Exciting Content', self.open_exciting_content),
+                (' Channel This Energy', self.suggest_productive_activity),
+                (' Reflect on the Moment', self.show_reflection_prompt),
             ],
             'disgust': [
-                ('🎵 Play "What a Wonderful World" - Louis Armstrong', self.song_wonderful_world),
-                ('🎵 Play "Ocean Eyes" - Billie Eilish', self.song_ocean_eyes),
-                ('🎵 Play "Clair de Lune" - Debussy', self.song_clair_de_lune),
-                ('🎮 Play Tile Guru (Zen Match)', self.game_tile_guru),
-                ('🎮 Play Jigsaw Puzzle Online', self.game_jigsaw_puzzle),
-                ('🌿 Fresh Air Reminder', self.suggest_fresh_air),
-                ('🎵 Play Pleasant Music', self.play_relaxing_music),
-                ('🧘 Mindfulness Exercise', self.open_meditation),
-                ('🚿 Self-Care Routine Guide', self.show_selfcare_tips),
-                ('🌸 View Beautiful Nature', self.show_nature_content),
-                ('🧼 Cleansing Rituals', self.show_cleansing_tips),
-                ('🍵 Comfort Recipes', self.show_comfort_recipes),
-                ('🎨 Art Therapy', self.open_art_therapy),
-                ('🌊 Cleansing Visualization', self.show_cleansing_visualization),
-                ('💚 Reset Your Space', self.show_space_reset_tips),
+                ('Play "What a Wonderful World" - Louis Armstrong', self.song_wonderful_world),
+                ('Play "Ocean Eyes" - Billie Eilish', self.song_ocean_eyes),
+                ('Play "Clair de Lune" - Debussy', self.song_clair_de_lune),
+                ('Play Tile Guru (Zen Match)', self.game_tile_guru),
+                ('Play Jigsaw Puzzle Online', self.game_jigsaw_puzzle),
+                ('Fresh Air Reminder', self.suggest_fresh_air),
+                ('Play Pleasant Music', self.play_relaxing_music),
+                ('Mindfulness Exercise', self.open_meditation),
+                ('Self-Care Routine Guide', self.show_selfcare_tips),
+                ('View Beautiful Nature', self.show_nature_content),
+                ('Cleansing Rituals', self.show_cleansing_tips),
+                ('Comfort Recipes', self.show_comfort_recipes),
+                ('Art Therapy', self.open_art_therapy),
+                ('Cleansing Visualization', self.show_cleansing_visualization),
+                ('Reset Your Space', self.show_space_reset_tips),
             ],
             'neutral': [
-                ('🎵 Play "Bohemian Rhapsody" - Queen', self.song_bohemian_rhapsody),
-                ('🎵 Play "Blinding Lights" - The Weeknd', self.song_blinding_lights),
-                ('🎵 Play "Lofi Hip Hop Radio"', self.song_lofi_radio),
-                ('🎮 Play 2048 (Brain Teaser)', self.game_2048),
-                ('🎮 Play Tetris Online', self.game_tetris),
-                ('🎮 Play Chess Online', self.game_chess),
-                ('🎵 Discover New Music', self.discover_music),
-                ('📚 Learn Something New', self.open_learning_resources),
-                ('🎮 Browse Casual Games', self.open_games),
-                ('📺 Explore Entertainment', self.open_youtube),
-                ('💭 Start Mood Journal', self.open_journal),
-                ('🎯 Open Productivity Apps', self.open_productivity),
-                ('🌐 Explore Your Interests', self.explore_interests),
-                ('📊 Daily Planning Tool', self.open_planner),
-                ('🧩 Brain Training Games', self.open_brain_games),
-                ('📖 Read Articles/News', self.open_reading),
-                ('🎨 Creative Projects', self.open_creative_apps),
-                ('🌟 Set New Goals', self.open_goal_setting),
+                (' Play "Bohemian Rhapsody" - Queen', self.song_bohemian_rhapsody),
+                (' Play "Blinding Lights" - The Weeknd', self.song_blinding_lights),
+                (' Play "Lofi Hip Hop Radio"', self.song_lofi_radio),
+                (' Play 2048 (Brain Teaser)', self.game_2048),
+                (' Play Tetris Online', self.game_tetris),
+                (' Play Chess Online', self.game_chess),
+                (' Discover New Music', self.discover_music),
+                (' Learn Something New', self.open_learning_resources),
+                (' Browse Casual Games', self.open_games),
+                (' Explore Entertainment', self.open_youtube),
+                (' Start Mood Journal', self.open_journal),
+                (' Open Productivity Apps', self.open_productivity),
+                (' Explore Your Interests', self.explore_interests),
+                (' Daily Planning Tool', self.open_planner),
+                (' Brain Training Games', self.open_brain_games),
+                (' Read Articles/News', self.open_reading),
+                (' Creative Projects', self.open_creative_apps),
+                (' Set New Goals', self.open_goal_setting),
             ],
         }
 
@@ -1011,12 +1011,12 @@ class EmotionRecognitionApp:
 
         if not self.gesture_controller.running:
             self.gesture_controller.start(self.cap)
-            self.gesture_btn.configure(text="🖐️ Disable Gestures")
+            self.gesture_btn.configure(text="Disable Gestures")
             self.gesture_status_label.configure(
                 text="Gesture Control: ON (Show 5 fingers to activate mouse)"
             )
             if self.popup_gesture_btn is not None and self.popup_gesture_btn.winfo_exists():
-                self.popup_gesture_btn.configure(text="🖐️ Disable Gestures")
+                self.popup_gesture_btn.configure(text="Disable Gestures")
                 self.popup_gesture_btn.state(["!disabled"])
 
             messagebox.showinfo(
@@ -1609,7 +1609,7 @@ class EmotionRecognitionApp:
             try:
                 # Find the tab index
                 for i in range(self.main_notebook.index('end')):
-                    if self.main_notebook.tab(i, 'text').startswith('📈'):
+                    if self.main_notebook.tab(i, 'text').startswith(''):
                         self.main_notebook.select(i)
                         # Refresh the data
                         self._refresh_analytics_tab()
@@ -1619,7 +1619,7 @@ class EmotionRecognitionApp:
         
         # Create new analytics tab
         self.analytics_tab = ttk.Frame(self.main_notebook, style='Dark.TFrame')
-        self.main_notebook.add(self.analytics_tab, text=f"📈 Analytics - {self.current_user}")
+        self.main_notebook.add(self.analytics_tab, text=f"Analytics - {self.current_user}")
         
         # Main container with padding
         main_frame = ttk.Frame(self.analytics_tab, style='Dark.TFrame', padding=15)
@@ -1807,7 +1807,7 @@ class EmotionRecognitionApp:
 
         self.voice_status_label = ttk.Label(
             status_frame,
-            text="⏹ Not started",
+            text="Not started",
             style='Dark.TLabel',
             font=('Segoe UI', 10),
             wraplength=250,
@@ -1867,7 +1867,7 @@ class EmotionRecognitionApp:
         info_frame.grid(row=2, column=0, sticky='ew', pady=(0, 15))
 
         ttk.Label(
-            info_frame, text="🔑 Wake Word",
+            info_frame, text=" Wake Word",
             style='Dark.TLabel',
             font=('Segoe UI', 11, 'bold')
         ).pack(anchor='w')
@@ -1893,45 +1893,45 @@ class EmotionRecognitionApp:
         ).pack(anchor='w')
 
         commands_text = (
-            "🖥️ System Apps:\n"
+            " System Apps:\n"
             "  • Open Notepad / Calculator / Explorer\n"
             "  • Task Manager / Settings / CMD / PowerShell\n"
             "  • Word / Excel / PowerPoint / Camera\n\n"
-            "🌐 Web & Search:\n"
+            " Web & Search:\n"
             "  • Open YouTube / Google / Gmail / GitHub\n"
             "  • Open Reddit / Twitter / Netflix / Spotify\n"
             "  • Search for [topic] / Search YouTube [topic]\n\n"
-            "🔊 Volume & Media:\n"
+            " Volume & Media:\n"
             "  • Volume up / down / mute / max / min\n"
             "  • Set volume to [0-100] / Play / Pause\n\n"
-            "🖐️ Gesture Mouse:\n"
+            " Gesture Mouse:\n"
             "  • Enable mouse / Enable gesture mouse\n"
             "  • Disable mouse / Disable gesture\n\n"
-            "🖱️ Mouse & Click:\n"
+            " Mouse & Click:\n"
             "  • Click / Double click / Right click\n"
             "  • Move mouse [direction]\n\n"
-            "⌨️ Keyboard & Typing:\n"
+            " Keyboard & Typing:\n"
             "  • Copy / Paste / Cut / Undo / Redo\n"
             "  • Type [text] / Save / Save as / Print\n"
             "  • New tab / Close tab / Reopen tab\n\n"
-            "🪟 Window Management:\n"
+            " Window Management:\n"
             "  • Minimize / Maximize / Close / Restore\n"
             "  • Snap left / right / Show desktop\n"
             "  • Screenshot / Switch window\n\n"
-            "📜 Scroll:\n"
+            " Scroll:\n"
             "  • Scroll up / down / left / right\n"
             "  • Page up / Page down / Top / Bottom\n\n"
-            "🔧 System Control:\n"
+            " System Control:\n"
             "  • Lock screen / Brightness up-down\n"
             "  • Wi-Fi / Bluetooth / Sound settings\n"
             "  • Battery status / Date / Time\n\n"
-            "💬 Fun & Utility:\n"
+            " Fun & Utility:\n"
             "  • Tell me a joke / Motivate me\n"
             "  • Set timer [N] seconds\n\n"
-            "🛑 Control:\n"
+            " Control:\n"
             "  • Stop listening / Go to sleep / Help\n"
             "  \n"
-            "💡 Speak naturally! e.g.:\n"
+            " Speak naturally! e.g.:\n"
             "  'Hey Moody, can you open YouTube?'\n"
             "  'Hey Moody, please enable mouse'"
         )
@@ -2126,7 +2126,7 @@ class EmotionRecognitionApp:
         
         ttk.Label(
             parent,
-            text="🎯 Emotion Distribution Today",
+            text=" Emotion Distribution Today",
             style='Dark.TLabel',
             font=('Segoe UI', 12, 'bold')
         ).pack(pady=(0, 15))
@@ -2765,210 +2765,210 @@ class EmotionRecognitionApp:
     # Happy songs
     def song_happy_pharrell(self):
         webbrowser.open("https://www.youtube.com/watch?v=ZbZSe6N_BXs")
-        messagebox.showinfo("🎵 Now Playing", '"Happy" by Pharrell Williams\nBecause you\'re happy!')
+        messagebox.showinfo(" Now Playing", '"Happy" by Pharrell Williams\nBecause you\'re happy!')
 
     def song_uptown_funk(self):
         webbrowser.open("https://www.youtube.com/watch?v=OPf0YbXqDm0")
-        messagebox.showinfo("🎵 Now Playing", '"Uptown Funk" by Bruno Mars\nDon\'t believe me just watch!')
+        messagebox.showinfo(" Now Playing", '"Uptown Funk" by Bruno Mars\nDon\'t believe me just watch!')
 
     def song_good_as_hell(self):
         webbrowser.open("https://www.youtube.com/watch?v=SmbmeOgWsqE")
-        messagebox.showinfo("🎵 Now Playing", '"Good as Hell" by Lizzo\nFeeling good as hell!')
+        messagebox.showinfo(" Now Playing", '"Good as Hell" by Lizzo\nFeeling good as hell!')
 
     # sad songs
     def song_fix_you(self):
         webbrowser.open("https://www.youtube.com/watch?v=k4V3Mo61fJM")
-        messagebox.showinfo("🎵 Now Playing", '"Fix You" by Coldplay\nLights will guide you home...')
+        messagebox.showinfo(" Now Playing", '"Fix You" by Coldplay\nLights will guide you home...')
 
     def song_lean_on_me(self):
         webbrowser.open("https://www.youtube.com/watch?v=fOZ-MySzAac")
-        messagebox.showinfo("🎵 Now Playing", '"Lean on Me" by Bill Withers\nYou\'re not alone.')
+        messagebox.showinfo(" Now Playing", '"Lean on Me" by Bill Withers\nYou\'re not alone.')
 
     def song_here_comes_the_sun(self):
         webbrowser.open("https://www.youtube.com/watch?v=KQetemT1sWc")
-        messagebox.showinfo("🎵 Now Playing", '"Here Comes the Sun" by The Beatles\nIt\'s alright...')
+        messagebox.showinfo(" Now Playing", '"Here Comes the Sun" by The Beatles\nIt\'s alright...')
 
     # Angry songs
     def song_weightless(self):
         webbrowser.open("https://www.youtube.com/watch?v=UfcAVejslrU")
-        messagebox.showinfo("🎵 Now Playing", '"Weightless" by Marconi Union\nScientifically proven to reduce anxiety by 65%.')
+        messagebox.showinfo(" Now Playing", '"Weightless" by Marconi Union\nScientifically proven to reduce anxiety by 65%.')
 
     def song_breathe_me(self):
         webbrowser.open("https://www.youtube.com/watch?v=SFGvmrJ5rjM")
-        messagebox.showinfo("🎵 Now Playing", '"Breathe Me" by Sia\nBreathe... let it go.')
+        messagebox.showinfo(" Now Playing", '"Breathe Me" by Sia\nBreathe... let it go.')
 
     def song_let_it_be(self):
         webbrowser.open("https://www.youtube.com/watch?v=QDYfEBY9NM4")
-        messagebox.showinfo("🎵 Now Playing", '"Let It Be" by The Beatles\nLet it be...')
+        messagebox.showinfo(" Now Playing", '"Let It Be" by The Beatles\nLet it be...')
 
     # Fear songs
     def song_over_the_rainbow(self):
         webbrowser.open("https://www.youtube.com/watch?v=V1bFr2SWP1I")
-        messagebox.showinfo("🎵 Now Playing", '"Somewhere Over the Rainbow" by Israel Kamakawiwo\'ole\nYou are safe.')
+        messagebox.showinfo(" Now Playing", '"Somewhere Over the Rainbow" by Israel Kamakawiwo\'ole\nYou are safe.')
 
     def song_brave(self):
         webbrowser.open("https://www.youtube.com/watch?v=QUQsqBqxoR4")
-        messagebox.showinfo("🎵 Now Playing", '"Brave" by Sara Bareilles\nSay what you wanna say!')
+        messagebox.showinfo(" Now Playing", '"Brave" by Sara Bareilles\nSay what you wanna say!')
 
     def song_three_little_birds(self):
         webbrowser.open("https://www.youtube.com/watch?v=zaGUr6wBO-A")
-        messagebox.showinfo("🎵 Now Playing", '"Three Little Birds" by Bob Marley\nEvery little thing is gonna be alright.')
+        messagebox.showinfo(" Now Playing", '"Three Little Birds" by Bob Marley\nEvery little thing is gonna be alright.')
 
     # Surprise songs
     def song_dont_stop_me_now(self):
         webbrowser.open("https://www.youtube.com/watch?v=HgzGwKwLmgM")
-        messagebox.showinfo("🎵 Now Playing", '"Don\'t Stop Me Now" by Queen\nI\'m having such a good time!')
+        messagebox.showinfo(" Now Playing", '"Don\'t Stop Me Now" by Queen\nI\'m having such a good time!')
 
     def song_celebration(self):
         webbrowser.open("https://www.youtube.com/watch?v=3GwjfUFyY6M")
-        messagebox.showinfo("🎵 Now Playing", '"Celebration" by Kool & The Gang\nCelebrate good times!')
+        messagebox.showinfo(" Now Playing", '"Celebration" by Kool & The Gang\nCelebrate good times!')
 
     def song_walking_on_sunshine(self):
         webbrowser.open("https://www.youtube.com/watch?v=iPUmE-tne5U")
-        messagebox.showinfo("🎵 Now Playing", '"Walking on Sunshine" by Katrina & The Waves\nAnd don\'t it feel good!')
+        messagebox.showinfo(" Now Playing", '"Walking on Sunshine" by Katrina & The Waves\nAnd don\'t it feel good!')
 
     # Disgust songs
     def song_wonderful_world(self):
         webbrowser.open("https://www.youtube.com/watch?v=A3yCcXgbKrE")
-        messagebox.showinfo("🎵 Now Playing", '"What a Wonderful World" by Louis Armstrong\nSee the beauty around you.')
+        messagebox.showinfo(" Now Playing", '"What a Wonderful World" by Louis Armstrong\nSee the beauty around you.')
 
     def song_ocean_eyes(self):
         webbrowser.open("https://www.youtube.com/watch?v=viimfQi_pUw")
-        messagebox.showinfo("🎵 Now Playing", '"Ocean Eyes" by Billie Eilish\nGentle and cleansing...')
+        messagebox.showinfo(" Now Playing", '"Ocean Eyes" by Billie Eilish\nGentle and cleansing...')
 
     def song_clair_de_lune(self):
         webbrowser.open("https://www.youtube.com/watch?v=CvFH_6DNRCY")
-        messagebox.showinfo("🎵 Now Playing", '"Clair de Lune" by Debussy\nPure, elegant calm.')
+        messagebox.showinfo(" Now Playing", '"Clair de Lune" by Debussy\nPure, elegant calm.')
 
     # Neutral songs
     def song_bohemian_rhapsody(self):
         webbrowser.open("https://www.youtube.com/watch?v=fJ9rUzIMcZQ")
-        messagebox.showinfo("🎵 Now Playing", '"Bohemian Rhapsody" by Queen\nA masterpiece to enjoy.')
+        messagebox.showinfo(" Now Playing", '"Bohemian Rhapsody" by Queen\nA masterpiece to enjoy.')
 
     def song_blinding_lights(self):
         webbrowser.open("https://www.youtube.com/watch?v=4NRXx6U8ABQ")
-        messagebox.showinfo("🎵 Now Playing", '"Blinding Lights" by The Weeknd\nGreat vibes!')
+        messagebox.showinfo(" Now Playing", '"Blinding Lights" by The Weeknd\nGreat vibes!')
 
     def song_lofi_radio(self):
         webbrowser.open("https://www.youtube.com/watch?v=jfKfPfyJRdk")
-        messagebox.showinfo("🎵 Now Playing", '"Lofi Hip Hop Radio"\nBeats to relax/study to.')
+        messagebox.showinfo(" Now Playing", '"Lofi Hip Hop Radio"\nBeats to relax/study to.')
 
     # SPECIFIC GAME METHODS
     # Happy games 
     def game_pacman(self):
         webbrowser.open("https://www.google.com/logos/2010/pacman10-i.html")
-        messagebox.showinfo("🎮 Game Time", "Play Pac-Man right in your browser!\nGoogle's classic Pac-Man game.")
+        messagebox.showinfo(" Game Time", "Play Pac-Man right in your browser!\nGoogle's classic Pac-Man game.")
 
     def game_friday_night_funkin(self):
         webbrowser.open("https://www.crazygames.com/game/friday-night-funkin")
-        messagebox.showinfo("🎮 Game Time", "Friday Night Funkin'!\nBeat your opponents in epic music battles!")
+        messagebox.showinfo(" Game Time", "Friday Night Funkin'!\nBeat your opponents in epic music battles!")
 
     # Sad games
     def game_little_alchemy(self):
         webbrowser.open("https://www.crazygames.com/game/little-alchemy")
-        messagebox.showinfo("🎮 Game Time", "Little Alchemy!\nMix elements and discover new things. Gentle and creative!")
+        messagebox.showinfo(" Game Time", "Little Alchemy!\nMix elements and discover new things. Gentle and creative!")
 
     def game_bubble_shooter(self):
         webbrowser.open("https://www.crazygames.com/game/bubble-shooter-classic")
-        messagebox.showinfo("🎮 Game Time", "Bubble Shooter!\nPop bubbles — simple, satisfying, and soothing.")
+        messagebox.showinfo(" Game Time", "Bubble Shooter!\nPop bubbles — simple, satisfying, and soothing.")
 
     # Angry games 
     def game_slice_master(self):
         webbrowser.open("https://www.crazygames.com/game/slice-master")
-        messagebox.showinfo("🎮 Game Time", "Slice Master!\nSlash and slice everything in sight to release tension!")
+        messagebox.showinfo(" Game Time", "Slice Master!\nSlash and slice everything in sight to release tension!")
 
     def game_punchers(self):
         webbrowser.open("https://www.crazygames.com/game/punchers")
-        messagebox.showinfo("🎮 Game Time", "Punchers!\nPhysics-based boxing — punch it out safely!")
+        messagebox.showinfo(" Game Time", "Punchers!\nPhysics-based boxing — punch it out safely!")
 
     # Fear games
     def game_mahjong_solitaire(self):
         webbrowser.open("https://www.crazygames.com/game/mahjongg-solitaire")
-        messagebox.showinfo("🎮 Game Time", "Mahjong Solitaire!\nA calm, meditative tile-matching puzzle.")
+        messagebox.showinfo(" Game Time", "Mahjong Solitaire!\nA calm, meditative tile-matching puzzle.")
 
     def game_color_fill(self):
         webbrowser.open("https://www.crazygames.com/game/color-fill-3d")
-        messagebox.showinfo("🎮 Game Time", "Color Fill 3D!\nFill colors peacefully — simple and calming.")
+        messagebox.showinfo(" Game Time", "Color Fill 3D!\nFill colors peacefully — simple and calming.")
 
     # Surprise games
     def game_agario(self):
         webbrowser.open("https://agar.io")
-        messagebox.showinfo("🎮 Game Time", "Agar.io!\nGrow, eat, and surprise others!")
+        messagebox.showinfo(" Game Time", "Agar.io!\nGrow, eat, and surprise others!")
 
     def game_helix_jump(self):
         webbrowser.open("https://www.crazygames.com/game/helix-jump")
-        messagebox.showinfo("🎮 Game Time", "Helix Jump!\nBounce your way down — exciting and addictive!")
+        messagebox.showinfo(" Game Time", "Helix Jump!\nBounce your way down — exciting and addictive!")
 
     # Disgust games
     def game_tile_guru(self):
         webbrowser.open("https://www.crazygames.com/game/tile-guru")
-        messagebox.showinfo("🎮 Game Time", "Tile Guru!\nZen-inspired tile matching — peaceful and relaxing.")
+        messagebox.showinfo(" Game Time", "Tile Guru!\nZen-inspired tile matching — peaceful and relaxing.")
 
     def game_jigsaw_puzzle(self):
         webbrowser.open("https://www.jigsawplanet.com")
-        messagebox.showinfo("🎮 Game Time", "Solve beautiful jigsaw puzzles!\nFocus on something lovely.")
+        messagebox.showinfo(" Game Time", "Solve beautiful jigsaw puzzles!\nFocus on something lovely.")
 
     # Neutral games
     def game_2048(self):
         webbrowser.open("https://play2048.co")
-        messagebox.showinfo("🎮 Game Time", "Play 2048!\nClassic brain teaser — how high can you score?")
+        messagebox.showinfo(" Game Time", "Play 2048!\nClassic brain teaser — how high can you score?")
 
     def game_tetris(self):
         webbrowser.open("https://tetris.com/play-tetris")
-        messagebox.showinfo("🎮 Game Time", "Play official Tetris!\nThe timeless classic.")
+        messagebox.showinfo(" Game Time", "Play official Tetris!\nThe timeless classic.")
 
     def game_chess(self):
         webbrowser.open("https://www.chess.com/play/online")
-        messagebox.showinfo("🎮 Game Time", "Play Chess online!\nChallenge your mind.")
+        messagebox.showinfo(" Game Time", "Play Chess online!\nChallenge your mind.")
 
     # ALL ACTION METHODS 
     def play_upbeat_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=upbeat+happy+music+playlist")
-        messagebox.showinfo("🎵 Music", "Opening upbeat music to match your mood!")
+        messagebox.showinfo(" Music", "Opening upbeat music to match your mood!")
     
     def play_party_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=party+dance+music")
-        messagebox.showinfo("🎉 Party Time", "Let's get the party started!")
+        messagebox.showinfo(" Party Time", "Let's get the party started!")
     
     def open_creative_apps(self):
         if platform.system() == "Windows":
             try:
                 subprocess.Popen("mspaint.exe")
-                messagebox.showinfo("🎨 Creative", "Opening Paint for you!")
+                messagebox.showinfo(" Creative", "Opening Paint for you!")
             except:
                 webbrowser.open("https://www.photopea.com")
-                messagebox.showinfo("🎨 Creative", "Opening online creative tools!")
+                messagebox.showinfo(" Creative", "Opening online creative tools!")
         else:
             webbrowser.open("https://www.photopea.com")
-            messagebox.showinfo("🎨 Creative", "Opening creative tools for you!")
+            messagebox.showinfo(" Creative", "Opening creative tools for you!")
     
     def open_video_call(self):
         webbrowser.open("https://meet.google.com")
-        messagebox.showinfo("💬 Connect", "Share your happiness with friends!")
+        messagebox.showinfo(" Connect", "Share your happiness with friends!")
     
     def open_happy_journal(self):
         self.open_journal()
-        messagebox.showinfo("📝 Journal", "Document your happiness!")
+        messagebox.showinfo(" Journal", "Document your happiness!")
 
     def play_comforting_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=comforting+peaceful+music")
-        messagebox.showinfo("🎵 Comfort", "Playing music to comfort you...")
+        messagebox.showinfo(" Comfort", "Playing music to comfort you...")
     
     def watch_comedy(self):
         webbrowser.open("https://www.youtube.com/results?search_query=funny+comedy+videos+2024")
-        messagebox.showinfo("😄 Comedy", "Let's lift your spirits with some laughter!")
+        messagebox.showinfo(" Comedy", "Let's lift your spirits with some laughter!")
     
     def open_mood_lifting(self):
         webbrowser.open("https://www.youtube.com/results?search_query=mood+lifting+feel+good+videos")
-        messagebox.showinfo("🌈 Feel Good", "Here's something to brighten your day!")
+        messagebox.showinfo(" Feel Good", "Here's something to brighten your day!")
     
     def open_messaging(self):
         webbrowser.open("https://web.whatsapp.com")
-        messagebox.showinfo("💬 Connect", "Reach out to someone!")
+        messagebox.showinfo(" Connect", "Reach out to someone!")
     
     def play_healing_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=healing+music+emotional")
-        messagebox.showinfo("🎧 Healing", "Let this music help heal your heart...")
+        messagebox.showinfo(" Healing", "Let this music help heal your heart...")
     
     def show_support_resources(self):
         messagebox.showinfo(
@@ -2981,19 +2981,19 @@ class EmotionRecognitionApp:
 
     def play_calming_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=calming+meditation+music")
-        messagebox.showinfo("🎵 Calm", "Soothing sounds for inner peace...")
+        messagebox.showinfo(" Calm", "Soothing sounds for inner peace...")
     
     def open_fitness_app(self):
         webbrowser.open("https://www.youtube.com/results?search_query=quick+workout+anger+relief")
-        messagebox.showinfo("🏃 Exercise", "Channel that energy into movement!")
+        messagebox.showinfo(" Exercise", "Channel that energy into movement!")
     
     def open_stress_games(self):
         webbrowser.open("https://www.crazygames.com/t/stress-relief")
-        messagebox.showinfo("🎮 Games", "Try these stress-relief games!")
+        messagebox.showinfo(" Games", "Try these stress-relief games!")
     
     def open_stress_relief(self):
         webbrowser.open("https://www.youtube.com/results?search_query=virtual+stress+relief+activities")
-        messagebox.showinfo("🥊 Relief", "Let it out in a healthy way!")
+        messagebox.showinfo("Relief", "Let it out in a healthy way!")
     
     def show_anger_tips(self):
         tips = [
@@ -3006,7 +3006,7 @@ class EmotionRecognitionApp:
             "Squeeze a stress ball",
             "Step away from the situation"
         ]
-        messagebox.showinfo("💡 Anger Management", f"Try this:\n\n{np.random.choice(tips)}")
+        messagebox.showinfo("Anger Management", f"Try this:\n\n{np.random.choice(tips)}")
     
     def suggest_productive_activity(self):
         activities = [
@@ -3017,7 +3017,7 @@ class EmotionRecognitionApp:
             "Work on a project",
             "Plan tomorrow's tasks"
         ]
-        messagebox.showinfo("🎯 Productive", f"Channel your energy:\n\n{np.random.choice(activities)}")
+        messagebox.showinfo("Productive", f"Channel your energy:\n\n{np.random.choice(activities)}")
     
     def show_cooldown_tips(self):
         messagebox.showinfo(
@@ -3035,37 +3035,37 @@ class EmotionRecognitionApp:
 
     def show_safety_resources(self):
         messagebox.showinfo(
-            "🔒 Safety",
+            "Safety",
             "Resources:\n• Crisis Helpline: 988\n• Emergency: 911\n• Crisis Text: HOME to 741741"
         )
     
     def open_support_chat(self):
         webbrowser.open("https://www.7cups.com")
-        messagebox.showinfo("💬 Support", "Connect with trained listeners.")
+        messagebox.showinfo("Support", "Connect with trained listeners.")
     
     def play_anxiety_relief(self):
         webbrowser.open("https://www.youtube.com/results?search_query=anxiety+relief+calming+sounds")
-        messagebox.showinfo("🎧 Calm", "Soothing sounds to ease anxiety...")
+        messagebox.showinfo("Calm", "Soothing sounds to ease anxiety...")
     
     def show_grounding_techniques(self):
-        messagebox.showinfo("🛡️ Grounding", "5-4-3-2-1 Technique:\n5 see • 4 touch • 3 hear • 2 smell • 1 taste")
+        messagebox.showinfo("Grounding", "5-4-3-2-1 Technique:\n5 see • 4 touch • 3 hear • 2 smell • 1 taste")
     
     def show_peace_guide(self):
-        messagebox.showinfo("☮️ Peace", "Focus on breathing. You are safe. This will pass.")
+        messagebox.showinfo("Peace", "Focus on breathing. You are safe. This will pass.")
 
     def open_video_recorder(self):
         if platform.system() == "Windows":
             try:
                 subprocess.Popen("start microsoft.windows.camera:", shell=True)
-                messagebox.showinfo("📹 Camera", "Capture this moment!")
+                messagebox.showinfo(" Camera", "Capture this moment!")
             except:
-                messagebox.showinfo("📹 Camera", "Open your camera app to record this moment!")
+                messagebox.showinfo(" Camera", "Open your camera app to record this moment!")
         else:
-            messagebox.showinfo("📹 Camera", "Open your camera app to capture this moment!")
+            messagebox.showinfo(" Camera", "Open your camera app to capture this moment!")
     
     def open_exciting_content(self):
         webbrowser.open("https://www.youtube.com/results?search_query=exciting+amazing+moments")
-        messagebox.showinfo("⚡ Exciting", "More amazing content for you!")
+        messagebox.showinfo("Exciting", "More amazing content for you!")
     
     def show_reflection_prompt(self):
         prompts = [
@@ -3085,37 +3085,37 @@ class EmotionRecognitionApp:
             "Organize your space",
             "Change into clean clothes"
         ]
-        messagebox.showinfo("🧼 Cleansing", f"Try this:\n\n{np.random.choice(tips)}")
+        messagebox.showinfo("Cleansing", f"Try this:\n\n{np.random.choice(tips)}")
     
     def show_comfort_recipes(self):
         webbrowser.open("https://www.youtube.com/results?search_query=comfort+food+recipes")
-        messagebox.showinfo("🍵 Comfort", "Find something comforting to make!")
+        messagebox.showinfo(" Comfort", "Find something comforting to make!")
     
     def open_art_therapy(self):
         webbrowser.open("https://www.youtube.com/results?search_query=art+therapy+relaxing")
-        messagebox.showinfo("🎨 Art Therapy", "Express yourself through art!")
+        messagebox.showinfo("Art Therapy", "Express yourself through art!")
     
     def show_cleansing_visualization(self):
-        messagebox.showinfo("🌊 Visualization","Imagine a waterfall washing away the negativity.")
+        messagebox.showinfo("Visualization","Imagine a waterfall washing away the negativity.")
     
     def show_space_reset_tips(self):
-        messagebox.showinfo("💚 Space Reset","Open windows, clear clutter, play uplifting music.")
+        messagebox.showinfo("Space Reset","Open windows, clear clutter, play uplifting music.")
 
     def discover_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=music+discovery+mix")
-        messagebox.showinfo("🎵 Discover", "Find new music you'll love!")
+        messagebox.showinfo(" Discover", "Find new music you'll love!")
     
     def open_learning_resources(self):
         webbrowser.open("https://www.coursera.org")
-        messagebox.showinfo("📚 Learn", "Explore free courses.")
+        messagebox.showinfo("Learn", "Explore free courses.")
     
     def open_productivity(self):
         webbrowser.open("https://todoist.com")
-        messagebox.showinfo("🎯 Productivity", "Get organized.")
+        messagebox.showinfo("Productivity", "Get organized.")
     
     def explore_interests(self):
         webbrowser.open("https://www.youtube.com/")
-        messagebox.showinfo("🌐 Explore", "Discover something new today!")
+        messagebox.showinfo("Explore", "Discover something new today!")
     
     def open_planner(self):
         try:
@@ -3125,61 +3125,61 @@ class EmotionRecognitionApp:
                 subprocess.Popen(["open", "-a", "TextEdit"])
             else:
                 subprocess.Popen(["gedit"])
-            messagebox.showinfo("📊 Planning", "Plan your day ahead!")
+            messagebox.showinfo(" Planning", "Plan your day ahead!")
         except:
-            messagebox.showinfo("📊 Planning", "Open your favorite note app to plan your day!")
+            messagebox.showinfo(" Planning", "Open your favorite note app to plan your day!")
     
     def open_brain_games(self):
         webbrowser.open("https://www.lumosity.com")
-        messagebox.showinfo("🧩 Brain Games", "Challenge your mind!")
+        messagebox.showinfo("Brain Games", "Challenge your mind!")
     
     def open_reading(self):
         webbrowser.open("https://medium.com")
-        messagebox.showinfo("📖 Reading", "Discover interesting articles.")
+        messagebox.showinfo("Reading", "Discover interesting articles.")
     
     def open_goal_setting(self):
         self.open_journal()
-        messagebox.showinfo("🌟 Goals", "Write down your goals and aspirations.")
+        messagebox.showinfo(" Goals", "Write down your goals and aspirations.")
     
     def play_relaxing_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=relaxing+calm+music")
-        messagebox.showinfo("🎵 Relax", "Peaceful music to calm your mind!")
+        messagebox.showinfo(" Relax", "Peaceful music to calm your mind!")
     
     def play_nature_sounds(self):
         webbrowser.open("https://www.youtube.com/results?search_query=nature+sounds+rain+forest")
-        messagebox.showinfo("🌿 Nature", "Immerse yourself in nature sounds!")
+        messagebox.showinfo(" Nature", "Immerse yourself in nature sounds!")
     
     def open_games(self):
         if platform.system() == "Windows":
             try:
                 subprocess.Popen("start steam://", shell=True)
-                messagebox.showinfo("🎮 Games", "Opening Steam!")
+                messagebox.showinfo(" Games", "Opening Steam!")
             except:
                 webbrowser.open("https://www.crazygames.com")
-                messagebox.showinfo("🎮 Games", "Time for some fun online games!")
+                messagebox.showinfo(" Games", "Time for some fun online games!")
         else:
             webbrowser.open("https://www.crazygames.com")
-            messagebox.showinfo("🎮 Games", "Time for some fun!")
+            messagebox.showinfo("Games", "Time for some fun!")
     
     def open_youtube(self):
         webbrowser.open("https://www.youtube.com")
-        messagebox.showinfo("📺 YouTube", "Explore videos that interest you!")
+        messagebox.showinfo("YouTube", "Explore videos that interest you!")
     
     def open_social_media(self):
         webbrowser.open("https://www.twitter.com")
-        messagebox.showinfo("📱 Social", "Connect with your network!")
+        messagebox.showinfo("Social", "Connect with your network!")
     
     def open_camera_app(self):
         if platform.system() == "Windows":
             try:
                 subprocess.Popen("start microsoft.windows.camera:", shell=True)
-                messagebox.showinfo("📸 Camera", "Camera opened!")
+                messagebox.showinfo("Camera", "Camera opened!")
             except:
-                messagebox.showinfo("📸 Camera", "Open your camera app to capture moments!")
+                messagebox.showinfo("Camera", "Open your camera app to capture moments!")
         elif platform.system() == "Darwin":
-            messagebox.showinfo("📸 Camera", "Open Photo Booth to capture moments!")
+            messagebox.showinfo("Camera", "Open Photo Booth to capture moments!")
         else:
-            messagebox.showinfo("📸 Camera", "Open your camera app to capture moments!")
+            messagebox.showinfo("Camera", "Open your camera app to capture moments!")
     
     def show_selfcare_tips(self):
         tips = [
@@ -3192,7 +3192,7 @@ class EmotionRecognitionApp:
             "Make a comforting drink",
             "Read a chapter of a book"
         ]
-        messagebox.showinfo("💝 Self-Care", f"Self-care tip:\n\n{np.random.choice(tips)}")
+        messagebox.showinfo("Self-Care", f"Self-care tip:\n\n{np.random.choice(tips)}")
     
     def show_motivational_quotes(self):
         quotes = [
@@ -3204,11 +3204,11 @@ class EmotionRecognitionApp:
             "Progress, not perfection.",
             "You are capable of amazing things!"
         ]
-        messagebox.showinfo("✨ Motivation", np.random.choice(quotes))
+        messagebox.showinfo("Motivation", np.random.choice(quotes))
     
     def open_meditation(self):
         webbrowser.open("https://www.youtube.com/results?search_query=guided+meditation+10+minutes")
-        messagebox.showinfo("🧘 Meditation", "Find inner peace with guided meditation!")
+        messagebox.showinfo("Meditation", "Find inner peace with guided meditation!")
     
     def start_breathing_exercise(self):
         messagebox.showinfo("🌬️ Breathing Exercise","IN 4 • HOLD 4 • OUT 6 • HOLD 2\nRepeat 5–10 times.")
@@ -3222,7 +3222,7 @@ class EmotionRecognitionApp:
             "10 push-ups",
             "Full-body stretch"
         ]
-        messagebox.showinfo("🏃 Exercise", f"Try this:\n\n{np.random.choice(exercises)}")
+        messagebox.showinfo(" Exercise", f"Try this:\n\n{np.random.choice(exercises)}")
     
     def open_journal(self):
         try:
@@ -3232,10 +3232,10 @@ class EmotionRecognitionApp:
                 subprocess.Popen(["open", "-a", "TextEdit"])
             else:
                 subprocess.Popen(["gedit"])
-            messagebox.showinfo("✍️ Journal", "Express your thoughts in writing!")
+            messagebox.showinfo("Journal", "Express your thoughts in writing!")
         except:
             webbrowser.open("https://docs.google.com")
-            messagebox.showinfo("✍️ Journal", "Opening Google Docs for journaling!")
+            messagebox.showinfo("Journal", "Opening Google Docs for journaling!")
     
     def show_emergency_contacts(self):
         messagebox.showinfo(
@@ -3251,7 +3251,7 @@ class EmotionRecognitionApp:
             "I am resilient.",
             "I deserve peace and happiness."
         ]
-        messagebox.showinfo("💫 Affirmation", np.random.choice(affirmations))
+        messagebox.showinfo("Affirmation", np.random.choice(affirmations))
     
     def show_celebration_ideas(self):
         ideas = [
@@ -3261,11 +3261,11 @@ class EmotionRecognitionApp:
             "Happy dance",
             "Journal the moment"
         ]
-        messagebox.showinfo("🎉 Celebrate", f"Try this:\n\n{np.random.choice(ideas)}")
+        messagebox.showinfo("Celebrate", f"Try this:\n\n{np.random.choice(ideas)}")
     
     def show_nature_content(self):
         webbrowser.open("https://www.youtube.com/results?search_query=beautiful+nature+scenery+4k+relaxing")
-        messagebox.showinfo("🌸 Nature", "Immerse yourself in beautiful nature!")
+        messagebox.showinfo("Nature", "Immerse yourself in beautiful nature!")
     
     # REPORT GENERATION 
     def generate_report_dialog(self):
@@ -3293,7 +3293,7 @@ class EmotionRecognitionApp:
         frame = ttk.Frame(dialog, style='Dark.TFrame', padding=20)
         frame.pack(fill='both', expand=True)
         
-        ttk.Label(frame, text="📄 Generate Emotion Report", style='Title.TLabel').pack(pady=(0, 20))
+        ttk.Label(frame, text="Generate Emotion Report", style='Title.TLabel').pack(pady=(0, 20))
         ttk.Label(frame, text=f"User: {self.current_user}", style='Dark.TLabel', font=('Segoe UI', 10)).pack(pady=5)
         ttk.Label(frame, text=f"Total Emotions Logged: {len(self.emotion_log)}", style='Dark.TLabel', font=('Segoe UI', 10)).pack(pady=5)
         
@@ -3303,13 +3303,13 @@ class EmotionRecognitionApp:
         ttk.Label(frame, text="\nSelect Report Format:", style='Dark.TLabel', font=('Segoe UI', 11, 'bold')).pack(pady=(15, 10))
         
         pdf_status = "✓ Available" if REPORTLAB_AVAILABLE else "✗ Install reportlab"
-        ttk.Button(frame, text=f"📕 PDF Report {pdf_status}", style='Gesture.TButton' if REPORTLAB_AVAILABLE else 'Dark.TButton', command=lambda: self._generate_pdf_report(dialog), state='normal' if REPORTLAB_AVAILABLE else 'disabled').pack(fill='x', pady=5)
+        ttk.Button(frame, text=f"PDF Report {pdf_status}", style='Gesture.TButton' if REPORTLAB_AVAILABLE else 'Dark.TButton', command=lambda: self._generate_pdf_report(dialog), state='normal' if REPORTLAB_AVAILABLE else 'disabled').pack(fill='x', pady=5)
         
         excel_status = "✓ Available" if PANDAS_AVAILABLE else "✗ Install pandas"
-        ttk.Button(frame, text=f"📗 Excel Report {excel_status}", style='Gesture.TButton' if PANDAS_AVAILABLE else 'Dark.TButton', command=lambda: self._generate_excel_report(dialog), state='normal' if PANDAS_AVAILABLE else 'disabled').pack(fill='x', pady=5)
+        ttk.Button(frame, text=f"Excel Report {excel_status}", style='Gesture.TButton' if PANDAS_AVAILABLE else 'Dark.TButton', command=lambda: self._generate_excel_report(dialog), state='normal' if PANDAS_AVAILABLE else 'disabled').pack(fill='x', pady=5)
         
-        ttk.Button(frame, text="📄 JSON Data Export", style='Dark.TButton', command=lambda: self._generate_json_report(dialog)).pack(fill='x', pady=5)
-        ttk.Label(frame, text="\n💡 Tip: Install missing libraries to enable all formats", style='Dark.TLabel', font=('Segoe UI', 8, 'italic')).pack(pady=(10, 0))
+        ttk.Button(frame, text="JSON Data Export", style='Dark.TButton', command=lambda: self._generate_json_report(dialog)).pack(fill='x', pady=5)
+        ttk.Label(frame, text="\nTip: Install missing libraries to enable all formats", style='Dark.TLabel', font=('Segoe UI', 8, 'italic')).pack(pady=(10, 0))
     
     def _generate_pdf_report(self, dialog):
         """Generate comprehensive PDF report"""

@@ -40,95 +40,95 @@ class EmotionRecognitionApp:
         # Suggested actions per emotion 
         self.emotion_actions = {
             'happy': [
-                ('🎵 Play Upbeat Music', self.play_upbeat_music),
-                ('🎮 Open Games Platform', self.open_games),
-                ('📺 Browse YouTube', self.open_youtube),
-                ('📱 Open Social Media', self.open_social_media),
-                ('📸 Launch Camera App', self.open_camera_app),
-                ('🎨 Open Paint/Creative Tools', self.open_creative_apps),
-                ('💬 Start Video Call', self.open_video_call),
-                ('🎉 Play Party Music', self.play_party_music),
-                ('📝 Create Happy Journal Entry', self.open_happy_journal),
+                (' Play Upbeat Music', self.play_upbeat_music),
+                (' Open Games Platform', self.open_games),
+                (' Browse YouTube', self.open_youtube),
+                (' Open Social Media', self.open_social_media),
+                (' Launch Camera App', self.open_camera_app),
+                (' Open Paint/Creative Tools', self.open_creative_apps),
+                (' Start Video Call', self.open_video_call),
+                (' Play Party Music', self.play_party_music),
+                (' Create Happy Journal Entry', self.open_happy_journal),
             ],
             'sad': [
-                ('🎵 Play Comforting Music', self.play_comforting_music),
-                ('🎬 Watch Comedy/Feel-Good Shows', self.watch_comedy),
-                ('☕ View Self-Care Guide', self.show_selfcare_tips),
-                ('📖 Read Motivational Content', self.show_motivational_quotes),
-                ('🧘 Open Meditation App', self.open_meditation),
-                ('💬 Connect with Friends', self.open_messaging),
-                ('📝 Write in Journal', self.open_journal),
-                ('🌈 Watch Mood-Lifting Videos', self.open_mood_lifting),
-                ('🎧 Listen to Healing Sounds', self.play_healing_music),
-                ('🆘 View Support Resources', self.show_support_resources),
-                ('🌻 Positive Affirmations', self.show_affirmations),
-                ('📞 Contact Helpline Info', self.show_emergency_contacts),
+                (' Play Comforting Music', self.play_comforting_music),
+                (' Watch Comedy/Feel-Good Shows', self.watch_comedy),
+                (' View Self-Care Guide', self.show_selfcare_tips),
+                (' Read Motivational Content', self.show_motivational_quotes),
+                (' Open Meditation App', self.open_meditation),
+                (' Connect with Friends', self.open_messaging),
+                (' Write in Journal', self.open_journal),
+                (' Watch Mood-Lifting Videos', self.open_mood_lifting),
+                (' Listen to Healing Sounds', self.play_healing_music),
+                (' View Support Resources', self.show_support_resources),
+                (' Positive Affirmations', self.show_affirmations),
+                (' Contact Helpline Info', self.show_emergency_contacts),
             ],
             'angry': [
-                ('🎵 Play Calming Music', self.play_calming_music),
-                ('🧘 Start Breathing Exercise', self.start_breathing_exercise),
-                ('🏃 Open Workout/Exercise Videos', self.open_fitness_app),
-                ('✍️ Vent in Journal', self.open_journal),
-                ('🌿 Listen to Nature Sounds', self.play_nature_sounds),
-                ('🎮 Play Stress-Relief Games', self.open_stress_games),
-                ('🥊 Virtual Stress Relief', self.open_stress_relief),
-                ('📊 Anger Management Tips', self.show_anger_tips),
-                ('🎯 Redirect Energy Productively', self.suggest_productive_activity),
-                ('💪 Physical Exercise Guide', self.suggest_exercise),
-                ('🧊 Cool Down Technique', self.show_cooldown_tips),
-                ('📉 Track Your Triggers', self.open_mood_tracker),
+                (' Play Calming Music', self.play_calming_music),
+                (' Start Breathing Exercise', self.start_breathing_exercise),
+                (' Open Workout/Exercise Videos', self.open_fitness_app),
+                (' Vent in Journal', self.open_journal),
+                (' Listen to Nature Sounds', self.play_nature_sounds),
+                (' Play Stress-Relief Games', self.open_stress_games),
+                (' Virtual Stress Relief', self.open_stress_relief),
+                (' Anger Management Tips', self.show_anger_tips),
+                (' Redirect Energy Productively', self.suggest_productive_activity),
+                (' Physical Exercise Guide', self.suggest_exercise),
+                (' Cool Down Technique', self.show_cooldown_tips),
+                (' Track Your Triggers', self.open_mood_tracker),
             ],
             'fear': [
-                ('🎵 Play Comforting Music', self.play_comforting_music),
-                ('🧘 Guided Meditation', self.open_meditation),
-                ('📞 Emergency Contacts', self.show_emergency_contacts),
-                ('💪 Empowerment Content', self.show_motivational_quotes),
-                ('🌟 Positive Affirmations', self.show_affirmations),
-                ('🔒 Safety Resources', self.show_safety_resources),
-                ('💬 Support Chat', self.open_support_chat),
-                ('🎧 Anxiety Relief Audio', self.play_anxiety_relief),
-                ('🌬️ Breathing Exercises', self.start_breathing_exercise),
-                ('📝 Write Your Worries', self.open_journal),
-                ('🛡️ Grounding Techniques', self.show_grounding_techniques),
-                ('☮️ Peace and Calm Guide', self.show_peace_guide),
+                (' Play Comforting Music', self.play_comforting_music),
+                (' Guided Meditation', self.open_meditation),
+                (' Emergency Contacts', self.show_emergency_contacts),
+                (' Empowerment Content', self.show_motivational_quotes),
+                (' Positive Affirmations', self.show_affirmations),
+                (' Safety Resources', self.show_safety_resources),
+                (' Support Chat', self.open_support_chat),
+                (' Anxiety Relief Audio', self.play_anxiety_relief),
+                (' Breathing Exercises', self.start_breathing_exercise),
+                (' Write Your Worries', self.open_journal),
+                (' Grounding Techniques', self.show_grounding_techniques),
+                (' Peace and Calm Guide', self.show_peace_guide),
             ],
             'surprise': [
-                ('📸 Capture This Moment', self.open_camera_app),
-                ('📱 Share on Social Media', self.open_social_media),
-                ('🎵 Play Energetic Music', self.play_upbeat_music),
-                ('📝 Document Your Thoughts', self.open_journal),
-                ('🎉 Celebration Ideas', self.show_celebration_ideas),
-                ('📹 Record Video Message', self.open_video_recorder),
-                ('🎊 Share Your Excitement', self.open_messaging),
-                ('⚡ Explore Exciting Content', self.open_exciting_content),
-                ('🎯 Channel This Energy', self.suggest_productive_activity),
-                ('🌟 Reflect on the Moment', self.show_reflection_prompt),
+                (' Capture This Moment', self.open_camera_app),
+                (' Share on Social Media', self.open_social_media),
+                (' Play Energetic Music', self.play_upbeat_music),
+                (' Document Your Thoughts', self.open_journal),
+                (' Celebration Ideas', self.show_celebration_ideas),
+                (' Record Video Message', self.open_video_recorder),
+                (' Share Your Excitement', self.open_messaging),
+                (' Explore Exciting Content', self.open_exciting_content),
+                (' Channel This Energy', self.suggest_productive_activity),
+                (' Reflect on the Moment', self.show_reflection_prompt),
             ],
             'disgust': [
-                ('🌿 Fresh Air Reminder', self.suggest_fresh_air),
-                ('🎵 Play Pleasant Music', self.play_relaxing_music),
-                ('🧘 Mindfulness Exercise', self.open_meditation),
-                ('🚿 Self-Care Routine Guide', self.show_selfcare_tips),
-                ('🌸 View Beautiful Nature', self.show_nature_content),
-                ('🧼 Cleansing Rituals', self.show_cleansing_tips),
-                ('🍵 Comfort Recipes', self.show_comfort_recipes),
-                ('🎨 Art Therapy', self.open_art_therapy),
-                ('🌊 Cleansing Visualization', self.show_cleansing_visualization),
-                ('💚 Reset Your Space', self.show_space_reset_tips),
+                (' Fresh Air Reminder', self.suggest_fresh_air),
+                (' Play Pleasant Music', self.play_relaxing_music),
+                (' Mindfulness Exercise', self.open_meditation),
+                (' Self-Care Routine Guide', self.show_selfcare_tips),
+                (' View Beautiful Nature', self.show_nature_content),
+                (' Cleansing Rituals', self.show_cleansing_tips),
+                (' Comfort Recipes', self.show_comfort_recipes),
+                (' Art Therapy', self.open_art_therapy),
+                (' Cleansing Visualization', self.show_cleansing_visualization),
+                (' Reset Your Space', self.show_space_reset_tips),
             ],
             'neutral': [
-                ('🎵 Discover New Music', self.discover_music),
-                ('📚 Learn Something New', self.open_learning_resources),
-                ('🎮 Browse Casual Games', self.open_games),
-                ('📺 Explore Entertainment', self.open_youtube),
-                ('💭 Start Mood Journal', self.open_journal),
-                ('🎯 Open Productivity Apps', self.open_productivity),
-                ('🌐 Explore Your Interests', self.explore_interests),
-                ('📊 Daily Planning Tool', self.open_planner),
-                ('🧩 Brain Training Games', self.open_brain_games),
-                ('📖 Read Articles/News', self.open_reading),
-                ('🎨 Creative Projects', self.open_creative_apps),
-                ('🌟 Set New Goals', self.open_goal_setting),
+                (' Discover New Music', self.discover_music),
+                (' Learn Something New', self.open_learning_resources),
+                (' Browse Casual Games', self.open_games),
+                (' Explore Entertainment', self.open_youtube),
+                (' Start Mood Journal', self.open_journal),
+                (' Open Productivity Apps', self.open_productivity),
+                (' Explore Your Interests', self.explore_interests),
+                (' Daily Planning Tool', self.open_planner),
+                (' Brain Training Games', self.open_brain_games),
+                (' Read Articles/News', self.open_reading),
+                (' Creative Projects', self.open_creative_apps),
+                (' Set New Goals', self.open_goal_setting),
             ],
         }
 
@@ -171,7 +171,7 @@ class EmotionRecognitionApp:
         main_container.grid_columnconfigure(2, weight=2)
 
         # Title
-        title_label = ttk.Label(main_container, text="🎭 Emotion Recognition Assistant", style='Title.TLabel')
+        title_label = ttk.Label(main_container, text="Emotion Recognition Assistant", style='Title.TLabel')
         title_label.grid(row=0, column=0, columnspan=3, pady=(0, 15), sticky='ew')
 
         # LEFT COLUMN Camera
@@ -180,7 +180,7 @@ class EmotionRecognitionApp:
         left_frame.grid_rowconfigure(1, weight=1)
         left_frame.grid_columnconfigure(0, weight=1)
 
-        camera_label = ttk.Label(left_frame, text="📹 Live Camera Feed", style='Dark.TLabel',
+        camera_label = ttk.Label(left_frame, text=" Live Camera Feed", style='Dark.TLabel',
                                  font=('Segoe UI', 12, 'bold'))
         camera_label.grid(row=0, column=0, pady=(0, 10), sticky='w')
 
@@ -198,11 +198,11 @@ class EmotionRecognitionApp:
         control_frame.grid_columnconfigure(0, weight=1)
         control_frame.grid_columnconfigure(1, weight=1)
 
-        self.start_btn = ttk.Button(control_frame, text="▶️ Start Detection", style='Dark.TButton',
+        self.start_btn = ttk.Button(control_frame, text="Start Detection", style='Dark.TButton',
                                     command=self.start_detection)
         self.start_btn.grid(row=0, column=0, padx=(0, 5), sticky='ew')
 
-        self.stop_btn = ttk.Button(control_frame, text="⏹️ Stop Detection", style='Dark.TButton',
+        self.stop_btn = ttk.Button(control_frame, text="Stop Detection", style='Dark.TButton',
                                    command=self.stop_detection, state='disabled')
         self.stop_btn.grid(row=0, column=1, padx=(5, 0), sticky='ew')
 
@@ -212,7 +212,7 @@ class EmotionRecognitionApp:
         middle_frame.grid_rowconfigure(2, weight=1)  # space beneath history
         middle_frame.grid_columnconfigure(0, weight=1)
 
-        emotion_title = ttk.Label(middle_frame, text="🎯 Current Emotion", style='Dark.TLabel',
+        emotion_title = ttk.Label(middle_frame, text=" Current Emotion", style='Dark.TLabel',
                                   font=('Segoe UI', 12, 'bold'))
         emotion_title.grid(row=0, column=0, pady=(0, 15), sticky='ew')
 
@@ -229,7 +229,7 @@ class EmotionRecognitionApp:
         self.confidence_label.pack(pady=(5, 0))
 
         # History
-        history_label = ttk.Label(middle_frame, text="📊 Recent Emotions", style='Dark.TLabel',
+        history_label = ttk.Label(middle_frame, text=" Recent Emotions", style='Dark.TLabel',
                                   font=('Segoe UI', 11, 'bold'))
         history_label.grid(row=2, column=0, pady=(20, 10), sticky='new')
         self.history_frame = ttk.Frame(middle_frame, style='Dark.TFrame')
@@ -241,7 +241,7 @@ class EmotionRecognitionApp:
         right_frame.grid_rowconfigure(1, weight=1)
         right_frame.grid_columnconfigure(0, weight=1)
 
-        actions_label = ttk.Label(right_frame, text="💡 Suggested Actions", style='Dark.TLabel',
+        actions_label = ttk.Label(right_frame, text=" Suggested Actions", style='Dark.TLabel',
                                   font=('Segoe UI', 12, 'bold'))
         actions_label.grid(row=0, column=0, pady=(0, 10), sticky='w')
 
@@ -478,176 +478,176 @@ class EmotionRecognitionApp:
     # Happy
     def play_upbeat_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=upbeat+happy+music+playlist")
-        messagebox.showinfo("🎵 Music", "Opening upbeat music to match your mood!")
+        messagebox.showinfo(" Music", "Opening upbeat music to match your mood!")
     def play_party_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=party+dance+music")
-        messagebox.showinfo("🎉 Party Time", "Let's get the party started!")
+        messagebox.showinfo(" Party Time", "Let's get the party started!")
     def open_creative_apps(self):
         if platform.system() == "Windows":
-            try: subprocess.Popen("mspaint.exe"); messagebox.showinfo("🎨 Creative", "Opening Paint for you!")
-            except: webbrowser.open("https://www.photopea.com"); messagebox.showinfo("🎨 Creative", "Opening online creative tools!")
+            try: subprocess.Popen("mspaint.exe"); messagebox.showinfo(" Creative", "Opening Paint for you!")
+            except: webbrowser.open("https://www.photopea.com"); messagebox.showinfo(" Creative", "Opening online creative tools!")
         else:
-            webbrowser.open("https://www.photopea.com"); messagebox.showinfo("🎨 Creative", "Opening creative tools for you!")
+            webbrowser.open("https://www.photopea.com"); messagebox.showinfo(" Creative", "Opening creative tools for you!")
     def open_video_call(self):
-        webbrowser.open("https://meet.google.com"); messagebox.showinfo("💬 Connect", "Share your happiness with friends!")
+        webbrowser.open("https://meet.google.com"); messagebox.showinfo(" Connect", "Share your happiness with friends!")
     def open_happy_journal(self):
-        self.open_journal(); messagebox.showinfo("📝 Journal", "Document your happiness!")
+        self.open_journal(); messagebox.showinfo(" Journal", "Document your happiness!")
 
     # Sad
     def play_comforting_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=comforting+peaceful+music")
-        messagebox.showinfo("🎵 Comfort", "Playing music to comfort you...")
+        messagebox.showinfo(" Comfort", "Playing music to comfort you...")
     def watch_comedy(self):
         webbrowser.open("https://www.youtube.com/results?search_query=funny+comedy+videos+2024")
-        messagebox.showinfo("😄 Comedy", "Let's lift your spirits with some laughter!")
+        messagebox.showinfo(" Comedy", "Let's lift your spirits with some laughter!")
     def open_mood_lifting(self):
         webbrowser.open("https://www.youtube.com/results?search_query=mood+lifting+feel+good+videos")
-        messagebox.showinfo("🌈 Feel Good", "Here's something to brighten your day!")
+        messagebox.showinfo(" Feel Good", "Here's something to brighten your day!")
     def open_messaging(self):
-        webbrowser.open("https://web.whatsapp.com"); messagebox.showinfo("💬 Connect", "Reach out to someone!")
+        webbrowser.open("https://web.whatsapp.com"); messagebox.showinfo(" Connect", "Reach out to someone!")
     def play_healing_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=healing+music+emotional")
-        messagebox.showinfo("🎧 Healing", "Let this music help heal your heart...")
+        messagebox.showinfo(" Healing", "Let this music help heal your heart...")
     def show_support_resources(self):
-        messagebox.showinfo("🆘 Support","You're not alone. Support is available:\n\n• Mental Health Hotline: 1-800-662-4357\n• Crisis Text Line: Text HOME to 741741\n• Suicide Prevention: 988\n")
+        messagebox.showinfo(" Support","You're not alone. Support is available:\n\n• Mental Health Hotline: 1-800-662-4357\n• Crisis Text Line: Text HOME to 741741\n• Suicide Prevention: 988\n")
 
     # Angry
     def play_calming_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=calming+meditation+music")
-        messagebox.showinfo("🎵 Calm", "Soothing sounds for inner peace...")
+        messagebox.showinfo(" Calm", "Soothing sounds for inner peace...")
     def open_fitness_app(self):
         webbrowser.open("https://www.youtube.com/results?search_query=quick+workout+anger+relief")
-        messagebox.showinfo("🏃 Exercise", "Channel that energy into movement!")
+        messagebox.showinfo(" Exercise", "Channel that energy into movement!")
     def open_stress_games(self):
-        webbrowser.open("https://www.crazygames.com/t/stress-relief"); messagebox.showinfo("🎮 Games", "Try these stress-relief games!")
+        webbrowser.open("https://www.crazygames.com/t/stress-relief"); messagebox.showinfo(" Games", "Try these stress-relief games!")
     def open_stress_relief(self):
-        webbrowser.open("https://www.youtube.com/results?search_query=virtual+stress+relief+activities"); messagebox.showinfo("🥊 Relief", "Let it out in a healthy way!")
+        webbrowser.open("https://www.youtube.com/results?search_query=virtual+stress+relief+activities"); messagebox.showinfo(" Relief", "Let it out in a healthy way!")
     def show_anger_tips(self):
         tips = ["Take 10 deep breaths slowly","Count backwards from 100","Go for a brisk walk","Write down what's bothering you","Listen to calming music","Do some intense exercise","Squeeze a stress ball","Step away from the situation"]
-        messagebox.showinfo("💡 Anger Management", f"Try this:\n\n{np.random.choice(tips)}")
+        messagebox.showinfo(" Anger Management", f"Try this:\n\n{np.random.choice(tips)}")
     def suggest_productive_activity(self):
         activities = ["Organize your workspace","Clean a room","Do a workout","Learn a new skill online","Work on a project","Plan tomorrow's tasks"]
-        messagebox.showinfo("🎯 Productive", f"Channel your energy:\n\n{np.random.choice(activities)}")
+        messagebox.showinfo(" Productive", f"Channel your energy:\n\n{np.random.choice(activities)}")
     def show_cooldown_tips(self):
-        messagebox.showinfo("🧊 Cool Down","• Splash cold water on your face\n• Take 5 slow, deep breaths\n• Count to 10 slowly\n• Step outside for fresh air\n• Drink cold water")
+        messagebox.showinfo(" Cool Down","• Splash cold water on your face\n• Take 5 slow, deep breaths\n• Count to 10 slowly\n• Step outside for fresh air\n• Drink cold water")
     def open_mood_tracker(self):
-        self.open_journal(); messagebox.showinfo("📉 Track", "Document what triggered this feeling.")
+        self.open_journal(); messagebox.showinfo(" Track", "Document what triggered this feeling.")
 
     # Fear
     def show_safety_resources(self):
-        messagebox.showinfo("🔒 Safety", "Resources:\n• Crisis Helpline: 988\n• Emergency: 911\n• Crisis Text: HOME to 741741")
+        messagebox.showinfo(" Safety", "Resources:\n• Crisis Helpline: 988\n• Emergency: 911\n• Crisis Text: HOME to 741741")
     def open_support_chat(self):
-        webbrowser.open("https://www.7cups.com"); messagebox.showinfo("💬 Support", "Connect with trained listeners.")
+        webbrowser.open("https://www.7cups.com"); messagebox.showinfo(" Support", "Connect with trained listeners.")
     def play_anxiety_relief(self):
-        webbrowser.open("https://www.youtube.com/results?search_query=anxiety+relief+calming+sounds"); messagebox.showinfo("🎧 Calm", "Soothing sounds to ease anxiety...")
+        webbrowser.open("https://www.youtube.com/results?search_query=anxiety+relief+calming+sounds"); messagebox.showinfo(" Calm", "Soothing sounds to ease anxiety...")
     def show_grounding_techniques(self):
-        messagebox.showinfo("🛡️ Grounding", "5-4-3-2-1 Technique:\n5 see • 4 touch • 3 hear • 2 smell • 1 taste")
+        messagebox.showinfo(" Grounding", "5-4-3-2-1 Technique:\n5 see • 4 touch • 3 hear • 2 smell • 1 taste")
     def show_peace_guide(self):
-        messagebox.showinfo("☮️ Peace", "Focus on breathing. You are safe. This will pass.")
+        messagebox.showinfo(" Peace", "Focus on breathing. You are safe. This will pass.")
 
     # Surprise
     def open_video_recorder(self):
         if platform.system() == "Windows":
-            try: subprocess.Popen("start microsoft.windows.camera:", shell=True); messagebox.showinfo("📹 Camera", "Capture this moment!")
-            except: messagebox.showinfo("📹 Camera", "Open your camera app to record this moment!")
+            try: subprocess.Popen("start microsoft.windows.camera:", shell=True); messagebox.showinfo(" Camera", "Capture this moment!")
+            except: messagebox.showinfo(" Camera", "Open your camera app to record this moment!")
         else:
-            messagebox.showinfo("📹 Camera", "Open your camera app to capture this moment!")
+            messagebox.showinfo(" Camera", "Open your camera app to capture this moment!")
     def open_exciting_content(self):
-        webbrowser.open("https://www.youtube.com/results?search_query=exciting+amazing+moments"); messagebox.showinfo("⚡ Exciting", "More amazing content for you!")
+        webbrowser.open("https://www.youtube.com/results?search_query=exciting+amazing+moments"); messagebox.showinfo(" Exciting", "More amazing content for you!")
     def show_reflection_prompt(self):
         prompts = ["What surprised you most?","How does this make you feel?","Who would you like to share this with?"]
-        messagebox.showinfo("🌟 Reflect", f"Take a moment:\n\n{np.random.choice(prompts)}")
+        messagebox.showinfo(" Reflect", f"Take a moment:\n\n{np.random.choice(prompts)}")
 
     # Disgust
     def suggest_fresh_air(self):
-        messagebox.showinfo("🌿 Fresh Air","Step outside for 5 deep breaths and look at something green.")
+        messagebox.showinfo(" Fresh Air","Step outside for 5 deep breaths and look at something green.")
     def show_cleansing_tips(self):
         tips = ["Take a refreshing shower","Open windows for fresh air","Organize your space","Change into clean clothes"]
-        messagebox.showinfo("🧼 Cleansing", f"Try this:\n\n{np.random.choice(tips)}")
+        messagebox.showinfo(" Cleansing", f"Try this:\n\n{np.random.choice(tips)}")
     def show_comfort_recipes(self):
-        webbrowser.open("https://www.youtube.com/results?search_query=comfort+food+recipes"); messagebox.showinfo("🍵 Comfort", "Find something comforting to make!")
+        webbrowser.open("https://www.youtube.com/results?search_query=comfort+food+recipes"); messagebox.showinfo(" Comfort", "Find something comforting to make!")
     def open_art_therapy(self):
-        webbrowser.open("https://www.youtube.com/results?search_query=art+therapy+relaxing"); messagebox.showinfo("🎨 Art Therapy", "Express yourself through art!")
+        webbrowser.open("https://www.youtube.com/results?search_query=art+therapy+relaxing"); messagebox.showinfo(" Art Therapy", "Express yourself through art!")
     def show_cleansing_visualization(self):
-        messagebox.showinfo("🌊 Visualization","Imagine a waterfall washing away the negativity.")
+        messagebox.showinfo(" Visualization","Imagine a waterfall washing away the negativity.")
     def show_space_reset_tips(self):
-        messagebox.showinfo("💚 Space Reset","Open windows, clear clutter, play uplifting music.")
+        messagebox.showinfo(" Space Reset","Open windows, clear clutter, play uplifting music.")
 
     # Neutral / Common
     def discover_music(self):
-        webbrowser.open("https://www.youtube.com/results?search_query=music+discovery+mix"); messagebox.showinfo("🎵 Discover", "Find new music you'll love!")
+        webbrowser.open("https://www.youtube.com/results?search_query=music+discovery+mix"); messagebox.showinfo(" Discover", "Find new music you'll love!")
     def open_learning_resources(self):
-        webbrowser.open("https://www.coursera.org"); messagebox.showinfo("📚 Learn", "Explore free courses.")
+        webbrowser.open("https://www.coursera.org"); messagebox.showinfo(" Learn", "Explore free courses.")
     def open_productivity(self):
-        webbrowser.open("https://todoist.com"); messagebox.showinfo("🎯 Productivity", "Get organized.")
+        webbrowser.open("https://todoist.com"); messagebox.showinfo(" Productivity", "Get organized.")
     def explore_interests(self):
-        webbrowser.open("https://www.youtube.com/"); messagebox.showinfo("🌐 Explore", "Discover something new today!")
+        webbrowser.open("https://www.youtube.com/"); messagebox.showinfo(" Explore", "Discover something new today!")
     def open_planner(self):
         try:
             if platform.system() == "Windows": subprocess.Popen("notepad.exe")
             elif platform.system() == "Darwin": subprocess.Popen(["open", "-a", "TextEdit"])
             else: subprocess.Popen(["gedit"])
-            messagebox.showinfo("📊 Planning", "Plan your day ahead!")
-        except: messagebox.showinfo("📊 Planning", "Open your favorite note app to plan your day!")
+            messagebox.showinfo(" Planning", "Plan your day ahead!")
+        except: messagebox.showinfo(" Planning", "Open your favorite note app to plan your day!")
     def open_brain_games(self):
-        webbrowser.open("https://www.lumosity.com"); messagebox.showinfo("🧩 Brain Games", "Challenge your mind!")
+        webbrowser.open("https://www.lumosity.com"); messagebox.showinfo(" Brain Games", "Challenge your mind!")
     def open_reading(self):
-        webbrowser.open("https://medium.com"); messagebox.showinfo("📖 Reading", "Discover interesting articles.")
+        webbrowser.open("https://medium.com"); messagebox.showinfo(" Reading", "Discover interesting articles.")
     def open_goal_setting(self):
-        self.open_journal(); messagebox.showinfo("🌟 Goals", "Write down your goals and aspirations.")
+        self.open_journal(); messagebox.showinfo(" Goals", "Write down your goals and aspirations.")
     def play_relaxing_music(self):
-        webbrowser.open("https://www.youtube.com/results?search_query=relaxing+calm+music"); messagebox.showinfo("🎵 Relax", "Peaceful music to calm your mind!")
+        webbrowser.open("https://www.youtube.com/results?search_query=relaxing+calm+music"); messagebox.showinfo(" Relax", "Peaceful music to calm your mind!")
     def play_nature_sounds(self):
-        webbrowser.open("https://www.youtube.com/results?search_query=nature+sounds+rain+forest"); messagebox.showinfo("🌿 Nature", "Immerse yourself in nature sounds!")
+        webbrowser.open("https://www.youtube.com/results?search_query=nature+sounds+rain+forest"); messagebox.showinfo(" Nature", "Immerse yourself in nature sounds!")
     def open_games(self):
         if platform.system() == "Windows":
-            try: subprocess.Popen("start steam://", shell=True); messagebox.showinfo("🎮 Games", "Opening Steam!")
-            except: webbrowser.open("https://www.crazygames.com"); messagebox.showinfo("🎮 Games", "Time for some fun online games!")
+            try: subprocess.Popen("start steam://", shell=True); messagebox.showinfo(" Games", "Opening Steam!")
+            except: webbrowser.open("https://www.crazygames.com"); messagebox.showinfo(" Games", "Time for some fun online games!")
         else:
-            webbrowser.open("https://www.crazygames.com"); messagebox.showinfo("🎮 Games", "Time for some fun!")
+            webbrowser.open("https://www.crazygames.com"); messagebox.showinfo(" Games", "Time for some fun!")
     def open_youtube(self):
-        webbrowser.open("https://www.youtube.com"); messagebox.showinfo("📺 YouTube", "Explore videos that interest you!")
+        webbrowser.open("https://www.youtube.com"); messagebox.showinfo(" YouTube", "Explore videos that interest you!")
     def open_social_media(self):
-        webbrowser.open("https://www.twitter.com"); messagebox.showinfo("📱 Social", "Connect with your network!")
+        webbrowser.open("https://www.twitter.com"); messagebox.showinfo(" Social", "Connect with your network!")
     def open_camera_app(self):
         if platform.system() == "Windows":
-            try: subprocess.Popen("start microsoft.windows.camera:", shell=True); messagebox.showinfo("📸 Camera", "Camera opened!")
-            except: messagebox.showinfo("📸 Camera", "Open your camera app to capture moments!")
+            try: subprocess.Popen("start microsoft.windows.camera:", shell=True); messagebox.showinfo(" Camera", "Camera opened!")
+            except: messagebox.showinfo(" Camera", "Open your camera app to capture moments!")
         elif platform.system() == "Darwin":
-            messagebox.showinfo("📸 Camera", "Open Photo Booth to capture moments!")
+            messagebox.showinfo(" Camera", "Open Photo Booth to capture moments!")
         else:
-            messagebox.showinfo("📸 Camera", "Open your camera app to capture moments!")
+            messagebox.showinfo(" Camera", "Open your camera app to capture moments!")
     def show_selfcare_tips(self):
         tips = ["Take a warm bath","Deep breathing 5 minutes","Go for a peaceful walk","Call a friend","Write in a journal","Gentle stretching","Make a comforting drink","Read a chapter of a book"]
-        messagebox.showinfo("💝 Self-Care", f"Self-care tip:\n\n{np.random.choice(tips)}")
+        messagebox.showinfo(" Self-Care", f"Self-care tip:\n\n{np.random.choice(tips)}")
     def show_motivational_quotes(self):
         quotes = ["Every day is a new beginning!","You are stronger than you think!","This too shall pass.","Believe in yourself!","You've got this!","Progress, not perfection.","You are capable of amazing things!"]
-        messagebox.showinfo("✨ Motivation", np.random.choice(quotes))
+        messagebox.showinfo(" Motivation", np.random.choice(quotes))
     def open_meditation(self):
-        webbrowser.open("https://www.youtube.com/results?search_query=guided+meditation+10+minutes"); messagebox.showinfo("🧘 Meditation", "Find inner peace with guided meditation!")
+        webbrowser.open("https://www.youtube.com/results?search_query=guided+meditation+10+minutes"); messagebox.showinfo(" Meditation", "Find inner peace with guided meditation!")
     def start_breathing_exercise(self):
-        messagebox.showinfo("🌬️ Breathing Exercise","IN 4 • HOLD 4 • OUT 6 • HOLD 2\nRepeat 5–10 times.")
+        messagebox.showinfo(" Breathing Exercise","IN 4 • HOLD 4 • OUT 6 • HOLD 2\nRepeat 5–10 times.")
     def suggest_exercise(self):
         exercises = ["10-minute brisk walk","20 jumping jacks","5-minute yoga session","Dance to your favorite song","10 push-ups","Full-body stretch"]
-        messagebox.showinfo("🏃 Exercise", f"Try this:\n\n{np.random.choice(exercises)}")
+        messagebox.showinfo(" Exercise", f"Try this:\n\n{np.random.choice(exercises)}")
     def open_journal(self):
         try:
             if platform.system() == "Windows": subprocess.Popen("notepad.exe")
             elif platform.system() == "Darwin": subprocess.Popen(["open", "-a", "TextEdit"])
             else: subprocess.Popen(["gedit"])
-            messagebox.showinfo("✍️ Journal", "Express your thoughts in writing!")
+            messagebox.showinfo(" Journal", "Express your thoughts in writing!")
         except:
-            webbrowser.open("https://docs.google.com"); messagebox.showinfo("✍️ Journal", "Opening Google Docs for journaling!")
+            webbrowser.open("https://docs.google.com"); messagebox.showinfo(" Journal", "Opening Google Docs for journaling!")
     def show_emergency_contacts(self):
-        messagebox.showinfo("🆘 Emergency Support","Help is available 24/7:\n• 988 (US)\n• 911 (Emergency)\n• Text HOME to 741741")
+        messagebox.showinfo(" Emergency Support","Help is available 24/7:\n• 988 (US)\n• 911 (Emergency)\n• Text HOME to 741741")
     def show_affirmations(self):
         affirmations = ["I am brave and capable.","I focus on what I can control.","I am safe right now.","I am resilient.","I deserve peace and happiness."]
-        messagebox.showinfo("💫 Affirmation", np.random.choice(affirmations))
+        messagebox.showinfo(" Affirmation", np.random.choice(affirmations))
     def show_celebration_ideas(self):
         ideas = ["Share with friends","Treat yourself","Take a photo","Happy dance","Journal the moment"]
-        messagebox.showinfo("🎉 Celebrate", f"Try this:\n\n{np.random.choice(ideas)}")
+        messagebox.showinfo("Celebrate", f"Try this:\n\n{np.random.choice(ideas)}")
     def show_nature_content(self):
-        webbrowser.open("https://www.youtube.com/results?search_query=beautiful+nature+scenery+4k+relaxing"); messagebox.showinfo("🌸 Nature", "Immerse yourself in beautiful nature!")
+        webbrowser.open("https://www.youtube.com/results?search_query=beautiful+nature+scenery+4k+relaxing"); messagebox.showinfo(" Nature", "Immerse yourself in beautiful nature!")
 
     def __del__(self):
         if hasattr(self, 'cap') and self.cap is not None:

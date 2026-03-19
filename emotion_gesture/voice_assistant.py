@@ -1381,7 +1381,7 @@ class MoodyVoiceAssistant:
     def speak(self, text):
         if not text:
             return
-        self.on_log(f"🔊 Moody: {text}", "assistant")
+        self.on_log(f"Moody: {text}", "assistant")
 
         def _speak():
             with self._tts_lock:
@@ -1400,7 +1400,7 @@ class MoodyVoiceAssistant:
         self.awake = awake
         if awake:
             self._last_command_time = time.time()
-            self.on_status_change("🟢 Awake – Listening for commands...")
+            self.on_status_change("Awake – Listening for commands...")
             self.on_wake()
         else:
             self.on_status_change("💤 Sleeping – Say 'Hey Moody' to wake")
@@ -1408,7 +1408,7 @@ class MoodyVoiceAssistant:
     # Start Stop
     def start(self):
         if not SR_AVAILABLE:
-            self.on_log("❌ SpeechRecognition not installed. Install it with: pip install SpeechRecognition", "error")
+            self.on_log("SpeechRecognition not installed. Install it with: pip install SpeechRecognition", "error")
             return False
 
         if self.running:
@@ -1419,8 +1419,8 @@ class MoodyVoiceAssistant:
         self.awake = False
         self._last_command_time = 0
 
-        self.on_status_change("💤 Sleeping – Say 'Hey Moody' to wake")
-        self.on_log("🎤 Voice assistant started. Say 'Hey Moody' to begin!", "system")
+        self.on_status_change(" Sleeping – Say 'Hey Moody' to wake")
+        self.on_log("Voice assistant started. Say 'Hey Moody' to begin!", "system")
 
         self._listen_thread = threading.Thread(target=self._listen_loop, daemon=True)
         self._listen_thread.start()
@@ -1430,31 +1430,31 @@ class MoodyVoiceAssistant:
         self.running = False
         self.listening = False
         self.awake = False
-        self.on_status_change("⏹ Voice assistant stopped")
-        self.on_log("🛑 Voice assistant stopped.", "system")
+        self.on_status_change("Voice assistant stopped")
+        self.on_log("Voice assistant stopped.", "system")
 
     def toggle_background(self, enabled):
         self.background_mode = enabled
         if enabled:
-            self.on_log("📥 Background mode enabled – assistant will keep listening.", "system")
+            self.on_log("Background mode enabled – assistant will keep listening.", "system")
         else:
-            self.on_log("📤 Background mode disabled.", "system")
+            self.on_log("Background mode disabled.", "system")
 
     # core Listening Loop 
     def _listen_loop(self):
         try:
             self.microphone = sr.Microphone()
             with self.microphone as source:
-                self.on_log("🔧 Adjusting for ambient noise... please wait.", "system")
+                self.on_log("Adjusting for ambient noise... please wait.", "system")
                 self.recognizer.adjust_for_ambient_noise(source, duration=1.5)
-                self.on_log("✅ Ready! Say 'Hey Moody' to wake me up.", "system")
+                self.on_log("Ready! Say 'Hey Moody' to wake me up.", "system")
 
             while self.running:
                 try:
                     self._listen_once()
                 except Exception as e:
                     if self.running:
-                        self.on_log(f"⚠️ Listening error: {str(e)}", "error")
+                        self.on_log(f"Listening error: {str(e)}", "error")
                         time.sleep(1)
 
                 if self.awake and self._last_command_time > 0:
@@ -1465,8 +1465,8 @@ class MoodyVoiceAssistant:
                 time.sleep(0.05)
 
         except Exception as e:
-            self.on_log(f"❌ Microphone error: {str(e)}", "error")
-            self.on_status_change("❌ Microphone not available")
+            self.on_log(f"Microphone error: {str(e)}", "error")
+            self.on_status_change("Microphone not available")
             self.running = False
 
     def _listen_once(self):
@@ -1476,10 +1476,10 @@ class MoodyVoiceAssistant:
         try:
             with sr.Microphone() as source:
                 if self.awake:
-                    self.on_status_change("🟢 Listening for command...")
+                    self.on_status_change("Listening for command...")
                     audio = self.recognizer.listen(source, timeout=8, phrase_time_limit=12)
                 else:
-                    self.on_status_change("💤 Waiting for 'Hey Moody'...")
+                    self.on_status_change("Waiting for 'Hey Moody'...")
                     audio = self.recognizer.listen(source, timeout=5, phrase_time_limit=5)
         except sr.WaitTimeoutError:
             return
@@ -1490,7 +1490,7 @@ class MoodyVoiceAssistant:
             return
 
         try:
-            self.on_status_change("🔄 Processing speech...")
+            self.on_status_change("Processing speech...")
             text = self.recognizer.recognize_google(audio)
             if not text:
                 return
@@ -1498,7 +1498,7 @@ class MoodyVoiceAssistant:
         except sr.UnknownValueError:
             return
         except sr.RequestError as e:
-            self.on_log(f"⚠️ Speech API error: {str(e)}", "error")
+            self.on_log(f"Speech API error: {str(e)}", "error")
             return
 
         text_lower = text.lower()
@@ -1547,8 +1547,8 @@ class MoodyVoiceAssistant:
                 else:
                     cmd_info['handler']()
             except Exception as e:
-                self.on_log(f"⚠️ Command error: {str(e)}", "error")
+                self.on_log(f"Command error: {str(e)}", "error")
                 self.speak("Sorry, I had trouble with that command.")
         else:
             self.speak("I'm not sure how to do that. Try saying 'help' for a list of commands.")
-            self.on_log(f"❓ Unrecognized: {text}", "system")
+            self.on_log(f"Unrecognized: {text}", "system")
