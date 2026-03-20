@@ -240,14 +240,14 @@ class ReportGenerator:
         productivity = analytics.calculate_productivity_score(emotion_log)
         stability = analytics.calculate_stability_score(emotion_log)
         
-        story.append(Paragraph("📊 Executive Summary", heading_style))
+        story.append(Paragraph(" Executive Summary", heading_style))
         story.append(Paragraph(f"<b>Wellbeing Score:</b> {wellbeing:.1f}/100 ({analytics.get_wellbeing_interpretation(wellbeing)})", styles['Normal']))
         story.append(Paragraph(f"<b>Productivity Index:</b> {productivity:.1f}/100", styles['Normal']))
         story.append(Paragraph(f"<b>Emotional Stability:</b> {stability:.1f}/100", styles['Normal']))
         story.append(Spacer(1, 0.3*inch))
         
         # Emotion Distribution
-        story.append(Paragraph("🎯 Emotion Distribution", heading_style))
+        story.append(Paragraph(" Emotion Distribution", heading_style))
         emotion_counts = Counter([e['emotion'] for e in emotion_log])
         
         table_data = [['Emotion', 'Count', 'Percentage']]
@@ -271,7 +271,7 @@ class ReportGenerator:
         story.append(Spacer(1, 0.3*inch))
         
         # Insights
-        story.append(Paragraph("💡 Personalized Insights", heading_style))
+        story.append(Paragraph(" Personalized Insights", heading_style))
         insights = analytics.generate_insights(emotion_log, wellbeing, productivity)
         for insight in insights:
             story.append(Paragraph(f"• {insight}", styles['Normal']))
@@ -279,7 +279,7 @@ class ReportGenerator:
         
         # Stress Analysis
         recent_stress = analytics.get_recent_stress_count(24)
-        story.append(Paragraph("⚠️ Stress Analysis (Last 24h)", heading_style))
+        story.append(Paragraph(" Stress Analysis (Last 24h)", heading_style))
         story.append(Paragraph(f"<b>Stress Events Detected:</b> {recent_stress}", styles['Normal']))
         
         if recent_stress > 0:
@@ -289,7 +289,7 @@ class ReportGenerator:
         story.append(PageBreak())
         
         # Recent Emotion Log (last 20 entries)
-        story.append(Paragraph("📝 Recent Emotion Log", heading_style))
+        story.append(Paragraph(" Recent Emotion Log", heading_style))
         recent_log = emotion_log[-20:]
         log_data = [['Timestamp', 'Emotion', 'Confidence']]
         

@@ -27,7 +27,7 @@ FEATURE_ORDER = [
 ]
 
 
-# Math / geometry helpers
+# Math, geometry helpers
 
 def safe_L(landmarks: List[Tuple[int,int,float]], i: int) -> Optional[Tuple[int,int,float]]:
     return None if (i < 0 or i >= len(landmarks)) else landmarks[i]

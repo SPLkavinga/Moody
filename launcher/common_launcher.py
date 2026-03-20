@@ -91,28 +91,28 @@ class GradientFrame(tk.Canvas):
 WELCOME_GREETINGS = [
     "Welcome back! Ready to explore?",
     "Hey there! Let Moody brighten your day.",
-    "Hello, friend! Your AI companion awaits.",
+    "Hello friend! Your AI companion awaits.",
     "Good to see you! Let's get started.",
     "Welcome! Moody is here to help.",
 ]
 
 TIPS = [
-    "💡 Tip: Use the Emotion module to control your PC with facial expressions.",
-    "💡 Tip: Hand gestures let you navigate without touching the keyboard.",
-    "💡 Tip: Moody adapts to your mood and suggests content for you.",
-    "💡 Tip: Try resizing this window — the layout adapts automatically!",
-    "💡 Tip: You can launch modules and the launcher will close automatically.",
+    " Tip: Use the Emotion module to control your PC with facial expressions.",
+    " Tip: Hand gestures let you navigate without touching the keyboard.",
+    " Tip: Moody adapts to your mood and suggests content for you.",
+    " Tip: Try resizing this window — the layout adapts automatically!",
+    " Tip: You can launch modules and the launcher will close automatically.",
 ]
 
 FEATURES = [
-    ("🎭", "Emotion Detection", "Real-time facial expression analysis with AI-powered recognition."),
-    ("✋", "Hand Gestures", "Navigate and control your PC with intuitive hand movements."),
-    ("🧠", "Smart Analytics", "Track your emotional patterns and get personalized insights."),
+    ("", "Emotion Detection", "Real-time facial expression analysis with AI-powered recognition."),
+    ("", "Hand Gestures", "Navigate and control your PC with intuitive hand movements."),
+    ("", "Smart Analytics", "Track your emotional patterns and get personalized insights."),
 ]
 
 
 
-#  MAIN LAUNCHER APP  (responsive + hamburger)
+#  MAIN LAUNCHER APP  (responsive and hamburger)
 
 class MoodyLauncher(tk.Tk):
     def __init__(self):
@@ -128,7 +128,7 @@ class MoodyLauncher(tk.Tk):
         except Exception:
             pass
 
-        # Responsive resizable, min-size for mobile
+        # Responsive resizable, min size for mobile
         self.geometry("900x750")
         self.minsize(360, 520)
         self.resizable(True, True)
@@ -236,7 +236,7 @@ class MoodyLauncher(tk.Tk):
         inner = tk.Frame(self.auth_card, bg=CARD_BG)
         inner.pack(padx=24, pady=14, fill="x")
 
-        tk.Label(inner, text="🔒  Login / Register", fg=TEXT_WHITE, bg=CARD_BG,
+        tk.Label(inner, text="  Login / Register", fg=TEXT_WHITE, bg=CARD_BG,
                  font=("Segoe UI", 14, "bold")).pack(pady=(0, 10))
 
         # Tab like toggle
@@ -246,13 +246,13 @@ class MoodyLauncher(tk.Tk):
         self._auth_mode = "login"  # "login" or "register"
 
         self.login_tab_btn = tk.Label(
-            tab_frame, text="🔑 Login", fg=TEXT_WHITE, bg="#7C6EE6",
+            tab_frame, text=" Login", fg=TEXT_WHITE, bg="#7C6EE6",
             font=("Segoe UI", 11, "bold"), padx=18, pady=4, cursor="hand2",
         )
         self.login_tab_btn.pack(side="left", padx=(0, 4))
 
         self.register_tab_btn = tk.Label(
-            tab_frame, text="➕ Register", fg=TEXT_SOFT, bg=CARD_BG,
+            tab_frame, text=" Register", fg=TEXT_SOFT, bg=CARD_BG,
             font=("Segoe UI", 11), padx=18, pady=4, cursor="hand2",
         )
         self.register_tab_btn.pack(side="left")
@@ -280,7 +280,7 @@ class MoodyLauncher(tk.Tk):
         logout_btn_frame = tk.Frame(self.logged_in_frame, bg=CARD_BG)
         logout_btn_frame.pack(side="right", padx=20, pady=8)
         create_rounded_button(
-            logout_btn_frame, "🚪 Logout", BTN_RED,
+            logout_btn_frame, " Logout", BTN_RED,
             self._do_logout, font_size=10, width=130, height=38,
         ).pack()
 
@@ -471,10 +471,10 @@ class MoodyLauncher(tk.Tk):
         self.get_started_canvas = tk.Canvas(btn_frame, width=w, height=h,
                                             bg=BG_TOP, highlightthickness=0)
         r = min(24, h // 2)
-        init_color = "#888888"  # disabled-looking until login
+        init_color = "#888888"  # disabled looking until login
         self._gs_rect = draw_rounded_rect(self.get_started_canvas, 2, 2, w - 2, h - 2, r,
                                           fill=init_color, outline=init_color)
-        self.get_started_canvas.create_text(w // 2, h // 2, text="🚀  Get Started",
+        self.get_started_canvas.create_text(w // 2, h // 2, text="Get Started",
                                             fill="white", font=("Segoe UI", 15, "bold"))
 
         def on_enter(e):
@@ -546,7 +546,7 @@ class MoodyLauncher(tk.Tk):
                 self.hero_label.config(image=self.hero_img_tk)
         except Exception:
             self.hero_label.config(
-                text="🐱", font=("Segoe UI Emoji", 64), fg=TEXT_WHITE,
+                text="", font=("Segoe UI Emoji", 64), fg=TEXT_WHITE,
             )
 
     def _show_hero(self, small=False):
@@ -634,7 +634,7 @@ class MoodyLauncher(tk.Tk):
         ft.pack(fill="x", pady=(15, 25))
 
         tk.Label(
-            ft, text="Moody v1.0  •  System Ready  •  Built with ❤️",
+            ft, text="Moody v1.0  •  System Ready  •  Built with ",
             fg=TEXT_SOFT, bg=BG_TOP, font=("Segoe UI", 9),
         ).pack()
 

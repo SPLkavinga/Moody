@@ -12,7 +12,7 @@ import platform
 import warnings
 warnings.filterwarnings('ignore')
 
-# Model / features (your pipeline) 
+# Model / features ( pipeline) 
 import joblib
 from mediapipe.python.solutions import face_mesh as mp_face_mesh
 #from mediapipe_local.python.solutions import face_mesh as mp_face_mesh
@@ -132,13 +132,13 @@ class EmotionRecognitionApp:
             ],
         }
 
-        # UI + model + camera
+        # UI, model and camera
         self.setup_ui()
         self.setup_model()
         self.setup_camera()
         self.setup_responsive_layout()  # restore previous responsive behavior
 
-        # Start maximized (optional)
+        # Start maximized 
         try:
             if platform.system() == "Windows":
                 self.root.state('zoomed')
@@ -147,7 +147,7 @@ class EmotionRecognitionApp:
         except Exception:
             pass
 
-    # UI (RESTORED to previous layout)
+    # UI 
     def setup_ui(self):
         self.root.title("Emotion Recognition Assistant")
         self.root.configure(bg='#1a1a1a')
@@ -206,7 +206,7 @@ class EmotionRecognitionApp:
                                    command=self.stop_detection, state='disabled')
         self.stop_btn.grid(row=0, column=1, padx=(5, 0), sticky='ew')
 
-        # MIDDLE COLUMN Emotion Display (centered content)
+        # MIDDLE COLUMN Emotion Display 
         middle_frame = ttk.Frame(main_container, style='Dark.TFrame')
         middle_frame.grid(row=1, column=1, sticky='nsew', padx=10)
         middle_frame.grid_rowconfigure(2, weight=1)  # space beneath history
@@ -235,7 +235,7 @@ class EmotionRecognitionApp:
         self.history_frame = ttk.Frame(middle_frame, style='Dark.TFrame')
         self.history_frame.grid(row=3, column=0, sticky='nsew')
 
-        # RIGHT COLUMN Actions (scrollable)
+        # RIGHT COLUMN Actions 
         right_frame = ttk.Frame(main_container, style='Dark.TFrame')
         right_frame.grid(row=1, column=2, sticky='nsew', padx=(10, 0))
         right_frame.grid_rowconfigure(1, weight=1)
@@ -252,7 +252,7 @@ class EmotionRecognitionApp:
         self.actions_scrollable_frame.bind(
             "<Configure>", lambda e: self.actions_canvas.configure(scrollregion=self.actions_canvas.bbox("all"))
         )
-        # Keep inner frame width in sync with canvas width (so buttons stretch)
+        # Keep inner frame width in sync with canvas width 
         self.actions_canvas.bind('<Configure>', self._on_canvas_configure)
 
         self.actions_canvas.create_window((0, 0), window=self.actions_scrollable_frame, anchor="nw")
@@ -283,7 +283,7 @@ class EmotionRecognitionApp:
                 self._last_height = current_height
                 self.root.update_idletasks()
 
-    # Model / camera
+    # Model, camera
     def setup_model(self):
         try:
             self.model = joblib.load(MODEL_PATH)
@@ -330,7 +330,7 @@ class EmotionRecognitionApp:
     def _actions_for(self, canonical_label: str):
         return self.emotion_actions.get(canonical_label) or self.emotion_actions["neutral"]
 
-    # Prediction (UNCHANGED) 
+    # Prediction
     def predict_emotion_from_frame(self, frame_bgr):
         if not self.model_loaded or self.face_mesh is None:
             return "neutral", 0.0

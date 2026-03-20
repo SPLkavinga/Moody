@@ -5,7 +5,7 @@ import sys
 import os
 sys.path.insert(0, os.path.dirname(__file__))
 
-print("Testing Advanced Analytics and Patterns & Insights tabs...")
+print("Testing Advanced Analytics and Patterns and Insights tabs...")
 
 try:
     from advanced_analytics import AdvancedAnalytics
@@ -39,13 +39,13 @@ try:
     stability = analytics.calculate_stability_score(test_emotions)
     stress_count = analytics.get_recent_stress_count(24)
     
-    print("\n✓ Advanced Analytics Data:")
+    print("\n Advanced Analytics Data:")
     print(f"  - Wellbeing Score: {wellbeing:.1f}/100")
     print(f"  - Productivity Index: {productivity:.1f}/100")
     print(f"  - Emotional Stability: {stability:.1f}/100")
     print(f"  - Stress Events (24h): {stress_count}")
     
-    print("\n✓ Patterns & Insights Data:")
+    print("\n Patterns & Insights Data:")
     print(f"  - Emotion Transitions: {len(analytics.emotion_transitions)} types recorded")
     print(f"  - Hourly Patterns: {len(analytics.hourly_emotions)} hours tracked")
     
@@ -56,14 +56,14 @@ try:
     for i, insight in enumerate(insights[:3], 1):
         print(f"    {i}. {insight}")
     
-    print("\n✅ All analytics methods working correctly!")
-    print("\n📊 The tabs should now display:")
+    print("\n All analytics methods working correctly!")
+    print("\n The tabs should now display:")
     print("  1. Advanced Analytics: Wellbeing, Productivity, Stress, Stability scores")
     print("  2. Patterns & Insights: Transitions, Hourly patterns, Personalized insights")
     
-    print("\n💡 Next: Run the emotion module and check the Analytics dashboard!")
+    print("\n Next: Run the emotion module and check the Analytics dashboard!")
     
 except Exception as e:
-    print(f"\n❌ Error: {e}")
+    print(f"\n Error: {e}")
     import traceback
     traceback.print_exc()
