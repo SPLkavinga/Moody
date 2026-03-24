@@ -11,6 +11,10 @@ python -m venv .venv
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 
+# voice model
+pip install vosk
+pip install setuptools>=75.0.0
+
 # Run the app
 python launcher/common_launcher.py
 

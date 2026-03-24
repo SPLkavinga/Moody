@@ -31,7 +31,7 @@ from advanced_analytics import AdvancedAnalytics, ReportGenerator, REPORTLAB_AVA
 # Import voice assistant
 from voice_assistant import MoodyVoiceAssistant
 
-# Model / features 
+#  Model, features (your pipeline) 
 import joblib
 import mediapipe as mp
 mp_face_mesh = mp.solutions.face_mesh
@@ -44,7 +44,6 @@ MODEL_PATH = os.path.join(MODEL_DIR, "emotion_model.joblib")
 LABELS_PATH = os.path.join(MODEL_DIR, "label_encoder.joblib")
 
 # Hand Gesture Mouse Controller
-
 class HandGestureController:
     def __init__(self):
         self.running = False
@@ -170,7 +169,7 @@ class HandGestureController:
                             pyautogui.moveTo(mouse_x, mouse_y)
                             self.prev_mouse_x, self.prev_mouse_y = mouse_x, mouse_y
                     
-                    # Left click / drag
+                    # Left click and drag
                     left_click_gesture = thumb_ext and index_ext and not middle_ext and not ring_ext and not pinky_ext
                     if left_click_gesture:
                         if self.left_gesture_start is None:
@@ -227,17 +226,18 @@ class HandGestureController:
             time.sleep(0.03)
 
 
+ 
 # Main Emotion Recognition App
 
 class EmotionRecognitionApp:
     def __init__(self, root):
         self.root = root
 
-        # Theme configuration
+        #  Theme configuration 
         self.current_theme = theme_config.get_current_theme()
         self.colors = theme_config.get_theme_colors()
 
-        # App state
+        #  App state 
         self.current_emotion = "neutral"
         self.emotion_confidence = 0.0
         self.detection_active = False
@@ -249,7 +249,7 @@ class EmotionRecognitionApp:
         # Hand gesture controller
         self.gesture_controller = HandGestureController()
 
-        # Popup background mode state
+        # Popup, background mode state
         self.popup_window = None
         self.popup_actions_frame = None
         self.popup_gesture_btn = None
@@ -259,7 +259,7 @@ class EmotionRecognitionApp:
         self.notification_window = None
         self.notification_button = None
 
-        # popup drag + remember position
+        # popup drag, remember position
         self._popup_drag_offset_x = 0
         self._popup_drag_offset_y = 0
         self._popup_last_x = None
@@ -297,7 +297,7 @@ class EmotionRecognitionApp:
         self.productivity_score = 0.0
         self.wellbeing_score = 0.0
 
-        # Emotion actions with specific songs & games per emotion
+        # Emotion actions with specific songs and games per emotion
         self.emotion_actions = {
             'happy': [
                 (' Play "Happy" - Pharrell Williams', self.song_happy_pharrell),
@@ -373,7 +373,7 @@ class EmotionRecognitionApp:
             ],
             'surprise': [
                 (' Play "Don\'t Stop Me Now" - Queen', self.song_dont_stop_me_now),
-                (' Play "Celebration" - Kool & The Gang', self.song_celebration),
+                (' Play "Celebration" - Kool and The Gang', self.song_celebration),
                 (' Play "Walking on Sunshine"', self.song_walking_on_sunshine),
                 (' Play Agar.io (Surprise Attack!)', self.game_agario),
                 (' Play Helix Jump (How Far?)', self.game_helix_jump),
@@ -389,21 +389,21 @@ class EmotionRecognitionApp:
                 (' Reflect on the Moment', self.show_reflection_prompt),
             ],
             'disgust': [
-                ('Play "What a Wonderful World" - Louis Armstrong', self.song_wonderful_world),
-                ('Play "Ocean Eyes" - Billie Eilish', self.song_ocean_eyes),
-                ('Play "Clair de Lune" - Debussy', self.song_clair_de_lune),
-                ('Play Tile Guru (Zen Match)', self.game_tile_guru),
-                ('Play Jigsaw Puzzle Online', self.game_jigsaw_puzzle),
-                ('Fresh Air Reminder', self.suggest_fresh_air),
-                ('Play Pleasant Music', self.play_relaxing_music),
-                ('Mindfulness Exercise', self.open_meditation),
-                ('Self-Care Routine Guide', self.show_selfcare_tips),
-                ('View Beautiful Nature', self.show_nature_content),
-                ('Cleansing Rituals', self.show_cleansing_tips),
-                ('Comfort Recipes', self.show_comfort_recipes),
-                ('Art Therapy', self.open_art_therapy),
-                ('Cleansing Visualization', self.show_cleansing_visualization),
-                ('Reset Your Space', self.show_space_reset_tips),
+                (' Play "What a Wonderful World" - Louis Armstrong', self.song_wonderful_world),
+                (' Play "Ocean Eyes" - Billie Eilish', self.song_ocean_eyes),
+                (' Play "Clair de Lune" - Debussy', self.song_clair_de_lune),
+                (' Play Tile Guru (Zen Match)', self.game_tile_guru),
+                (' Play Jigsaw Puzzle Online', self.game_jigsaw_puzzle),
+                (' Fresh Air Reminder', self.suggest_fresh_air),
+                (' Play Pleasant Music', self.play_relaxing_music),
+                (' Mindfulness Exercise', self.open_meditation),
+                (' Self-Care Routine Guide', self.show_selfcare_tips),
+                (' View Beautiful Nature', self.show_nature_content),
+                (' Cleansing Rituals', self.show_cleansing_tips),
+                (' Comfort Recipes', self.show_comfort_recipes),
+                (' Art Therapy', self.open_art_therapy),
+                (' Cleansing Visualization', self.show_cleansing_visualization),
+                (' Reset Your Space', self.show_space_reset_tips),
             ],
             'neutral': [
                 (' Play "Bohemian Rhapsody" - Queen', self.song_bohemian_rhapsody),
@@ -427,7 +427,7 @@ class EmotionRecognitionApp:
             ],
         }
 
-        # UI,model,camera
+        # UI, model and camera
         self.setup_ui()
         self.setup_model()
         self.setup_camera()
@@ -457,11 +457,11 @@ class EmotionRecognitionApp:
         if launch_user:
             self.root.after(500, lambda: self._load_user_profile(launch_user))
         else:
-            # if launched directly without launcher go back to dashboard
+            # if launched directly without launcher, go back to dashboard
             self.root.after(500, self._require_launcher_login)
 
     def setup_ui(self):
-        self.root.title("Moody")
+        self.root.title("MOODY")
         self.root.configure(bg=self.colors['bg_primary'])
         self.root.minsize(1000, 700)
 
@@ -489,9 +489,9 @@ class EmotionRecognitionApp:
         self.main_notebook = ttk.Notebook(main_container)
         self.main_notebook.grid(row=1, column=0, sticky='nsew')
         
-        # Main app frame (existing UI)
+        # Main app frame 
         self.main_app_frame = ttk.Frame(self.main_notebook, style='Dark.TFrame')
-        self.main_notebook.add(self.main_app_frame, text="🎭 Emotion Recognition")
+        self.main_notebook.add(self.main_app_frame, text=" Emotion Recognition")
         
         # Grid configuration for main app frame
         self.main_app_frame.grid_rowconfigure(1, weight=1)
@@ -506,7 +506,7 @@ class EmotionRecognitionApp:
         
         title_label = ttk.Label(
             title_frame,
-            text="Moody",
+            text=" MOODY",
             style='Title.TLabel'
         )
         title_label.grid(row=0, column=0, sticky='w')
@@ -517,7 +517,7 @@ class EmotionRecognitionApp:
         
         self.profile_btn = ttk.Button(
             user_controls_frame,
-            text="Switch User",
+            text=" Switch User",
             style='Dark.TButton',
             command=self.show_profile_selector
         )
@@ -525,7 +525,7 @@ class EmotionRecognitionApp:
         
         self.analytics_btn = ttk.Button(
             user_controls_frame,
-            text="Analytics",
+            text=" Analytics",
             style='Dark.TButton',
             command=self.show_analytics_panel
         )
@@ -533,7 +533,7 @@ class EmotionRecognitionApp:
         
         self.report_btn = ttk.Button(
             user_controls_frame,
-            text="Download Report",
+            text=" Download Report",
             style='Gesture.TButton',
             command=self.generate_report_dialog
         )
@@ -541,7 +541,7 @@ class EmotionRecognitionApp:
         
         self.logout_btn = ttk.Button(
             user_controls_frame,
-            text="Logout",
+            text=" Logout",
             style='Dark.TButton',
             command=self.logout_user
         )
@@ -549,7 +549,7 @@ class EmotionRecognitionApp:
         
         self.dashboard_btn = ttk.Button(
             user_controls_frame,
-            text="Back to Dashboard",
+            text=" Back to Dashboard",
             style='Gesture.TButton',
             command=self.back_to_dashboard
         )
@@ -564,7 +564,7 @@ class EmotionRecognitionApp:
         )
         self.current_user_label.grid(row=1, column=0, columnspan=3, sticky='w', pady=(5, 0))
 
-        # LEFT COLUMN  Camera
+        # LEFT COLUMN, Camera
         left_frame = ttk.Frame(self.main_app_frame, style='Dark.TFrame')
         left_frame.grid(row=1, column=0, sticky='nsew', padx=(0, 10))
         left_frame.grid_rowconfigure(1, weight=1)
@@ -572,7 +572,7 @@ class EmotionRecognitionApp:
 
         camera_label = ttk.Label(
             left_frame,
-            text="Live Camera Feed",
+            text=" Live Camera Feed",
             style='Dark.TLabel',
             font=('Segoe UI', 12, 'bold')
         )
@@ -586,7 +586,7 @@ class EmotionRecognitionApp:
         self.video_label = ttk.Label(self.camera_container, style='Dark.TLabel', anchor='center')
         self.video_label.grid(row=0, column=0, sticky='nsew')
 
-        # Control frame with gesture control and speech buttons
+        # Control frame with gesture control, background and speech buttons
         control_frame = ttk.Frame(left_frame, style='Dark.TFrame')
         control_frame.grid(row=2, column=0, pady=(10, 0), sticky='ew')
         control_frame.grid_columnconfigure(0, weight=1)
@@ -597,7 +597,7 @@ class EmotionRecognitionApp:
 
         self.start_btn = ttk.Button(
             control_frame,
-            text="Start Detection",
+            text=" Start Detection",
             style='Dark.TButton',
             command=self.start_detection
         )
@@ -605,7 +605,7 @@ class EmotionRecognitionApp:
 
         self.stop_btn = ttk.Button(
             control_frame,
-            text="Stop Detection",
+            text=" Stop Detection",
             style='Dark.TButton',
             command=self.stop_detection,
             state='disabled'
@@ -614,7 +614,7 @@ class EmotionRecognitionApp:
 
         self.gesture_btn = ttk.Button(
             control_frame,
-            text="Enable Gestures",
+            text=" Enable Gestures",
             style='Gesture.TButton',
             command=self.toggle_gesture_control,
             state='disabled'
@@ -624,7 +624,7 @@ class EmotionRecognitionApp:
         # Background running button
         self.background_btn = ttk.Button(
             control_frame,
-            text="Background Run",
+            text=" Background Run",
             style='Dark.TButton',
             command=self.enable_background_mode,
             state='disabled'
@@ -634,7 +634,7 @@ class EmotionRecognitionApp:
         # Enable Speech button
         self.speech_btn = ttk.Button(
             control_frame,
-            text="Enable Speech",
+            text=" Enable Speech",
             style='Gesture.TButton',
             command=self.show_voice_assistant_tab
         )
@@ -649,7 +649,7 @@ class EmotionRecognitionApp:
         )
         self.gesture_status_label.grid(row=3, column=0, pady=(5, 0), sticky='w')
 
-        # MIDDLE COLUMN Emotion Display
+        # MIDDLE COLUMN, Emotion Display
         middle_frame = ttk.Frame(self.main_app_frame, style='Dark.TFrame')
         middle_frame.grid(row=1, column=1, sticky='nsew', padx=10)
         middle_frame.grid_rowconfigure(2, weight=1)
@@ -657,7 +657,7 @@ class EmotionRecognitionApp:
 
         emotion_title = ttk.Label(
             middle_frame,
-            text="Current Emotion",
+            text=" Current Emotion",
             style='Dark.TLabel',
             font=('Segoe UI', 12, 'bold')
         )
@@ -689,7 +689,7 @@ class EmotionRecognitionApp:
 
         history_label = ttk.Label(
             middle_frame,
-            text="Recent Emotions",
+            text=" Recent Emotions",
             style='Dark.TLabel',
             font=('Segoe UI', 11, 'bold')
         )
@@ -705,7 +705,7 @@ class EmotionRecognitionApp:
 
         actions_label = ttk.Label(
             right_frame,
-            text="Suggested Actions",
+            text=" Suggested Actions",
             style='Dark.TLabel',
             font=('Segoe UI', 12, 'bold')
         )
@@ -770,7 +770,7 @@ class EmotionRecognitionApp:
                 min_detection_confidence=0.5,
                 min_tracking_confidence=0.5
             )
-            print("Camera and FaceMesh initialized")
+            print("Camera + FaceMesh initialized")
         except Exception as e:
             print(f"Error initializing camera: {e}")
             self.cap = None
@@ -966,7 +966,7 @@ class EmotionRecognitionApp:
             messagebox.showerror("Error", "Camera not available")
             return
         
-        # Require user (should already be set via launcher)
+        # Require user 
         if self.current_user is None:
             messagebox.showwarning(
                 "Login Required",
@@ -999,7 +999,7 @@ class EmotionRecognitionApp:
         if self.current_user:
             self._save_emotion_log()
 
-        # Keep gesture control running if active only stop emotion detection
+        # Keep gesture control running if active  only stop emotion detection
         # Gesture button stays enabled so user can toggle gestures independently
         self.gesture_btn.configure(state='normal')
 
@@ -1011,31 +1011,31 @@ class EmotionRecognitionApp:
 
         if not self.gesture_controller.running:
             self.gesture_controller.start(self.cap)
-            self.gesture_btn.configure(text="Disable Gestures")
+            self.gesture_btn.configure(text=" Disable Gestures")
             self.gesture_status_label.configure(
                 text="Gesture Control: ON (Show 5 fingers to activate mouse)"
             )
             if self.popup_gesture_btn is not None and self.popup_gesture_btn.winfo_exists():
-                self.popup_gesture_btn.configure(text="Disable Gestures")
+                self.popup_gesture_btn.configure(text=" Disable Gestures")
                 self.popup_gesture_btn.state(["!disabled"])
 
             messagebox.showinfo(
                 "Gesture Control", 
                 "Hand Gesture Control Enabled!\n\n"
-                "Show 5 fingers: Toggle mouse control ON/OFF\n"
-                "Index finger: Move cursor\n"
-                "Thumb and Index: Click (hold for drag)\n"
-                "Index and Pinky (rock sign): Right click\n"
-                "Index, Middle and Ring: Scroll (move hand up/down)"
+                "• Show 5 fingers: Toggle mouse control ON/OFF\n"
+                "• Index finger: Move cursor\n"
+                "• Thumb + Index: Click (hold for drag)\n"
+                "• Index + Pinky (rock sign): Right click\n"
+                "• Index + Middle + Ring: Scroll (move hand up/down)"
             )
         else:
             self.gesture_controller.stop()
-            self.gesture_btn.configure(text="Enable Gestures")
+            self.gesture_btn.configure(text=" Enable Gestures")
             self.gesture_status_label.configure(text="Gesture Control: OFF")
             if self.popup_gesture_btn is not None and self.popup_gesture_btn.winfo_exists():
-                self.popup_gesture_btn.configure(text="Enable Gestures")
+                self.popup_gesture_btn.configure(text=" Enable Gestures")
 
-    # BACKGROUND MODE and POPUP
+    #  BACKGROUND MODE and POPUP 
     def enable_background_mode(self):
         if not self.detection_active:
             messagebox.showwarning("Background Run", "Start detection before enabling background mode.")
@@ -1067,7 +1067,7 @@ class EmotionRecognitionApp:
         self.popup_window.attributes("-topmost", True)
         self.popup_window.configure(bg="#1a1a1a")
 
-        # Size & position (top-right by default or last drag position)
+        # Size and position (top-right by default, or last drag position)
         width, height = 320, 420
         ws = self.root.winfo_screenwidth()
         hs = self.root.winfo_screenheight()
@@ -1091,7 +1091,7 @@ class EmotionRecognitionApp:
 
         title = ttk.Label(
             popup_frame,
-            text="Emotion Suggestions",
+            text=" Emotion Suggestions",
             style='Dark.TLabel',
             font=('Segoe UI', 10, 'bold')
         )
@@ -1109,10 +1109,10 @@ class EmotionRecognitionApp:
         self.popup_actions_frame = ttk.Frame(popup_frame, style='Dark.TFrame')
         self.popup_actions_frame.pack(fill="both", expand=True)
 
-        # Gesture toggle button (same behavior as main)
+        # Gesture toggle button 
         self.popup_gesture_btn = ttk.Button(
             popup_frame,
-            text="Enable Gestures",
+            text=" Enable Gestures",
             style='Gesture.TButton',
             command=self.toggle_gesture_control
         )
@@ -1123,7 +1123,7 @@ class EmotionRecognitionApp:
         # Restore main window button
         restore_btn = ttk.Button(
             popup_frame,
-            text="Restore App",
+            text="🔙 Restore App",
             style='Dark.TButton',
             command=self.restore_from_background
         )
@@ -1134,7 +1134,7 @@ class EmotionRecognitionApp:
     def on_popup_close(self):
         if self.popup_window is not None and self.popup_window.winfo_exists():
             try:
-                geo = self.popup_window.geometry() 
+                geo = self.popup_window.geometry()  # "WxH+X+Y"
                 parts = geo.split('+')
                 if len(parts) == 3:
                     x = int(parts[1])
@@ -1144,7 +1144,7 @@ class EmotionRecognitionApp:
             except Exception:
                 pass
 
-            # Just hide (withdraw) icon toggles it
+            # Just hide withdraw icon toggles it
             self.popup_window.withdraw()
 
     def restore_from_background(self):
@@ -1156,7 +1156,7 @@ class EmotionRecognitionApp:
         except Exception:
             pass
 
-        # Close popup (if exists)
+        # Close popup 
         if self.popup_window is not None and self.popup_window.winfo_exists():
             self.on_popup_close()
 
@@ -1186,7 +1186,7 @@ class EmotionRecognitionApp:
                 command=func
             ).pack(fill="x", pady=2)
 
-    # DRAG HANDLERS FOR POPUP 
+    #  DRAG HANDLERS FOR POPUP 
     def _start_popup_drag(self, event):
         self._popup_drag_offset_x = event.x
         self._popup_drag_offset_y = event.y
@@ -1198,7 +1198,7 @@ class EmotionRecognitionApp:
         self._popup_last_x = x
         self._popup_last_y = y
 
-    # DRAG HANDLERS FOR NOTIFICATION ICON 
+    #  DRAG HANDLERS FOR NOTIFICATION ICON 
     def _start_notif_drag(self, event):
         self._notif_drag_offset_x = event.x
         self._notif_drag_offset_y = event.y
@@ -1212,7 +1212,7 @@ class EmotionRecognitionApp:
         # could save position if needed
         pass
 
-    # NOTIFICATION ICON WINDOW 
+    #  NOTIFICATION ICON WINDOW 
     def show_notification_icon(self):
         # If exists, just bring to front
         if self.notification_window is not None and self.notification_window.winfo_exists():
@@ -1270,12 +1270,12 @@ class EmotionRecognitionApp:
         # Emoji in center
         canvas.create_text(
             center, center,
-            text="🎭",
+            text="",
             font=("Segoe UI", 22, "bold"),
             fill="white"
         )
         
-        # Red notification badge (top right)
+        # Red notification badge (top-right)
         badge_x = size - 12
         badge_y = 12
         badge_radius = 10
@@ -1308,22 +1308,22 @@ class EmotionRecognitionApp:
         self.notification_canvas = None
 
     def toggle_popup_from_notification(self):
-        # If popup doesn't exist or was destroyed create it
+        # If popup doesn't exist or was destroyed, create it
         if self.popup_window is None or not self.popup_window.winfo_exists():
             self.show_background_popup()
             return
 
-        # If popup is hidden show it if not hide it
+        # If popup is hidden, show it else hide it
         try:
             if not self.popup_window.winfo_viewable():
                 self.popup_window.deiconify()
                 self.popup_window.lift()
             else:
-                self.on_popup_close()  # withdraw remember position
+                self.on_popup_close()  # withdraw, remember position
         except Exception:
             self.show_background_popup()
 
-    # PROFILE MANAGEMENT 
+    #  PROFILE MANAGEMENT 
     def _require_launcher_login(self):
         """If no MOODY_USER env var, redirect to launcher for login."""
         messagebox.showinfo(
@@ -1352,7 +1352,7 @@ class EmotionRecognitionApp:
         if os.path.exists(profiles_file):
             with open(profiles_file, 'r') as f:
                 data = json.load(f)
-                # Return dictionary format {username password hash}
+                # Return dictionary format: {username: password hash}
                 return data.get('profiles', {})
         return {}
     
@@ -1444,7 +1444,7 @@ class EmotionRecognitionApp:
             self._save_emotion_log()
             self._save_user_settings()
         
-        # Return to dashboard for re-login
+        # Return to dashboard  for re login
         self.back_to_dashboard()
     
     def back_to_dashboard(self, force_close=False):
@@ -1552,12 +1552,12 @@ class EmotionRecognitionApp:
         # Check calm streak (2 hours)
         calm_duration = current_time - self.calm_streak_start
         if calm_duration >= 7200:  # 2 hours
-            self._show_achievement("🧘 Calm Mastery!", "You stayed calm for 2 hours! Keep it up!")
+            self._show_achievement(" Calm Mastery!", "You stayed calm for 2 hours! Keep it up!")
             self.calm_streak_start = current_time
         
         # Check happy spikes
         if self.daily_happy_spikes >= 3:
-            self._show_achievement("Joy Spreader!", f"You had {self.daily_happy_spikes} happy moments today!")
+            self._show_achievement(" Joy Spreader!", f"You had {self.daily_happy_spikes} happy moments today!")
     
     def _show_achievement(self, title, message):
         """Show achievement notification"""
@@ -1597,14 +1597,14 @@ class EmotionRecognitionApp:
         # Auto close after 4 seconds
         toast.after(4000, toast.destroy)
     
-    # ANALYTICS PANEL
+    #  ANALYTICS PANEL 
     def show_analytics_panel(self):
         """Show analytics panel as a tab within the main application"""
         if not self.current_user:
             messagebox.showwarning("Analytics", "Please login to view analytics!")
             return
         
-        # If analytics tab already exists switch to it
+        # If analytics tab already exists, switch to it
         if self.analytics_tab is not None:
             try:
                 # Find the tab index
@@ -1619,7 +1619,7 @@ class EmotionRecognitionApp:
         
         # Create new analytics tab
         self.analytics_tab = ttk.Frame(self.main_notebook, style='Dark.TFrame')
-        self.main_notebook.add(self.analytics_tab, text=f"Analytics - {self.current_user}")
+        self.main_notebook.add(self.analytics_tab, text=f" Analytics - {self.current_user}")
         
         # Main container with padding
         main_frame = ttk.Frame(self.analytics_tab, style='Dark.TFrame', padding=15)
@@ -1634,7 +1634,7 @@ class EmotionRecognitionApp:
         
         ttk.Label(
             header_frame,
-            text=f"Mood Analytics - {self.current_user}",
+            text=f" Mood Analytics - {self.current_user}",
             style='Title.TLabel'
         ).grid(row=0, column=0, sticky='w')
         
@@ -1643,41 +1643,41 @@ class EmotionRecognitionApp:
         
         ttk.Button(
             button_frame,
-            text="Refresh",
+            text=" Refresh",
             style='Dark.TButton',
             command=self._refresh_analytics_tab
         ).pack(side='left', padx=(0, 5))
         
         ttk.Button(
             button_frame,
-            text="Close Tab",
+            text=" Close Tab",
             style='Dark.TButton',
             command=self._close_analytics_tab
         ).pack(side='left')
         
-        # Create notebook for sub tabs
+        # Create notebook for sub-tabs
         self.analytics_notebook = ttk.Notebook(main_frame)
         self.analytics_notebook.grid(row=1, column=0, sticky='nsew')
         
-        # Tab 1 Today's Stats
+        # Tab 1: Today's Stats
         self.today_frame = ttk.Frame(self.analytics_notebook, style='Dark.TFrame', padding=15)
-        self.analytics_notebook.add(self.today_frame, text="Today")
+        self.analytics_notebook.add(self.today_frame, text=" Today")
         
         # Tab 2: Weekly Stats
         self.week_frame = ttk.Frame(self.analytics_notebook, style='Dark.TFrame', padding=15)
-        self.analytics_notebook.add(self.week_frame, text="This Week")
+        self.analytics_notebook.add(self.week_frame, text=" This Week")
         
         # Tab 3: Streaks and Goals
         self.goals_frame = ttk.Frame(self.analytics_notebook, style='Dark.TFrame', padding=15)
-        self.analytics_notebook.add(self.goals_frame, text="Achievements")
+        self.analytics_notebook.add(self.goals_frame, text=" Achievements")
         
         # Tab 4: Advanced Analytics
         self.advanced_frame = ttk.Frame(self.analytics_notebook, style='Dark.TFrame', padding=15)
-        self.analytics_notebook.add(self.advanced_frame, text="Advanced Analytics")
+        self.analytics_notebook.add(self.advanced_frame, text=" Advanced Analytics")
         
         # Tab 5: Patterns and Insights
         self.patterns_frame = ttk.Frame(self.analytics_notebook, style='Dark.TFrame', padding=15)
-        self.analytics_notebook.add(self.patterns_frame, text="Patterns & Insights")
+        self.analytics_notebook.add(self.patterns_frame, text=" Patterns and Insights")
         
         # Populate data
         self._populate_today_stats(self.today_frame)
@@ -1702,14 +1702,14 @@ class EmotionRecognitionApp:
 
     
     #  VOICE ASSISTANT TAB
-    
+     
     def show_voice_assistant_tab(self):
         """Show voice assistant panel as a new tab in the main notebook."""
-        # If voice tab already exists switch to it
+        # If voice tab already exists, switch to it
         if self.voice_tab is not None:
             try:
                 for i in range(self.main_notebook.index('end')):
-                    if self.main_notebook.tab(i, 'text').startswith('🎤'):
+                    if self.main_notebook.tab(i, 'text').startswith(''):
                         self.main_notebook.select(i)
                         return
             except:
@@ -1717,44 +1717,44 @@ class EmotionRecognitionApp:
 
         # Create new voice tab
         self.voice_tab = ttk.Frame(self.main_notebook, style='Dark.TFrame')
-        self.main_notebook.add(self.voice_tab, text="🎤 Voice Assistant")
+        self.main_notebook.add(self.voice_tab, text=" Voice Assistant")
 
         self.voice_tab.grid_rowconfigure(1, weight=1)
         self.voice_tab.grid_columnconfigure(0, weight=1)
 
-        # Header bar
+        #  Header bar 
         header = ttk.Frame(self.voice_tab, style='Dark.TFrame')
         header.grid(row=0, column=0, sticky='ew', padx=15, pady=(15, 5))
         header.grid_columnconfigure(1, weight=1)
 
         ttk.Label(
-            header, text="Moody Voice Assistant",
+            header, text=" Moody Voice Assistant",
             style='Title.TLabel'
         ).grid(row=0, column=0, sticky='w')
 
         # Close tab button
         close_btn = ttk.Button(
-            header, text="✖ Close Tab",
+            header, text=" Close Tab",
             style='Dark.TButton',
             command=self._close_voice_tab
         )
         close_btn.grid(row=0, column=2, sticky='e', padx=(10, 0))
 
-        # Main content two columns 
+        #  Main content: two columns 
         content = ttk.Frame(self.voice_tab, style='Dark.TFrame')
         content.grid(row=1, column=0, sticky='nsew', padx=15, pady=10)
         content.grid_rowconfigure(0, weight=1)
         content.grid_columnconfigure(0, weight=1)   # Log area
         content.grid_columnconfigure(1, weight=0)   # Control panel
 
-        # Chat and Log area 
+        #  LEFT: Chat and  Log area 
         log_frame = ttk.Frame(content, style='Dark.TFrame')
         log_frame.grid(row=0, column=0, sticky='nsew', padx=(0, 10))
         log_frame.grid_rowconfigure(1, weight=1)
         log_frame.grid_columnconfigure(0, weight=1)
 
         ttk.Label(
-            log_frame, text="Activity Log",
+            log_frame, text=" Activity Log",
             style='Dark.TLabel',
             font=('Segoe UI', 11, 'bold')
         ).grid(row=0, column=0, sticky='w', pady=(0, 5))
@@ -1790,7 +1790,7 @@ class EmotionRecognitionApp:
         self.voice_log_text.tag_configure('error', foreground='#F87171')
         self.voice_log_text.tag_configure('timestamp', foreground='#6B7280')
 
-        # RIGHT Control panel
+        #  RIGHT: Control panel 
         ctrl_panel = ttk.Frame(content, style='Dark.TFrame')
         ctrl_panel.grid(row=0, column=1, sticky='nsew')
         ctrl_panel.grid_columnconfigure(0, weight=1)
@@ -1807,7 +1807,7 @@ class EmotionRecognitionApp:
 
         self.voice_status_label = ttk.Label(
             status_frame,
-            text="Not started",
+            text=" Not started",
             style='Dark.TLabel',
             font=('Segoe UI', 10),
             wraplength=250,
@@ -1817,7 +1817,7 @@ class EmotionRecognitionApp:
         # Wake word indicator
         self.voice_wake_indicator = ttk.Label(
             status_frame,
-            text="Waiting for wake word",
+            text=" Waiting for wake word",
             style='Dark.TLabel',
             font=('Segoe UI', 9, 'italic'),
         )
@@ -1831,7 +1831,7 @@ class EmotionRecognitionApp:
 
         self.voice_start_btn = ttk.Button(
             btn_frame,
-            text="Start Listening",
+            text=" Start Listening",
             style='Gesture.TButton',
             command=self._start_voice_assistant
         )
@@ -1839,7 +1839,7 @@ class EmotionRecognitionApp:
 
         self.voice_stop_btn = ttk.Button(
             btn_frame,
-            text="Stop",
+            text=" Stop",
             style='Dark.TButton',
             command=self._stop_voice_assistant,
             state='disabled'
@@ -1850,7 +1850,7 @@ class EmotionRecognitionApp:
         self.voice_bg_var = tk.BooleanVar(value=False)
         bg_check = tk.Checkbutton(
             btn_frame,
-            text="Background Mode",
+            text=" Background Mode",
             variable=self.voice_bg_var,
             command=self._toggle_voice_background,
             bg=self.colors['bg_primary'],
@@ -1887,7 +1887,7 @@ class EmotionRecognitionApp:
         ctrl_panel.grid_rowconfigure(3, weight=1)
 
         ttk.Label(
-            cmd_frame, text="Quick Command Reference",
+            cmd_frame, text=" Quick Command Reference",
             style='Dark.TLabel',
             font=('Segoe UI', 11, 'bold')
         ).pack(anchor='w')
@@ -1897,20 +1897,20 @@ class EmotionRecognitionApp:
             "  • Open Notepad / Calculator / Explorer\n"
             "  • Task Manager / Settings / CMD / PowerShell\n"
             "  • Word / Excel / PowerPoint / Camera\n\n"
-            " Web & Search:\n"
+            " Web and Search:\n"
             "  • Open YouTube / Google / Gmail / GitHub\n"
             "  • Open Reddit / Twitter / Netflix / Spotify\n"
             "  • Search for [topic] / Search YouTube [topic]\n\n"
-            " Volume & Media:\n"
+            " Volume and Media:\n"
             "  • Volume up / down / mute / max / min\n"
             "  • Set volume to [0-100] / Play / Pause\n\n"
             " Gesture Mouse:\n"
             "  • Enable mouse / Enable gesture mouse\n"
             "  • Disable mouse / Disable gesture\n\n"
-            " Mouse & Click:\n"
+            " Mouse and Click:\n"
             "  • Click / Double click / Right click\n"
             "  • Move mouse [direction]\n\n"
-            " Keyboard & Typing:\n"
+            " Keyboard and Typing:\n"
             "  • Copy / Paste / Cut / Undo / Redo\n"
             "  • Type [text] / Save / Save as / Print\n"
             "  • New tab / Close tab / Reopen tab\n\n"
@@ -1925,7 +1925,7 @@ class EmotionRecognitionApp:
             "  • Lock screen / Brightness up-down\n"
             "  • Wi-Fi / Bluetooth / Sound settings\n"
             "  • Battery status / Date / Time\n\n"
-            " Fun & Utility:\n"
+            " Fun and Utility:\n"
             "  • Tell me a joke / Motivate me\n"
             "  • Set timer [N] seconds\n\n"
             " Control:\n"
@@ -1950,7 +1950,7 @@ class EmotionRecognitionApp:
         self.main_notebook.select(self.voice_tab)
 
         # Add welcome message
-        self._voice_log("Welcome to Moody Voice Assistant!", "system")
+        self._voice_log("Welcome to Moody Voice Assistant! ", "system")
         self._voice_log("Click 'Start Listening' and then say 'Hey Moody' to begin.", "system")
 
     def _close_voice_tab(self):
@@ -1994,11 +1994,11 @@ class EmotionRecognitionApp:
                 # Update wake indicator
                 if self.voice_wake_indicator:
                     if "Awake" in status or "command" in status.lower():
-                        self.voice_wake_indicator.configure(text="🟢 Awake — say a command!")
+                        self.voice_wake_indicator.configure(text=" Awake  say a command!")
                     elif "Sleeping" in status or "Waiting" in status:
-                        self.voice_wake_indicator.configure(text="💤 Waiting for 'Hey Moody'")
+                        self.voice_wake_indicator.configure(text=" Waiting for 'Hey Moody'")
                     elif "stopped" in status.lower():
-                        self.voice_wake_indicator.configure(text="⏹ Not active")
+                        self.voice_wake_indicator.configure(text="Not active")
             self.root.after(0, _do)
         except Exception:
             pass
@@ -2008,7 +2008,7 @@ class EmotionRecognitionApp:
         try:
             def _do():
                 if self.voice_wake_indicator:
-                    self.voice_wake_indicator.configure(text="Awake — say a command!")
+                    self.voice_wake_indicator.configure(text=" Awake  say a command!")
             self.root.after(0, _do)
         except Exception:
             pass
@@ -2017,28 +2017,48 @@ class EmotionRecognitionApp:
         """Toggle gesture mouse control from voice command."""
         try:
             if action == "enable":
-                if not self.detection_active or self.cap is None:
-                    self._voice_log("Start detection first before enabling gesture mouse.", "error")
+                # Auto initialize camera if not available
+                if self.cap is None:
+                    self._voice_log("Initializing camera for gesture control...", "system")
+                    try:
+                        self.setup_camera()
+                    except Exception:
+                        pass
+                if self.cap is None:
+                    self._voice_log("Camera is not available. Cannot enable gesture mouse.", "error")
                     return
+
                 if not self.gesture_controller.running:
                     self.gesture_controller.start(self.cap)
-                    self.gesture_btn.configure(text="\U0001f590\ufe0f Disable Gestures")
-                    self.gesture_status_label.configure(
-                        text="Gesture Control: ON (Show 5 fingers to activate mouse)"
-                    )
-                    if self.popup_gesture_btn is not None and self.popup_gesture_btn.winfo_exists():
-                        self.popup_gesture_btn.configure(text="\U0001f590\ufe0f Disable Gestures")
-                        self.popup_gesture_btn.state(["!disabled"])
+                    # Update UI elements safely from any thread
+                    def _update_ui():
+                        try:
+                            self.gesture_btn.configure(text="\U0001f590\ufe0f Disable Gestures")
+                            self.gesture_btn.configure(state='normal')
+                            self.gesture_status_label.configure(
+                                text="Gesture Control: ON (Show 5 fingers to activate mouse)"
+                            )
+                            if self.popup_gesture_btn is not None and self.popup_gesture_btn.winfo_exists():
+                                self.popup_gesture_btn.configure(text="\U0001f590\ufe0f Disable Gestures")
+                                self.popup_gesture_btn.state(["!disabled"])
+                        except Exception:
+                            pass
+                    self.root.after(0, _update_ui)
                     self._voice_log("Gesture mouse control ENABLED.", "system")
                 else:
                     self._voice_log("Gesture mouse is already enabled.", "system")
             elif action == "disable":
                 if self.gesture_controller.running:
                     self.gesture_controller.stop()
-                    self.gesture_btn.configure(text="\U0001f590\ufe0f Enable Gestures")
-                    self.gesture_status_label.configure(text="Gesture Control: OFF")
-                    if self.popup_gesture_btn is not None and self.popup_gesture_btn.winfo_exists():
-                        self.popup_gesture_btn.configure(text="\U0001f590\ufe0f Enable Gestures")
+                    def _update_ui():
+                        try:
+                            self.gesture_btn.configure(text="\U0001f590\ufe0f Enable Gestures")
+                            self.gesture_status_label.configure(text="Gesture Control: OFF")
+                            if self.popup_gesture_btn is not None and self.popup_gesture_btn.winfo_exists():
+                                self.popup_gesture_btn.configure(text="\U0001f590\ufe0f Enable Gestures")
+                        except Exception:
+                            pass
+                    self.root.after(0, _update_ui)
                     self._voice_log("Gesture mouse control DISABLED.", "system")
                 else:
                     self._voice_log("Gesture mouse is already disabled.", "system")
@@ -2062,7 +2082,7 @@ class EmotionRecognitionApp:
         if success:
             self.voice_start_btn.configure(state='disabled')
             self.voice_stop_btn.configure(state='normal')
-            self.speech_btn.configure(text="Speech ON", style='Gesture.TButton')
+            self.speech_btn.configure(text=" Speech ON", style='Gesture.TButton')
         else:
             self._voice_log("Failed to start voice assistant. Check microphone.", "error")
 
@@ -2072,7 +2092,7 @@ class EmotionRecognitionApp:
             self.voice_assistant.stop()
         self.voice_start_btn.configure(state='normal')
         self.voice_stop_btn.configure(state='disabled')
-        self.speech_btn.configure(text="Enable Speech", style='Gesture.TButton')
+        self.speech_btn.configure(text=" Enable Speech", style='Gesture.TButton')
 
     def _toggle_voice_background(self):
         """Toggle voice assistant background mode."""
@@ -2080,7 +2100,7 @@ class EmotionRecognitionApp:
             enabled = self.voice_bg_var.get()
             self.voice_assistant.toggle_background(enabled)
             if enabled:
-                self._voice_log("Background mode ON — assistant keeps listening even when you switch tabs.", "system")
+                self._voice_log("Background mode ON  assistant keeps listening even when you switch tabs.", "system")
             else:
                 self._voice_log("Background mode OFF.", "system")
         elif self.voice_bg_var and self.voice_bg_var.get():
@@ -2185,7 +2205,7 @@ class EmotionRecognitionApp:
     
     def _populate_week_stats(self, parent):
         """Populate this week's statistics"""
-        # Filter week's emotions
+        # Filter this week's emotions
         week_ago = datetime.now() - timedelta(days=7)
         week_emotions = [
             entry for entry in self.emotion_log
@@ -2203,7 +2223,7 @@ class EmotionRecognitionApp:
         
         ttk.Label(
             parent,
-            text="Weekly Summary",
+            text=" Weekly Summary",
             style='Dark.TLabel',
             font=('Segoe UI', 12, 'bold')
         ).pack(pady=(0, 15))
@@ -2221,7 +2241,7 @@ class EmotionRecognitionApp:
         
         ttk.Label(
             parent,
-            text="\nTop Emotions This Week",
+            text="\n Top Emotions This Week",
             style='Dark.TLabel',
             font=('Segoe UI', 11, 'bold')
         ).pack(pady=10)
@@ -2273,7 +2293,7 @@ class EmotionRecognitionApp:
         """Populate achievements and goals"""
         ttk.Label(
             parent,
-            text="🏆 Achievements & Goals",
+            text=" Achievements and Goals",
             style='Dark.TLabel',
             font=('Segoe UI', 12, 'bold')
         ).pack(pady=(0, 20))
@@ -2289,7 +2309,7 @@ class EmotionRecognitionApp:
             
             ttk.Label(
                 achievement_frame,
-                text="🧘 Calm Streak",
+                text=" Calm Streak",
                 style='Dark.TLabel',
                 font=('Segoe UI', 11, 'bold')
             ).pack(anchor='w')
@@ -2608,7 +2628,7 @@ class EmotionRecognitionApp:
         # Title
         ttk.Label(
             scrollable_frame,
-            text=" Patterns & Insights",
+            text=" Patterns and Insights",
             style='Title.TLabel'
         ).pack(pady=(0, 20))
         
@@ -2688,7 +2708,7 @@ class EmotionRecognitionApp:
         
         ttk.Label(
             insights_frame,
-            text="Personalized Insights",
+            text=" Personalized Insights",
             style='Dark.TLabel',
             font=('Segoe UI', 12, 'bold')
         ).pack(anchor='w')
@@ -2712,7 +2732,7 @@ class EmotionRecognitionApp:
         
         ttk.Label(
             rec_frame,
-            text="Recommendations",
+            text=" Recommendations",
             style='Dark.TLabel',
             font=('Segoe UI', 12, 'bold')
         ).pack(anchor='w')
@@ -2746,7 +2766,7 @@ class EmotionRecognitionApp:
         for rec in recommendations:
             ttk.Label(
                 rec_frame,
-                text=f"✓ {rec}",
+                text=f" {rec}",
                 style='Dark.TLabel',
                 wraplength=600
             ).pack(anchor='w', padx=20, pady=3)
@@ -2756,13 +2776,13 @@ class EmotionRecognitionApp:
         bar_frame = tk.Frame(parent, bg='#3a3a3a', height=20)
         bar_frame.pack(fill='x', padx=20, pady=5)
         
-        # Calculate fill width (max 560px with padding)
+        # Calculate fill width 
         fill_width = int((value / 100) * 560)
         fill_bar = tk.Frame(bar_frame, bg=color, height=20, width=fill_width)
         fill_bar.place(x=0, y=0)
 
-    # SPECIFIC SONG METHODS 
-    # Happy songs
+    #  SPECIFIC SONG METHODS 
+    #  Happy songs 
     def song_happy_pharrell(self):
         webbrowser.open("https://www.youtube.com/watch?v=ZbZSe6N_BXs")
         messagebox.showinfo(" Now Playing", '"Happy" by Pharrell Williams\nBecause you\'re happy!')
@@ -2775,7 +2795,7 @@ class EmotionRecognitionApp:
         webbrowser.open("https://www.youtube.com/watch?v=SmbmeOgWsqE")
         messagebox.showinfo(" Now Playing", '"Good as Hell" by Lizzo\nFeeling good as hell!')
 
-    # sad songs
+    #  Sad songs 
     def song_fix_you(self):
         webbrowser.open("https://www.youtube.com/watch?v=k4V3Mo61fJM")
         messagebox.showinfo(" Now Playing", '"Fix You" by Coldplay\nLights will guide you home...')
@@ -2788,7 +2808,7 @@ class EmotionRecognitionApp:
         webbrowser.open("https://www.youtube.com/watch?v=KQetemT1sWc")
         messagebox.showinfo(" Now Playing", '"Here Comes the Sun" by The Beatles\nIt\'s alright...')
 
-    # Angry songs
+    #  Angry songs 
     def song_weightless(self):
         webbrowser.open("https://www.youtube.com/watch?v=UfcAVejslrU")
         messagebox.showinfo(" Now Playing", '"Weightless" by Marconi Union\nScientifically proven to reduce anxiety by 65%.')
@@ -2801,7 +2821,7 @@ class EmotionRecognitionApp:
         webbrowser.open("https://www.youtube.com/watch?v=QDYfEBY9NM4")
         messagebox.showinfo(" Now Playing", '"Let It Be" by The Beatles\nLet it be...')
 
-    # Fear songs
+    #  Fear songs 
     def song_over_the_rainbow(self):
         webbrowser.open("https://www.youtube.com/watch?v=V1bFr2SWP1I")
         messagebox.showinfo(" Now Playing", '"Somewhere Over the Rainbow" by Israel Kamakawiwo\'ole\nYou are safe.')
@@ -2814,20 +2834,20 @@ class EmotionRecognitionApp:
         webbrowser.open("https://www.youtube.com/watch?v=zaGUr6wBO-A")
         messagebox.showinfo(" Now Playing", '"Three Little Birds" by Bob Marley\nEvery little thing is gonna be alright.')
 
-    # Surprise songs
+    #  Surprise songs 
     def song_dont_stop_me_now(self):
         webbrowser.open("https://www.youtube.com/watch?v=HgzGwKwLmgM")
         messagebox.showinfo(" Now Playing", '"Don\'t Stop Me Now" by Queen\nI\'m having such a good time!')
 
     def song_celebration(self):
         webbrowser.open("https://www.youtube.com/watch?v=3GwjfUFyY6M")
-        messagebox.showinfo(" Now Playing", '"Celebration" by Kool & The Gang\nCelebrate good times!')
+        messagebox.showinfo(" Now Playing", '"Celebration" by Kool and The Gang\nCelebrate good times!')
 
     def song_walking_on_sunshine(self):
         webbrowser.open("https://www.youtube.com/watch?v=iPUmE-tne5U")
-        messagebox.showinfo(" Now Playing", '"Walking on Sunshine" by Katrina & The Waves\nAnd don\'t it feel good!')
+        messagebox.showinfo(" Now Playing", '"Walking on Sunshine" by Katrina and The Waves\nAnd don\'t it feel good!')
 
-    # Disgust songs
+    #  Disgust songs 
     def song_wonderful_world(self):
         webbrowser.open("https://www.youtube.com/watch?v=A3yCcXgbKrE")
         messagebox.showinfo(" Now Playing", '"What a Wonderful World" by Louis Armstrong\nSee the beauty around you.')
@@ -2840,7 +2860,7 @@ class EmotionRecognitionApp:
         webbrowser.open("https://www.youtube.com/watch?v=CvFH_6DNRCY")
         messagebox.showinfo(" Now Playing", '"Clair de Lune" by Debussy\nPure, elegant calm.')
 
-    # Neutral songs
+    #  Neutral songs 
     def song_bohemian_rhapsody(self):
         webbrowser.open("https://www.youtube.com/watch?v=fJ9rUzIMcZQ")
         messagebox.showinfo(" Now Playing", '"Bohemian Rhapsody" by Queen\nA masterpiece to enjoy.')
@@ -2853,8 +2873,8 @@ class EmotionRecognitionApp:
         webbrowser.open("https://www.youtube.com/watch?v=jfKfPfyJRdk")
         messagebox.showinfo(" Now Playing", '"Lofi Hip Hop Radio"\nBeats to relax/study to.')
 
-    # SPECIFIC GAME METHODS
-    # Happy games 
+    #  SPECIFIC GAME METHODS 
+    #  Happy games 
     def game_pacman(self):
         webbrowser.open("https://www.google.com/logos/2010/pacman10-i.html")
         messagebox.showinfo(" Game Time", "Play Pac-Man right in your browser!\nGoogle's classic Pac-Man game.")
@@ -2863,55 +2883,55 @@ class EmotionRecognitionApp:
         webbrowser.open("https://www.crazygames.com/game/friday-night-funkin")
         messagebox.showinfo(" Game Time", "Friday Night Funkin'!\nBeat your opponents in epic music battles!")
 
-    # Sad games
+    #  Sad games 
     def game_little_alchemy(self):
         webbrowser.open("https://www.crazygames.com/game/little-alchemy")
         messagebox.showinfo(" Game Time", "Little Alchemy!\nMix elements and discover new things. Gentle and creative!")
 
     def game_bubble_shooter(self):
         webbrowser.open("https://www.crazygames.com/game/bubble-shooter-classic")
-        messagebox.showinfo(" Game Time", "Bubble Shooter!\nPop bubbles — simple, satisfying, and soothing.")
+        messagebox.showinfo(" Game Time", "Bubble Shooter!\nPop bubbles  simple, satisfying, and soothing.")
 
-    # Angry games 
+    #  Angry games 
     def game_slice_master(self):
         webbrowser.open("https://www.crazygames.com/game/slice-master")
         messagebox.showinfo(" Game Time", "Slice Master!\nSlash and slice everything in sight to release tension!")
 
     def game_punchers(self):
         webbrowser.open("https://www.crazygames.com/game/punchers")
-        messagebox.showinfo(" Game Time", "Punchers!\nPhysics-based boxing — punch it out safely!")
+        messagebox.showinfo(" Game Time", "Punchers!\nPhysics-based boxing  punch it out safely!")
 
-    # Fear games
+    #  Fear games 
     def game_mahjong_solitaire(self):
         webbrowser.open("https://www.crazygames.com/game/mahjongg-solitaire")
         messagebox.showinfo(" Game Time", "Mahjong Solitaire!\nA calm, meditative tile-matching puzzle.")
 
     def game_color_fill(self):
         webbrowser.open("https://www.crazygames.com/game/color-fill-3d")
-        messagebox.showinfo(" Game Time", "Color Fill 3D!\nFill colors peacefully — simple and calming.")
+        messagebox.showinfo(" Game Time", "Color Fill 3D!\nFill colors peacefully  simple and calming.")
 
-    # Surprise games
+    #  Surprise games 
     def game_agario(self):
         webbrowser.open("https://agar.io")
         messagebox.showinfo(" Game Time", "Agar.io!\nGrow, eat, and surprise others!")
 
     def game_helix_jump(self):
         webbrowser.open("https://www.crazygames.com/game/helix-jump")
-        messagebox.showinfo(" Game Time", "Helix Jump!\nBounce your way down — exciting and addictive!")
+        messagebox.showinfo(" Game Time", "Helix Jump!\nBounce your way down  exciting and addictive!")
 
-    # Disgust games
+    #  Disgust games 
     def game_tile_guru(self):
         webbrowser.open("https://www.crazygames.com/game/tile-guru")
-        messagebox.showinfo(" Game Time", "Tile Guru!\nZen-inspired tile matching — peaceful and relaxing.")
+        messagebox.showinfo(" Game Time", "Tile Guru!\nZen-inspired tile matching  peaceful and relaxing.")
 
     def game_jigsaw_puzzle(self):
         webbrowser.open("https://www.jigsawplanet.com")
         messagebox.showinfo(" Game Time", "Solve beautiful jigsaw puzzles!\nFocus on something lovely.")
 
-    # Neutral games
+    #  Neutral games 
     def game_2048(self):
         webbrowser.open("https://play2048.co")
-        messagebox.showinfo(" Game Time", "Play 2048!\nClassic brain teaser — how high can you score?")
+        messagebox.showinfo(" Game Time", "Play 2048!\nClassic brain teaser  how high can you score?")
 
     def game_tetris(self):
         webbrowser.open("https://tetris.com/play-tetris")
@@ -2921,7 +2941,7 @@ class EmotionRecognitionApp:
         webbrowser.open("https://www.chess.com/play/online")
         messagebox.showinfo(" Game Time", "Play Chess online!\nChallenge your mind.")
 
-    # ALL ACTION METHODS 
+    #  ALL ACTION METHODS 
     def play_upbeat_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=upbeat+happy+music+playlist")
         messagebox.showinfo(" Music", "Opening upbeat music to match your mood!")
@@ -2993,7 +3013,7 @@ class EmotionRecognitionApp:
     
     def open_stress_relief(self):
         webbrowser.open("https://www.youtube.com/results?search_query=virtual+stress+relief+activities")
-        messagebox.showinfo("Relief", "Let it out in a healthy way!")
+        messagebox.showinfo(" Relief", "Let it out in a healthy way!")
     
     def show_anger_tips(self):
         tips = [
@@ -3006,7 +3026,7 @@ class EmotionRecognitionApp:
             "Squeeze a stress ball",
             "Step away from the situation"
         ]
-        messagebox.showinfo("Anger Management", f"Try this:\n\n{np.random.choice(tips)}")
+        messagebox.showinfo(" Anger Management", f"Try this:\n\n{np.random.choice(tips)}")
     
     def suggest_productive_activity(self):
         activities = [
@@ -3017,7 +3037,7 @@ class EmotionRecognitionApp:
             "Work on a project",
             "Plan tomorrow's tasks"
         ]
-        messagebox.showinfo("Productive", f"Channel your energy:\n\n{np.random.choice(activities)}")
+        messagebox.showinfo(" Productive", f"Channel your energy:\n\n{np.random.choice(activities)}")
     
     def show_cooldown_tips(self):
         messagebox.showinfo(
@@ -3035,23 +3055,23 @@ class EmotionRecognitionApp:
 
     def show_safety_resources(self):
         messagebox.showinfo(
-            "Safety",
+            " Safety",
             "Resources:\n• Crisis Helpline: 988\n• Emergency: 911\n• Crisis Text: HOME to 741741"
         )
     
     def open_support_chat(self):
         webbrowser.open("https://www.7cups.com")
-        messagebox.showinfo("Support", "Connect with trained listeners.")
+        messagebox.showinfo(" Support", "Connect with trained listeners.")
     
     def play_anxiety_relief(self):
         webbrowser.open("https://www.youtube.com/results?search_query=anxiety+relief+calming+sounds")
-        messagebox.showinfo("Calm", "Soothing sounds to ease anxiety...")
+        messagebox.showinfo(" Calm", "Soothing sounds to ease anxiety...")
     
     def show_grounding_techniques(self):
-        messagebox.showinfo("Grounding", "5-4-3-2-1 Technique:\n5 see • 4 touch • 3 hear • 2 smell • 1 taste")
+        messagebox.showinfo(" Grounding", "5-4-3-2-1 Technique:\n5 see • 4 touch • 3 hear • 2 smell • 1 taste")
     
     def show_peace_guide(self):
-        messagebox.showinfo("Peace", "Focus on breathing. You are safe. This will pass.")
+        messagebox.showinfo(" Peace", "Focus on breathing. You are safe. This will pass.")
 
     def open_video_recorder(self):
         if platform.system() == "Windows":
@@ -3065,7 +3085,7 @@ class EmotionRecognitionApp:
     
     def open_exciting_content(self):
         webbrowser.open("https://www.youtube.com/results?search_query=exciting+amazing+moments")
-        messagebox.showinfo("Exciting", "More amazing content for you!")
+        messagebox.showinfo(" Exciting", "More amazing content for you!")
     
     def show_reflection_prompt(self):
         prompts = [
@@ -3085,7 +3105,7 @@ class EmotionRecognitionApp:
             "Organize your space",
             "Change into clean clothes"
         ]
-        messagebox.showinfo("Cleansing", f"Try this:\n\n{np.random.choice(tips)}")
+        messagebox.showinfo(" Cleansing", f"Try this:\n\n{np.random.choice(tips)}")
     
     def show_comfort_recipes(self):
         webbrowser.open("https://www.youtube.com/results?search_query=comfort+food+recipes")
@@ -3093,13 +3113,13 @@ class EmotionRecognitionApp:
     
     def open_art_therapy(self):
         webbrowser.open("https://www.youtube.com/results?search_query=art+therapy+relaxing")
-        messagebox.showinfo("Art Therapy", "Express yourself through art!")
+        messagebox.showinfo(" Art Therapy", "Express yourself through art!")
     
     def show_cleansing_visualization(self):
-        messagebox.showinfo("Visualization","Imagine a waterfall washing away the negativity.")
+        messagebox.showinfo(" Visualization","Imagine a waterfall washing away the negativity.")
     
     def show_space_reset_tips(self):
-        messagebox.showinfo("Space Reset","Open windows, clear clutter, play uplifting music.")
+        messagebox.showinfo(" Space Reset","Open windows, clear clutter, play uplifting music.")
 
     def discover_music(self):
         webbrowser.open("https://www.youtube.com/results?search_query=music+discovery+mix")
@@ -3107,15 +3127,15 @@ class EmotionRecognitionApp:
     
     def open_learning_resources(self):
         webbrowser.open("https://www.coursera.org")
-        messagebox.showinfo("Learn", "Explore free courses.")
+        messagebox.showinfo(" Learn", "Explore free courses.")
     
     def open_productivity(self):
         webbrowser.open("https://todoist.com")
-        messagebox.showinfo("Productivity", "Get organized.")
+        messagebox.showinfo(" Productivity", "Get organized.")
     
     def explore_interests(self):
         webbrowser.open("https://www.youtube.com/")
-        messagebox.showinfo("Explore", "Discover something new today!")
+        messagebox.showinfo(" Explore", "Discover something new today!")
     
     def open_planner(self):
         try:
@@ -3131,11 +3151,11 @@ class EmotionRecognitionApp:
     
     def open_brain_games(self):
         webbrowser.open("https://www.lumosity.com")
-        messagebox.showinfo("Brain Games", "Challenge your mind!")
+        messagebox.showinfo(" Brain Games", "Challenge your mind!")
     
     def open_reading(self):
         webbrowser.open("https://medium.com")
-        messagebox.showinfo("Reading", "Discover interesting articles.")
+        messagebox.showinfo(" Reading", "Discover interesting articles.")
     
     def open_goal_setting(self):
         self.open_journal()
@@ -3159,27 +3179,27 @@ class EmotionRecognitionApp:
                 messagebox.showinfo(" Games", "Time for some fun online games!")
         else:
             webbrowser.open("https://www.crazygames.com")
-            messagebox.showinfo("Games", "Time for some fun!")
+            messagebox.showinfo(" Games", "Time for some fun!")
     
     def open_youtube(self):
         webbrowser.open("https://www.youtube.com")
-        messagebox.showinfo("YouTube", "Explore videos that interest you!")
+        messagebox.showinfo(" YouTube", "Explore videos that interest you!")
     
     def open_social_media(self):
         webbrowser.open("https://www.twitter.com")
-        messagebox.showinfo("Social", "Connect with your network!")
+        messagebox.showinfo(" Social", "Connect with your network!")
     
     def open_camera_app(self):
         if platform.system() == "Windows":
             try:
                 subprocess.Popen("start microsoft.windows.camera:", shell=True)
-                messagebox.showinfo("Camera", "Camera opened!")
+                messagebox.showinfo(" Camera", "Camera opened!")
             except:
-                messagebox.showinfo("Camera", "Open your camera app to capture moments!")
+                messagebox.showinfo(" Camera", "Open your camera app to capture moments!")
         elif platform.system() == "Darwin":
-            messagebox.showinfo("Camera", "Open Photo Booth to capture moments!")
+            messagebox.showinfo(" Camera", "Open Photo Booth to capture moments!")
         else:
-            messagebox.showinfo("Camera", "Open your camera app to capture moments!")
+            messagebox.showinfo(" Camera", "Open your camera app to capture moments!")
     
     def show_selfcare_tips(self):
         tips = [
@@ -3192,7 +3212,7 @@ class EmotionRecognitionApp:
             "Make a comforting drink",
             "Read a chapter of a book"
         ]
-        messagebox.showinfo("Self-Care", f"Self-care tip:\n\n{np.random.choice(tips)}")
+        messagebox.showinfo(" Self-Care", f"Self-care tip:\n\n{np.random.choice(tips)}")
     
     def show_motivational_quotes(self):
         quotes = [
@@ -3204,14 +3224,14 @@ class EmotionRecognitionApp:
             "Progress, not perfection.",
             "You are capable of amazing things!"
         ]
-        messagebox.showinfo("Motivation", np.random.choice(quotes))
+        messagebox.showinfo(" Motivation", np.random.choice(quotes))
     
     def open_meditation(self):
         webbrowser.open("https://www.youtube.com/results?search_query=guided+meditation+10+minutes")
-        messagebox.showinfo("Meditation", "Find inner peace with guided meditation!")
+        messagebox.showinfo(" Meditation", "Find inner peace with guided meditation!")
     
     def start_breathing_exercise(self):
-        messagebox.showinfo("🌬️ Breathing Exercise","IN 4 • HOLD 4 • OUT 6 • HOLD 2\nRepeat 5–10 times.")
+        messagebox.showinfo(" Breathing Exercise","IN 4 • HOLD 4 • OUT 6 • HOLD 2\nRepeat 5–10 times.")
     
     def suggest_exercise(self):
         exercises = [
@@ -3232,10 +3252,10 @@ class EmotionRecognitionApp:
                 subprocess.Popen(["open", "-a", "TextEdit"])
             else:
                 subprocess.Popen(["gedit"])
-            messagebox.showinfo("Journal", "Express your thoughts in writing!")
+            messagebox.showinfo(" Journal", "Express your thoughts in writing!")
         except:
             webbrowser.open("https://docs.google.com")
-            messagebox.showinfo("Journal", "Opening Google Docs for journaling!")
+            messagebox.showinfo(" Journal", "Opening Google Docs for journaling!")
     
     def show_emergency_contacts(self):
         messagebox.showinfo(
@@ -3251,7 +3271,7 @@ class EmotionRecognitionApp:
             "I am resilient.",
             "I deserve peace and happiness."
         ]
-        messagebox.showinfo("Affirmation", np.random.choice(affirmations))
+        messagebox.showinfo(" Affirmation", np.random.choice(affirmations))
     
     def show_celebration_ideas(self):
         ideas = [
@@ -3261,13 +3281,13 @@ class EmotionRecognitionApp:
             "Happy dance",
             "Journal the moment"
         ]
-        messagebox.showinfo("Celebrate", f"Try this:\n\n{np.random.choice(ideas)}")
+        messagebox.showinfo(" Celebrate", f"Try this:\n\n{np.random.choice(ideas)}")
     
     def show_nature_content(self):
         webbrowser.open("https://www.youtube.com/results?search_query=beautiful+nature+scenery+4k+relaxing")
-        messagebox.showinfo("Nature", "Immerse yourself in beautiful nature!")
+        messagebox.showinfo(" Nature", "Immerse yourself in beautiful nature!")
     
-    # REPORT GENERATION 
+    #  REPORT GENERATION 
     def generate_report_dialog(self):
         """Show dialog to choose report format"""
         if not self.current_user:
@@ -3293,7 +3313,7 @@ class EmotionRecognitionApp:
         frame = ttk.Frame(dialog, style='Dark.TFrame', padding=20)
         frame.pack(fill='both', expand=True)
         
-        ttk.Label(frame, text="Generate Emotion Report", style='Title.TLabel').pack(pady=(0, 20))
+        ttk.Label(frame, text=" Generate Emotion Report", style='Title.TLabel').pack(pady=(0, 20))
         ttk.Label(frame, text=f"User: {self.current_user}", style='Dark.TLabel', font=('Segoe UI', 10)).pack(pady=5)
         ttk.Label(frame, text=f"Total Emotions Logged: {len(self.emotion_log)}", style='Dark.TLabel', font=('Segoe UI', 10)).pack(pady=5)
         
@@ -3302,14 +3322,14 @@ class EmotionRecognitionApp:
         
         ttk.Label(frame, text="\nSelect Report Format:", style='Dark.TLabel', font=('Segoe UI', 11, 'bold')).pack(pady=(15, 10))
         
-        pdf_status = "✓ Available" if REPORTLAB_AVAILABLE else "✗ Install reportlab"
-        ttk.Button(frame, text=f"PDF Report {pdf_status}", style='Gesture.TButton' if REPORTLAB_AVAILABLE else 'Dark.TButton', command=lambda: self._generate_pdf_report(dialog), state='normal' if REPORTLAB_AVAILABLE else 'disabled').pack(fill='x', pady=5)
+        pdf_status = " Available" if REPORTLAB_AVAILABLE else " Install reportlab"
+        ttk.Button(frame, text=f" PDF Report {pdf_status}", style='Gesture.TButton' if REPORTLAB_AVAILABLE else 'Dark.TButton', command=lambda: self._generate_pdf_report(dialog), state='normal' if REPORTLAB_AVAILABLE else 'disabled').pack(fill='x', pady=5)
         
-        excel_status = "✓ Available" if PANDAS_AVAILABLE else "✗ Install pandas"
-        ttk.Button(frame, text=f"Excel Report {excel_status}", style='Gesture.TButton' if PANDAS_AVAILABLE else 'Dark.TButton', command=lambda: self._generate_excel_report(dialog), state='normal' if PANDAS_AVAILABLE else 'disabled').pack(fill='x', pady=5)
+        excel_status = " Available" if PANDAS_AVAILABLE else " Install pandas"
+        ttk.Button(frame, text=f" Excel Report {excel_status}", style='Gesture.TButton' if PANDAS_AVAILABLE else 'Dark.TButton', command=lambda: self._generate_excel_report(dialog), state='normal' if PANDAS_AVAILABLE else 'disabled').pack(fill='x', pady=5)
         
-        ttk.Button(frame, text="JSON Data Export", style='Dark.TButton', command=lambda: self._generate_json_report(dialog)).pack(fill='x', pady=5)
-        ttk.Label(frame, text="\nTip: Install missing libraries to enable all formats", style='Dark.TLabel', font=('Segoe UI', 8, 'italic')).pack(pady=(10, 0))
+        ttk.Button(frame, text=" JSON Data Export", style='Dark.TButton', command=lambda: self._generate_json_report(dialog)).pack(fill='x', pady=5)
+        ttk.Label(frame, text="\ Tip: Install missing libraries to enable all formats", style='Dark.TLabel', font=('Segoe UI', 8, 'italic')).pack(pady=(10, 0))
     
     def _generate_pdf_report(self, dialog):
         """Generate comprehensive PDF report"""

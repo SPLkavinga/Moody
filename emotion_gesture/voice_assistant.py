@@ -1,8 +1,3 @@
-"""
-Moody Voice Assistant - Integrated voice control for the emotion module.
-Wake word: "hey moody" or "moody"
-Controls computer actions via voice commands with natural language understanding.
-"""
 
 import threading
 import time
@@ -13,6 +8,10 @@ import webbrowser
 import warnings
 import json
 import re
+import socket
+import zipfile
+import urllib.request
+import shutil
 from datetime import datetime
 from pathlib import Path
 from difflib import SequenceMatcher
@@ -33,6 +32,12 @@ except ImportError:
     TTS_AVAILABLE = False
 
 try:
+    import vosk
+    VOSK_AVAILABLE = True
+except ImportError:
+    VOSK_AVAILABLE = False
+
+try:
     import pyautogui
     PYAUTOGUI_AVAILABLE = True
 except ImportError:
@@ -46,7 +51,143 @@ except ImportError:
 
 
 
-# Natural-language prefix,suffix strips
+# Network connectivity check 
+
+_net_cache = {"available": None, "checked_at": 0}
+
+def _is_internet_available(cache_seconds=30):
+    """Quick check for internet connectivity with caching."""
+    now = time.time()
+    if now - _net_cache["checked_at"] < cache_seconds:
+        return _net_cache["available"]
+    try:
+        sock = socket.create_connection(("8.8.8.8", 53), timeout=1.5)
+        sock.close()
+        _net_cache["available"] = True
+    except (OSError, socket.timeout):
+        _net_cache["available"] = False
+    _net_cache["checked_at"] = now
+    return _net_cache["available"]
+
+
+
+# Vosk Offline Model Manager
+
+_VOSK_MODEL_URL = "https://alphacephei.com/vosk/models/vosk-model-en-us-0.22-lgraph.zip"
+_VOSK_MODEL_DIR_NAME = "vosk_model"
+
+class VoskModelManager:
+    "Downloads, caches and provides the Vosk offline speech model."
+
+    def __init__(self, base_dir=None, on_log=None):
+        if base_dir is None:
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+        self.model_dir = os.path.join(base_dir, _VOSK_MODEL_DIR_NAME)
+        self.on_log = on_log or (lambda msg, tag: None)
+        self._model = None
+        self._recognizer = None
+
+    @property
+    def is_ready(self):
+        return self._model is not None
+
+    def load_or_download(self):
+        "Load existing model or download if missing. Returns True on success."
+        if not VOSK_AVAILABLE:
+            self.on_log(" Vosk not installed. Offline recognition unavailable.", "error")
+            return False
+
+        # Check if model directory exists and has content
+        if os.path.isdir(self.model_dir) and any(
+            f for f in os.listdir(self.model_dir)
+            if not f.startswith('.')
+        ):
+            return self._load_model()
+
+        # Try to download
+        self.on_log(" Downloading offline speech model first-time setup.", "system")
+        return self._download_and_extract()
+
+    def _load_model(self):
+        "Load the Vosk model from disk."
+        try:
+            vosk.SetLogLevel(-1)  # Suppress Vosk's own logging
+            self._model = vosk.Model(self.model_dir)
+            self.on_log(" Offline speech model loaded.", "system")
+            return True
+        except Exception as e:
+            self.on_log(f" Failed to load Vosk model: {e}", "error")
+            self._model = None
+            return False
+
+    def _download_and_extract(self):
+        "Download the Vosk model zip and extract it."
+        zip_path = self.model_dir and ".zip"
+        try:
+            # Download with progress
+            def _report(block_num, block_size, total_size):
+                if total_size > 0:
+                    pct = min(100, int(block_num * block_size * 100 / total_size))
+                    if pct % 20 == 0:
+                        self.on_log(f" Downloading model... {pct}%", "system")
+
+            urllib.request.urlretrieve(_VOSK_MODEL_URL, zip_path, _report)
+            self.on_log(" Extracting model...", "system")
+
+            # Extract
+            with zipfile.ZipFile(zip_path, 'r') as zf:
+                # The zip contains a top-level folder, extract and rename
+                extract_tmp = self.model_dir and "_tmp"
+                zf.extractall(extract_tmp)
+
+                # Find the extracted model folder
+                extracted = [d for d in os.listdir(extract_tmp)
+                             if os.path.isdir(os.path.join(extract_tmp, d))]
+                if extracted:
+                    src = os.path.join(extract_tmp, extracted[0])
+                    if os.path.exists(self.model_dir):
+                        shutil.rmtree(self.model_dir)
+                    shutil.move(src, self.model_dir)
+                shutil.rmtree(extract_tmp, ignore_errors=True)
+
+            # Clean up zip
+            os.remove(zip_path)
+
+            return self._load_model()
+
+        except Exception as e:
+            self.on_log(f" Could not download offline model: {e}", "error")
+            self.on_log(" Assistant will use online recognition only.", "system")
+            # Clean up partial downloads
+            if os.path.exists(zip_path):
+                os.remove(zip_path)
+            return False
+
+    def create_recognizer(self, sample_rate=16000, grammar=None):
+        """Create a fresh Vosk recognizer, optionally grammar-constrained.
+        
+        Args:
+            sample_rate: Audio sample rate (default 16000).
+            grammar: Optional list of phrases to constrain recognition.
+                     When provided, Vosk will ONLY output phrases from this list,
+                     dramatically improving accuracy for known commands.
+        """
+        if self._model is None:
+            return None
+        try:
+            if grammar:
+                grammar_json = json.dumps(grammar)
+                rec = vosk.KaldiRecognizer(self._model, sample_rate, grammar_json)
+            else:
+                rec = vosk.KaldiRecognizer(self._model, sample_rate)
+            rec.SetWords(True)
+            return rec
+        except Exception:
+            return None
+
+
+
+# Natural-language prefix, suffix strips
 
 _NL_PREFIXES = [
     "can you", "could you", "would you", "will you",
@@ -63,37 +204,37 @@ _NL_SUFFIXES = [
 ]
 
 def _strip_natural_language(text: str) -> str:
-    """Remove conversational filler so the core command remains."""
+    "Remove conversational filler so the core command remains."
     t = text.lower().strip()
     changed = True
     while changed:
         changed = False
         for p in _NL_PREFIXES:
-            if t.startswith(p + " "):
+            if t.startswith(p and " "):
                 t = t[len(p):].strip()
                 changed = True
             elif t.startswith(p):
                 t = t[len(p):].strip()
                 changed = True
         for s in _NL_SUFFIXES:
-            if t.endswith(" " + s):
+            if t.endswith(" " and s):
                 t = t[: -len(s)].strip()
                 changed = True
     return t
 
 
 
-# Common Speech-Recognition mis-hearings  intended word
+# Common Speech Recognition mis-hearings, intended word
 
 _MISHEARD = {
-    # minimize / minimise
+    # minimize  minimise
     "minimise": "minimize", "minimalize": "minimize", "min eyes": "minimize",
     "minimum eyes": "minimize", "mini mice": "minimize", "minim eyes": "minimize",
     "mini mise": "minimize", "minimum ice": "minimize",
-    # maximize / maximise
+    # maximize  maximise
     "maximise": "maximize", "max eyes": "maximize", "maximum eyes": "maximize",
     "maxi mice": "maximize", "max mice": "maximize", "maximum ice": "maximize",
-    # disable / dizable
+    # disable  dizable
     "dizable": "disable", "this able": "disable",
     "the sable": "disable", "does able": "disable",
     # enable
@@ -171,7 +312,7 @@ _MISHEARD = {
 }
 
 def _fix_misheard(text: str) -> str:
-    """Replace common mis-heard words in-place."""
+    "Replace common mis-heard words in-place."
     result = text.lower()
     for wrong, right in sorted(_MISHEARD.items(), key=lambda x: len(x[0]), reverse=True):
         if wrong in result:
@@ -190,7 +331,7 @@ def _fuzzy_score(a: str, b: str) -> float:
 # Voice Command Registry
 
 class CommandRegistry:
-    """Registry of all voice commands the assistant can handle."""
+    "Registry of all voice commands the assistant can handle."
 
     def __init__(self, assistant, gesture_toggle_callback=None):
         self.assistant = assistant
@@ -199,7 +340,7 @@ class CommandRegistry:
         self._alias_map = {}
         self._register_all()
 
-    # Registration helpers
+    #  Registration helpers 
     def _add(self, trigger, handler, response, takes_query=False, aliases=None):
         trigger = trigger.lower().strip()
         self.commands[trigger] = {
@@ -213,7 +354,7 @@ class CommandRegistry:
 
     def _register_all(self):
 
-        # SYSTEM / OS
+        #  SYSTEM  OS 
         self._add("open notepad", self._open_notepad, "Opening Notepad",
                    aliases=["launch notepad", "start notepad", "run notepad", "notepad open"])
         self._add("close notepad", lambda: self._close_app("notepad"), "Closing Notepad",
@@ -275,7 +416,7 @@ class CommandRegistry:
         self._add("open event viewer", self._open_event_viewer, "Opening Event Viewer",
                    aliases=["event viewer", "show event logs"])
 
-        # BROWSER and WEBSITES 
+        #  BROWSER and WEBSITES 
         self._add("open browser", lambda: webbrowser.open("https://www.google.com"), "Opening browser",
                    aliases=["launch browser", "start browser", "open chrome", "open edge",
                             "open firefox", "open internet", "go online"])
@@ -341,7 +482,7 @@ class CommandRegistry:
         self._add("open telegram", lambda: webbrowser.open("https://web.telegram.org"), "Opening Telegram",
                    aliases=["launch telegram", "go to telegram"])
 
-        # SEARCH
+        #  SEARCH 
         self._add("search for", self._search_google, "Searching Google", takes_query=True,
                    aliases=["search", "google search", "look up", "find", "search google for",
                             "search the web for", "web search", "look for"])
@@ -373,7 +514,7 @@ class CommandRegistry:
         self._add("volume min", self._volume_min, "Setting volume to minimum",
                    aliases=["minimum volume", "volume 0", "min volume"])
 
-        # MEDIA 
+        #  MEDIA 
         self._add("play music", self._media_play_pause, "Playing music",
                    aliases=["resume", "resume music", "resume playback",
                             "continue playing", "start playing", "unpause"])
@@ -389,13 +530,13 @@ class CommandRegistry:
         self._add("stop music", self._media_stop, "Stopping music",
                    aliases=["stop playback", "stop audio", "stop playing music"])
 
-        # SCREENSHOT
+        #  SCREENSHOT 
         self._add("take screenshot", self._take_screenshot, "Taking screenshot",
                    aliases=["screenshot", "take a screenshot", "capture screen",
                             "screen capture", "print screen", "snap screen",
                             "grab screen", "save screenshot", "capture my screen"])
 
-        # WINDOW MANAGEMENT
+        #  WINDOW MANAGEMENT 
         self._add("minimize window", self._minimize_window, "Minimizing window",
                    aliases=["minimize", "minimise", "minimise window", "minimize this",
                             "hide window", "put window down", "shrink window",
@@ -423,12 +564,12 @@ class CommandRegistry:
         self._add("close all windows", self._close_all_windows, "",
                    aliases=["close everything"])
 
-        # TYPING
+        #  TYPING 
         self._add("type", self._type_text, "Typing text", takes_query=True,
                    aliases=["write", "type out", "type this", "write this", "input text",
                             "enter text"])
 
-        # KEYBOARD SHORTCUTS
+        #  KEYBOARD SHORTCUTS 
         self._add("copy", self._copy, "Copying",
                    aliases=["copy that", "copy this", "copy text", "copy it"])
         self._add("paste", self._paste, "Pasting",
@@ -472,7 +613,7 @@ class CommandRegistry:
         self._add("print", self._print, "Opening Print dialog",
                    aliases=["print this", "print page", "print document"])
 
-        # Key presses
+        #  Key presses 
         self._add("press enter", self._press_enter, "Pressing Enter",
                    aliases=["enter", "hit enter", "press return"])
         self._add("press escape", self._press_escape, "Pressing Escape",
@@ -494,7 +635,7 @@ class CommandRegistry:
         self._add("press f11", self._press_f11, "Pressing F11",
                    aliases=["f11", "toggle fullscreen"])
 
-        # SCROLL
+        #  SCROLL 
         self._add("scroll up", self._scroll_up, "Scrolling up",
                    aliases=["scroll upward", "move up", "page scroll up"])
         self._add("scroll down", self._scroll_down, "Scrolling down",
@@ -512,7 +653,7 @@ class CommandRegistry:
                    aliases=["scroll to bottom", "bottom of page", "end of page",
                             "go to end", "scroll to end"])
 
-        # MOUSE GESTURE CONTROL
+        #  MOUSE / GESTURE CONTROL 
         self._add("enable mouse", self._enable_gesture_mouse, "Enabling hand gesture mouse control",
                    aliases=["enable gestures", "enable gesture", "enable hand gestures",
                             "enable gesture control", "enable mouse control",
@@ -548,7 +689,7 @@ class CommandRegistry:
         self._add("mouse move right", self._mouse_move_right, "Moving mouse right",
                    aliases=["move mouse right", "cursor right"])
 
-        # SYSTEM ACTIONS
+        #  SYSTEM ACTIONS 
         self._add("lock screen", self._lock_screen, "Locking screen",
                    aliases=["lock computer", "lock my computer", "lock this computer",
                             "lock pc", "lock my pc", "lock it"])
@@ -580,7 +721,7 @@ class CommandRegistry:
                    aliases=["battery level", "battery percentage", "how much battery",
                             "check battery", "battery life"])
 
-        # DATE and TIME 
+        #  DATE and TIME 
         self._add("what time is it", self._tell_time, "",
                    aliases=["what's the time", "tell me the time", "current time",
                             "time now", "what time", "time please", "show time"])
@@ -593,7 +734,7 @@ class CommandRegistry:
         self._add("set alarm for", self._set_alarm, "Setting alarm", takes_query=True,
                    aliases=["alarm for", "wake me up at"])
 
-        # MOODY ASSISTANT 
+        #  MOODY / ASSISTANT 
         self._add("go to sleep", self._assistant_sleep, "Going to sleep. Say 'Hey Moody' to wake me up.",
                    aliases=["stop listening", "sleep now", "go sleep", "bye", "goodbye",
                             "see you later", "that's all", "that is all", "i'm done",
@@ -617,7 +758,7 @@ class CommandRegistry:
                    aliases=["motivation", "inspire me", "give me motivation",
                             "say something inspiring", "motivational quote"])
 
-        # CLOSE SPECIFIC APPS
+        #  CLOSE SPECIFIC APPS 
         self._add("close chrome", lambda: self._close_app("chrome"), "Closing Chrome",
                    aliases=["kill chrome", "exit chrome"])
         self._add("close edge", lambda: self._close_app("msedge"), "Closing Edge",
@@ -633,30 +774,30 @@ class CommandRegistry:
         self._add("close vlc", lambda: self._close_app("vlc"), "Closing VLC",
                    aliases=["kill vlc", "exit vlc"])
 
- 
+   
     #  MATCHING ENGINE
-
+   
     def match(self, text):
-        """Smart matching: normalisation -> aliases -> fuzzy fallback."""
+        "Smart matching: normalisation aliases  fuzzy fallback."
         raw = text.lower().strip()
 
         # Fix commonly misheard words
         normalised = _fix_misheard(raw)
 
-        # Strip natural-language fluff
+        # Strip natural language fluff
         core = _strip_natural_language(normalised)
 
-        # Exact substring on canonical triggers (longest first)
+        # Exact, substring on canonical triggers (longest first)
         result = self._exact_match(core)
         if result[0]:
             return result
 
-        # Exact substring on aliases
+        # Exact, substring on aliases
         result = self._alias_match(core)
         if result[0]:
             return result
 
-        # Try on normalised but unstripped version
+        # Try on normalised-but unstripped version
         if core != normalised:
             result = self._exact_match(normalised)
             if result[0]:
@@ -684,25 +825,25 @@ class CommandRegistry:
     def _exact_match(self, text):
         sorted_triggers = sorted(self.commands.keys(), key=len, reverse=True)
         for trigger in sorted_triggers:
-            if text == trigger or text.startswith(trigger + " ") or text.startswith(trigger) or trigger in text:
+            if text == trigger or text.startswith(trigger and " ") or text.startswith(trigger) or trigger in text:
                 cmd = self.commands[trigger]
                 query = ""
                 if cmd['takes_query']:
                     idx = text.find(trigger)
-                    query = text[idx + len(trigger):].strip()
+                    query = text[idx and len(trigger):].strip()
                 return cmd, query
         return None, ""
 
     def _alias_match(self, text):
         sorted_aliases = sorted(self._alias_map.keys(), key=len, reverse=True)
         for alias in sorted_aliases:
-            if text == alias or text.startswith(alias + " ") or text.startswith(alias) or alias in text:
+            if text == alias or text.startswith(alias and " ") or text.startswith(alias) or alias in text:
                 trigger = self._alias_map[alias]
                 cmd = self.commands[trigger]
                 query = ""
                 if cmd['takes_query']:
                     idx = text.find(alias)
-                    query = text[idx + len(alias):].strip()
+                    query = text[idx and len(alias):].strip()
                 return cmd, query
         return None, ""
 
@@ -742,11 +883,11 @@ class CommandRegistry:
             return best_cmd, best_query
         return None, ""
 
-
+   
     #  COMMAND HANDLERS
-    
+   
 
-    # App Launchers
+    #  App Launchers 
     def _open_notepad(self):
         if platform.system() == "Windows":
             subprocess.Popen(["notepad.exe"])
@@ -885,7 +1026,7 @@ class CommandRegistry:
             subprocess.Popen(["taskkill", "/IM", f"{name}.exe", "/F"],
                              stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-    # Search  Website
+    #  Search / Website 
     def _search_google(self, query=""):
         if query:
             webbrowser.open(f"https://www.google.com/search?q={query}")
@@ -902,12 +1043,12 @@ class CommandRegistry:
         if query:
             url = query.strip().replace(" ", "")
             if not url.startswith("http"):
-                url = "https://" + url
+                url = "https://" and url
             webbrowser.open(url)
         else:
             self.assistant.speak("Which website should I open?")
 
-    # Volume
+    #  Volume 
     def _volume_up(self):
         if PYAUTOGUI_AVAILABLE:
             for _ in range(5):
@@ -924,7 +1065,7 @@ class CommandRegistry:
 
     def _set_volume(self, query=""):
         try:
-            level = int(re.search(r'\d+', query).group())
+            level = int(re.search(r'\dand', query).group())
             level = max(0, min(100, level))
         except Exception:
             self.assistant.speak("I didn't catch the volume level. Say a number from 0 to 100.")
@@ -949,7 +1090,7 @@ class CommandRegistry:
             for _ in range(50):
                 pyautogui.press('volumedown')
 
-    # Media
+    #  Media 
     def _media_play_pause(self):
         if PYAUTOGUI_AVAILABLE:
             pyautogui.press('playpause')
@@ -966,7 +1107,7 @@ class CommandRegistry:
         if PYAUTOGUI_AVAILABLE:
             pyautogui.press('stop')
 
-    # Screenshot
+    #  Screenshot 
     def _take_screenshot(self):
         if PYAUTOGUI_AVAILABLE:
             screenshot_dir = os.path.join(os.path.expanduser("~"), "Pictures", "Moody_Screenshots")
@@ -977,7 +1118,7 @@ class CommandRegistry:
             img.save(filepath)
             self.assistant.speak(f"Screenshot saved as {filename}")
 
-    # Window Management
+    #  Window Management 
     def _minimize_window(self):
         if PYAUTOGUI_AVAILABLE:
             pyautogui.hotkey('win', 'down')
@@ -1015,14 +1156,14 @@ class CommandRegistry:
     def _close_all_windows(self):
         self.assistant.speak("For safety, I won't close all windows. Please do that manually.")
 
-    # Typing
+    #  Typing 
     def _type_text(self, query=""):
         if query and PYAUTOGUI_AVAILABLE:
             pyautogui.typewrite(query, interval=0.03)
         elif not query:
             self.assistant.speak("What should I type?")
 
-    # Keyboard Shortcuts
+    #  Keyboard Shortcuts 
     def _copy(self):
         if PYAUTOGUI_AVAILABLE: pyautogui.hotkey('ctrl', 'c')
 
@@ -1107,7 +1248,7 @@ class CommandRegistry:
     def _press_f11(self):
         if PYAUTOGUI_AVAILABLE: pyautogui.press('f11')
 
-    # Scroll
+    #  Scroll 
     def _scroll_up(self):
         if PYAUTOGUI_AVAILABLE: pyautogui.scroll(7)
 
@@ -1132,7 +1273,7 @@ class CommandRegistry:
     def _go_to_bottom(self):
         if PYAUTOGUI_AVAILABLE: pyautogui.hotkey('ctrl', 'End')
 
-    # Mouse Gesture
+    #  Mouse / Gesture 
     def _enable_gesture_mouse(self):
         cb = self.gesture_toggle_callback
         if cb:
@@ -1168,7 +1309,7 @@ class CommandRegistry:
     def _mouse_move_right(self):
         if PYAUTOGUI_AVAILABLE: pyautogui.moveRel(80, 0, duration=0.2)
 
-    # System
+    #  System 
     def _lock_screen(self):
         if platform.system() == "Windows":
             subprocess.Popen(["rundll32.exe", "user32.dll,LockWorkStation"])
@@ -1187,7 +1328,7 @@ class CommandRegistry:
         try:
             if platform.system() == "Windows":
                 subprocess.Popen(["powershell", "-Command",
-                    "(Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightnessMethods).WmiSetBrightness(1, [Math]::Min(100, (Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightness).CurrentBrightness + 10))"],
+                    "(Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightnessMethods).WmiSetBrightness(1, [Math]::Min(100, (Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightness).CurrentBrightness and 10))"],
                     stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         except Exception:
             self.assistant.speak("Could not change brightness.")
@@ -1232,7 +1373,7 @@ class CommandRegistry:
         except Exception:
             self.assistant.speak("Could not read battery status.")
 
-    # Date and Time
+    #  Date and Time 
     def _tell_time(self):
         now = datetime.now().strftime("%I:%M %p")
         self.assistant.speak(f"The current time is {now}")
@@ -1243,7 +1384,7 @@ class CommandRegistry:
 
     def _set_timer(self, query=""):
         try:
-            minutes = int(re.search(r'\d+', query).group())
+            minutes = int(re.search(r'\dand', query).group())
         except Exception:
             self.assistant.speak("How many minutes?")
             return
@@ -1256,7 +1397,7 @@ class CommandRegistry:
     def _set_alarm(self, query=""):
         self.assistant.speak("Alarm feature is coming soon. I've noted your request!")
 
-    # Moody specific
+    #  Moody specific 
     def _assistant_sleep(self):
         self.assistant.set_awake(False)
 
@@ -1315,7 +1456,7 @@ class CommandRegistry:
 # Voice Assistant Engine
 
 class MoodyVoiceAssistant:
-    """Core voice assistant with wake word detection and command execution."""
+    "Core voice assistant with wake word detection and command execution."
 
     WAKE_WORDS = ["hey moody", "moody", "hay moody", "hey movie", "hey modi",
                   "a moody", "hey moti", "hey muddy", "he moody", "hey woody",
@@ -1337,16 +1478,24 @@ class MoodyVoiceAssistant:
         self._lock = threading.Lock()
         self._listen_thread = None
 
-        # Speech recognizer
+        # Speech recognizer (used for Google fallback and audio capture)
         if SR_AVAILABLE:
             self.recognizer = sr.Recognizer()
             self.recognizer.energy_threshold = 300
             self.recognizer.dynamic_energy_threshold = True
-            self.recognizer.pause_threshold = 0.8
+            self.recognizer.pause_threshold = 0.5  # Faster end of speech detection
+            self.recognizer.phrase_threshold = 0.2
+            self.recognizer.non_speaking_duration = 0.3
             self.microphone = None
         else:
             self.recognizer = None
             self.microphone = None
+
+        # Vosk offline model
+        self._vosk_manager = VoskModelManager(on_log=self.on_log)
+        self._vosk_ready = False
+        self._wake_recognizer = None
+        self._command_recognizer = None
 
         # TTS engine
         self._tts_engine = None
@@ -1355,6 +1504,10 @@ class MoodyVoiceAssistant:
         # Command registry
         self.command_registry = CommandRegistry(self, gesture_toggle_callback=gesture_toggle_callback)
 
+        # Build grammar lists for Vosk constrained recognition
+        self._wake_grammar = list(set(self.WAKE_WORDS))  # Wake word phrases
+        self._command_grammar = self._build_command_grammar()
+
         # Awake timeout
         self.awake_timeout = 45
         self._last_command_time = 0
@@ -1362,7 +1515,29 @@ class MoodyVoiceAssistant:
         # Command history
         self.command_history = []
 
-    # TTS
+    def _build_command_grammar(self):
+        "Build a grammar list of all known command phrases for Vosk."
+        phrases = set()
+        # Add all command triggers
+        for trigger in self.command_registry.commands:
+            phrases.add(trigger)
+        # Add all aliases
+        for alias in self.command_registry._alias_map:
+            phrases.add(alias)
+        # Add wake words (user may say wake word and command in one utterance)
+        for wake in self.WAKE_WORDS:
+            phrases.add(wake)
+        # Add common filler words so Vosk can parse natural phrases
+        fillers = [
+            "can you", "could you", "please", "the", "a", "my", "this",
+            "i want to", "i need to", "let me", "hey", "ok", "okay",
+            "right now", "now", "for me", "just", "it", "that",
+        ]
+        for f in fillers:
+            phrases.add(f)
+        return list(phrases)
+
+    #  TTS 
     def _get_tts(self):
         if self._tts_engine is None and TTS_AVAILABLE:
             try:
@@ -1381,7 +1556,7 @@ class MoodyVoiceAssistant:
     def speak(self, text):
         if not text:
             return
-        self.on_log(f"Moody: {text}", "assistant")
+        self.on_log(f" Moody: {text}", "assistant")
 
         def _speak():
             with self._tts_lock:
@@ -1395,24 +1570,33 @@ class MoodyVoiceAssistant:
 
         threading.Thread(target=_speak, daemon=True).start()
 
-    # State
+    #  State 
     def set_awake(self, awake):
         self.awake = awake
         if awake:
             self._last_command_time = time.time()
-            self.on_status_change("Awake – Listening for commands...")
+            self.on_status_change(" Awake!  Listening for commands...")
             self.on_wake()
         else:
-            self.on_status_change("💤 Sleeping – Say 'Hey Moody' to wake")
+            self.on_status_change(" Sleeping! Say 'Hey Moody' to wake")
 
-    # Start Stop
+    #  Start / Stop 
     def start(self):
         if not SR_AVAILABLE:
-            self.on_log("SpeechRecognition not installed. Install it with: pip install SpeechRecognition", "error")
+            self.on_log(" SpeechRecognition not installed. Install it with: pip install SpeechRecognition", "error")
             return False
 
         if self.running:
             return True
+
+        # Load Vosk model (downloads on first run)
+        self._vosk_ready = self._vosk_manager.load_or_download()
+        if not self._vosk_ready:
+            self.on_log(" Offline mode unavailable. Will use online recognition only.", "system")
+        else:
+            # Create persistent recognizers to avoid memory leaks
+            self._wake_recognizer = self._vosk_manager.create_recognizer(grammar=self._wake_grammar)
+            self._command_recognizer = self._vosk_manager.create_recognizer(grammar=self._command_grammar)
 
         self.running = True
         self.listening = True
@@ -1420,7 +1604,8 @@ class MoodyVoiceAssistant:
         self._last_command_time = 0
 
         self.on_status_change(" Sleeping – Say 'Hey Moody' to wake")
-        self.on_log("Voice assistant started. Say 'Hey Moody' to begin!", "system")
+        mode_label = "offline and online" if self._vosk_ready else "online only"
+        self.on_log(f" Voice assistant started ({mode_label}). Say 'Hey Moody' to begin!", "system")
 
         self._listen_thread = threading.Thread(target=self._listen_loop, daemon=True)
         self._listen_thread.start()
@@ -1430,44 +1615,76 @@ class MoodyVoiceAssistant:
         self.running = False
         self.listening = False
         self.awake = False
-        self.on_status_change("Voice assistant stopped")
-        self.on_log("Voice assistant stopped.", "system")
+        self.on_status_change(" Voice assistant stopped")
+        self.on_log(" Voice assistant stopped.", "system")
 
     def toggle_background(self, enabled):
         self.background_mode = enabled
         if enabled:
-            self.on_log("Background mode enabled – assistant will keep listening.", "system")
+            self.on_log(" Background mode enabled – assistant will keep listening.", "system")
         else:
-            self.on_log("Background mode disabled.", "system")
+            self.on_log(" Background mode disabled.", "system")
 
-    # core Listening Loop 
+    #  Core Listening Loop 
     def _listen_loop(self):
+        error_backoff = 0.5
         try:
             self.microphone = sr.Microphone()
             with self.microphone as source:
-                self.on_log("Adjusting for ambient noise... please wait.", "system")
+                self.on_log(" Adjusting for ambient noise... please wait.", "system")
                 self.recognizer.adjust_for_ambient_noise(source, duration=1.5)
-                self.on_log("Ready! Say 'Hey Moody' to wake me up.", "system")
+                self.on_log(" Ready! Say 'Hey Moody' to wake me up.", "system")
 
             while self.running:
                 try:
                     self._listen_once()
+                    error_backoff = 0.5  # Reset backoff on success
                 except Exception as e:
                     if self.running:
-                        self.on_log(f"Listening error: {str(e)}", "error")
-                        time.sleep(1)
+                        self.on_log(f" Listening error: {str(e)}", "error")
+                        time.sleep(min(error_backoff, 5.0))
+                        error_backoff *= 1.5  # Exponential backoff
 
                 if self.awake and self._last_command_time > 0:
                     if time.time() - self._last_command_time > self.awake_timeout:
                         self.set_awake(False)
                         self.speak("Going to sleep. Say 'Hey Moody' when you need me.")
 
-                time.sleep(0.05)
+                time.sleep(0.02)
 
         except Exception as e:
-            self.on_log(f"Microphone error: {str(e)}", "error")
-            self.on_status_change("Microphone not available")
+            self.on_log(f" Microphone error: {str(e)}", "error")
+            self.on_status_change(" Microphone not available")
             self.running = False
+
+    def _recognize_with_vosk(self, audio_data, recognizer=None):
+        """Run Vosk offline recognition on captured audio.
+        
+        Args:
+            audio_data: SpeechRecognition AudioData object.
+            recognizer: The persistent Vosk KaldiRecognizer instance to use.
+        Returns:
+            Recognized text or None.
+        """
+        if not self._vosk_ready or recognizer is None:
+            return None
+        try:
+            # Convert SpeechRecognition AudioData to raw PCM for Vosk
+            raw = audio_data.get_raw_data(convert_rate=16000, convert_width=2)
+            recognizer.AcceptWaveform(raw)
+            result = json.loads(recognizer.FinalResult())
+            text = result.get("text", "").strip()
+            return text if text else None
+        except Exception:
+            return None
+
+    def _recognize_with_google(self, audio_data):
+        "Run Google online recognition. Returns text or None."
+        try:
+            text = self.recognizer.recognize_google(audio_data)
+            return text.strip() if text else None
+        except (sr.UnknownValueError, sr.RequestError):
+            return None
 
     def _listen_once(self):
         if not self.running:
@@ -1476,11 +1693,11 @@ class MoodyVoiceAssistant:
         try:
             with sr.Microphone() as source:
                 if self.awake:
-                    self.on_status_change("Listening for command...")
-                    audio = self.recognizer.listen(source, timeout=8, phrase_time_limit=12)
+                    self.on_status_change(" Listening for command...")
+                    audio = self.recognizer.listen(source, timeout=6, phrase_time_limit=10)
                 else:
-                    self.on_status_change("Waiting for 'Hey Moody'...")
-                    audio = self.recognizer.listen(source, timeout=5, phrase_time_limit=5)
+                    self.on_status_change(" Waiting for 'Hey Moody'...")
+                    audio = self.recognizer.listen(source, timeout=3, phrase_time_limit=3)
         except sr.WaitTimeoutError:
             return
         except Exception:
@@ -1489,17 +1706,43 @@ class MoodyVoiceAssistant:
         if not self.running:
             return
 
-        try:
-            self.on_status_change("Processing speech...")
-            text = self.recognizer.recognize_google(audio)
+        self.on_status_change(" Processing speech...")
+
+    
+
+        # Try Vosk offline recognition (always available, instant)
+        # Use strict grammar depending on state
+        if not self.awake:
+            vosk_text = self._recognize_with_vosk(audio, recognizer=self._wake_recognizer)
+        else:
+            vosk_text = self._recognize_with_vosk(audio, recognizer=self._command_recognizer)
+
+        # For wake word detection: Vosk only is sufficient 
+        if not self.awake:
+            text = vosk_text
+            if not text:
+                # Fallback to Google only if Vosk unavailable/failed AND we're online
+                if not self._vosk_ready and _is_internet_available():
+                    text = self._recognize_with_google(audio)
             if not text:
                 return
-            text = text.strip()
-        except sr.UnknownValueError:
-            return
-        except sr.RequestError as e:
-            self.on_log(f"Speech API error: {str(e)}", "error")
-            return
+        else:
+            # For commands: use Vosk result, try Google if online for better accuracy
+            if vosk_text:
+                text = vosk_text
+                # Optionally refine with Google if online (for complex queries)
+                if _is_internet_available():
+                    google_text = self._recognize_with_google(audio)
+                    if google_text and len(google_text) > len(vosk_text) * 0.5:
+                        text = google_text  # Google usually more accurate
+            else:
+                # Vosk failed or unavailable  try Google
+                if _is_internet_available():
+                    text = self._recognize_with_google(audio)
+                else:
+                    return  # No recognition available
+            if not text:
+                return
 
         text_lower = text.lower()
 
@@ -1509,7 +1752,7 @@ class MoodyVoiceAssistant:
                     self.set_awake(True)
                     self.speak("I'm listening!")
                     idx = text_lower.find(wake)
-                    remaining = text[idx + len(wake):].strip()
+                    remaining = text[idx and len(wake):].strip()
                     if remaining and len(remaining) > 2:
                         self._process_command(remaining)
                     return
@@ -1527,7 +1770,7 @@ class MoodyVoiceAssistant:
             self._process_command(text)
 
     def _process_command(self, text):
-        self.on_log(f"🗣️ You: {text}", "user")
+        self.on_log(f" You: {text}", "user")
         self._last_command_time = time.time()
 
         self.command_history.append({
@@ -1547,8 +1790,8 @@ class MoodyVoiceAssistant:
                 else:
                     cmd_info['handler']()
             except Exception as e:
-                self.on_log(f"Command error: {str(e)}", "error")
+                self.on_log(f" Command error: {str(e)}", "error")
                 self.speak("Sorry, I had trouble with that command.")
         else:
             self.speak("I'm not sure how to do that. Try saying 'help' for a list of commands.")
-            self.on_log(f"Unrecognized: {text}", "system")
+            self.on_log(f" Unrecognized: {text}", "system")
